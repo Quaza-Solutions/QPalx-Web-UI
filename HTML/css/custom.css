@@ -1,0 +1,9 @@
+#inputPassword, #inputEmail {
+	border-radius: 30px;
+}	
+
+#gateway-error {
+    color: #FFFFFF;
+    font-weight: bold;
+    display: block;
+}
