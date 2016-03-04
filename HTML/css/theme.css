@@ -479,7 +479,7 @@ nav hr {
   padding: 0px 8px;
 }
 .overlay-bar {
-  background: none;
+  background: #243342;
 }
 .overlay-bar .has-dropdown:after {
   color: #fff;
