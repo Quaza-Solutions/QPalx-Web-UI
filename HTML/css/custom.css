@@ -25,6 +25,43 @@ section {
 .nav-menu {
   padding-top: 0px; }
 
+.qpalx-work h1 {
+  font-family: Avenir-Heavy;
+  font-size: 54px;
+  color: #343434;
+  letter-spacing: 3.85px;
+  line-height: 74px; }
+.qpalx-work .row {
+  margin-bottom: 50px; }
+.qpalx-work .logo-container {
+  text-align: center; }
+  .qpalx-work .logo-container img {
+    width: 125px; }
+  .qpalx-work .logo-container:nth-child(-n+3):after {
+    content: "";
+    position: absolute;
+    height: 245px;
+    width: 5px;
+    background-color: black;
+    left: 125px;
+    top: 89px;
+    z-index: -1; }
+.qpalx-work .last-logo-container:after {
+  content: "";
+  height: 0px;
+  background-color: white !important; }
+.qpalx-work .bold-header {
+  font-family: HelveticaNeue-Bold;
+  font-size: 18px;
+  color: #343434;
+  letter-spacing: 1.85px;
+  line-height: 32px; }
+.qpalx-work .body-content {
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  color: #343434;
+  letter-spacing: 1.85px; }
+
 .list-group {
   position: relative;
   display: inline-block;
@@ -126,7 +163,7 @@ h1.text-white {
       width: 70%;
       margin: 55px 0px; }
 
-.form-control {
+.courses-wrapper .form-control {
   border: 2px solid #979797;
   border-radius: 3px;
   font-family: Avenir-Medium;
