@@ -8,3 +8,7 @@ target
 
 # Log files to ignore
 /log/*
+
+.gitignore
+node_modules
+scss
