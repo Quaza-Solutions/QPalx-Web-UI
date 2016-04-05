@@ -17,7 +17,7 @@
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom.min.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
 		<![endif]-->
@@ -26,50 +26,45 @@
     </head>
     <body>
 
-		<div class="nav-container">
-			<nav class="top-bar overlay-bar">
-				<div class="container">
 
-					<div class="row utility-menu">
-						<div class="col-sm-12">
-							<div class="utility-inner clearfix">
-								<span class="alt-font"><i class="icon icon_mail"></i>company@quazasolutions.com</span>
 
-								<div class="pull-right">
-									<form class="form-inline">
-									  <div class="form-group">
-									    <label class="sr-only" for="inputEmail">Enter email address</label>
-									    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-									  </div>
-									  <div class="form-group">
-									    <label class="sr-only" for="inputPassword">Enter your password</label>
-									    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-									  </div>
-									  <a href="login.html" class="btn btn-primary login-button btn-xs">Login</a>
-										<a href="signup.html" class="btn btn-primary btn-filled btn-xs">Signup</a>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div><!--end of row-->
+		<nav class=" navbar-inverse ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><img src="./img/Owl%20-%20Header.svg" alt=""></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Enter Email Address" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Enter Password" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
 
-					<div class="mobile-toggle">
-						<i class="icon icon_menu"></i>
-					</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
 
-				</div><!--end of container-->
-			</nav>
-		</div>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
 
-		<div class="main-container">
+
+		<div class="">
 			<header class="fullscreen-element no-pad centered-text">
 				<div class="background-image-holder parallax-background overlay">
 					<img class="background-image" alt="Background Image" src="img/studyingstudent.jpg">
 				</div>
 
-				<div class="container align-vertical">
+				<div class="container align-vertical hero-section">
 					<div class="row">
-						<div class="col-sm-8">
+						<div class="col-sm-12 col-md-8 col-lg-8">
 							<span class="text-white alt-font">Welcom to Qpalx</span>
 							<h1 class="text-white">QPLAX is an eLearning platform for academic excellence.</h1>
 							<p class="lead text-white">Sign up and register for your online courses to get started</p>
@@ -83,10 +78,10 @@
 		<h1 class="text-center">How Qpalx works</h1>
 			<div class="row">
 				<div class="col-sm-12 col-lg-8 col-lg-offset-2">
-					<div class="col-lg-4 logo-container">
+					<div class="col-sm-4 col-lg-4 logo-container">
 						<img src="./img/Learn.svg" alt="">
 					</div>
-					<div class="col-lg-8">
+					<div class="col-sm-8 col-lg-8">
 						<p class="bold-header">Learn</p>
 						<p class="body-content">
 							Learn from videos created by expert teachers and content creators.
@@ -96,10 +91,10 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-lg-8 col-lg-offset-2">
-					<div class="col-lg-4 logo-container">
+					<div class="col-sm-4 col-lg-4 logo-container">
 						<img src="./img/practice.svg" alt="">
 					</div>
-					<div class="col-lg-8">
+					<div class="col-sm-8 col-lg-8">
 						<p class="bold-header">Practice</p>
 						<p class="body-content">
 							Practice what you learned through quizzes and interactive challenges.
@@ -109,10 +104,10 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-lg-8 col-lg-offset-2">
-					<div class="col-lg-4 logo-container">
+					<div class="col-sm-4 col-lg-4 logo-container">
 						<img src="./img/Adaptive.svg" alt="">
 					</div>
-					<div class="col-lg-8">
+					<div class="col-sm-8 col-lg-8">
 						<p class="bold-header">Adaptive</p>
 						<p class="body-content">
 							Lessons and assessments cater to your proficiency level needs and skills.
@@ -122,10 +117,10 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-lg-8 col-lg-offset-2">
-					<div class="col-lg-4 logo-container last-logo-container">
+					<div class="col-sm-4 col-lg-4 logo-container last-logo-container">
 						<img src="./img/performance.svg" alt="">
 					</div>
-					<div class="col-lg-8">
+					<div class="col-sm-8 col-lg-8">
 						<p class="bold-header">Performance</p>
 						<p class="body-content">
 							Track your performance overtime as an indicator of information retained.
@@ -135,36 +130,34 @@
 				</div>
 			</div>
 		</div>
-		
+
 
 		<div class="footer-container-home">
 
 			<footer class="short bg-secondary-1">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-10">
-							<span class="sub">© Copright 2015 Quaza Solutions.</span>
+						<div class="col-sm-10 col-md-7 col-lg-7 center-block text-center">
+              <img src="./img/Owl-footer.svg" class="img-responsive footer-logo" alt="">
+							<p class="sub">© Copright 2015 Quaza Solutions.</p>
 							<ul>
 								<li><a href="#">Terms Of Use</a></li>
 								<li><a href="#">Privacy &amp; Security Statement</a></li>
 								<li><a href="#">Sitemap</a></li>
 							</ul>
-						</div>
+              <ul class="social-icons">
+                <li>
+                  <a href="#">
+                    <i class="icon social_twitter"></i>
+                  </a>
+                </li>
 
-						<div class="col-sm-2 text-right">
-							<ul class="social-icons">
-								<li>
-									<a href="#">
-										<i class="icon social_twitter"></i>
-									</a>
-								</li>
-
-								<li>
-									<a href="#">
-										<i class="icon social_facebook"></i>
-									</a>
-								</li>
-							</ul>
+                <li>
+                  <a href="#">
+                    <i class="icon social_facebook"></i>
+                  </a>
+                </li>
+              </ul>
 						</div>
 					</div><!--end of row-->
 				</div><!--end of container-->
