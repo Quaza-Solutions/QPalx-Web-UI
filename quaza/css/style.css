@@ -489,3 +489,41 @@ _:-ms-lang(x), .email { width: 500px; }
 	background-color: #f2f2f2;
 	height: 100px;
 }
+		.focus{border: 1px solid red;outline: none;}
+		.focus-2{border: 1px solid red;outline: none;}
+        .blur{border: 1px solid #7dc855;outline: none; }
+		.blur-2{border: 1px solid #7dc855;outline: none; }
+		
+		
+	.focus + label::before{
+	content: "\00D7";
+	position: relative;
+	top: -24px;
+	left: 500px;
+	color: red;
+}
+
+	.focus-2 + label::before{
+	content: "\00D7";
+	position: relative;
+	top: -24px;
+	left: 230px;
+	color: red;
+}
+
+	.blur + label::before{
+	content: "\2713";
+	position: relative;
+	top: -24px;
+	left: 500px;
+	color: #7dc855;
+}
+
+	.blur-2 + label::before{
+	content: "\2713";
+	position: relative;
+	top: -24px;
+	left: 230px;
+	color: #7dc855;
+}
+
