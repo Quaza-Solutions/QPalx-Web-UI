@@ -11,6 +11,19 @@ body {
     font-weight: normal;
 }
 
+b, strong {
+	font-family: 'robotobold', sans-serif;	
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../web fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot');
+    src: url('../web fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
+         url('../web fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('../web fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg#robotobold') format('svg');
+}
+
 header {
 background-color: #43484d;
 text-align: right;
