@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
@@ -30,15 +29,29 @@
 
  </div>
  <br /><br />
- <div id="left-box" class="col-sm-4 box"><img src="images/student.png" class="user" /><h4 class="centered">Student</h4><p class="centered gray small-text">Sign up and learn from content created by expert teachers and content creators.</p></div>
- <div id="center-box" class="col-sm-4 box"><img src="images/student.png" class="user" /><h4 class="centered">Parent</h4><p class="centered gray small-text">Manage and track your son or daughter's performance using Qpalx.</p></div>
-  <div id="right-box" class="col-sm-4 box"><img src="images/student.png" class="user" /><h4 class="centered">Teacher</h4><p class="centered gray small-text">Manage your class performance and gain an understanding of how well your students are doing. </p></div> 
-  
-   
+ <form action="" method="get">
+ <div class="row">
+ <div class="col-sm-4">
+<input type="radio" id="check-box-1" name="options" />
+<label for="check-box-1" class="box" id="left-box"><img src="images/student.png" class="user" /><h4 class="centered">Student</h4><p class="centered gray small-text">Sign up and learn from content created by expert teachers and content creators.</p></label>
+</div>
+
+ <div class="col-sm-4">
+<input type="radio" id="check-box-2" name="options" />
+<label for="check-box-2" class="box" id="center-box"><img src="images/student.png" class="user" /><h4 class="centered">Parent</h4><p class="centered gray small-text">Manage and track your son or daughter's performance using Qpalx.</p></label>
+</div>
+
+ <div class="col-sm-4">
+<input type="radio" id="check-box-3" name="options" />
+<label for="check-box-3" class="box" id="right-box"><img src="images/student.png" class="user" /><h4 class="centered">Teacher</h4><p class="centered gray small-text">Manage your class performance and gain an understanding of how well your students are doing. </p></label>
+</div>
+
+   </div>
    <div class="clearfix bottom-space"></div>
    <br /><br />
    <br />
     <div class="col-md-12 continue"><button type="button" class="btn btn-success">Continue</button></div>
+    </form>
 </div>
    <div class="clearfix bottom-space"></div>
    
@@ -71,5 +84,6 @@
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
   </body>
 </html>
