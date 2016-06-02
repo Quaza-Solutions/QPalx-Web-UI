@@ -211,20 +211,20 @@ height: 32px;
 	height: 400px;
 	width: 256px;
 	border-radius: 10px;
+	border: thin solid #86939e;
 }
-
+.box:hover {
+	border: 2px solid #7dc855;
+}
 #left-box {
-	border: thin solid #7dc855;
 	margin: 0 40px 0 60px;
 }
 
 #center-box {
-	border: thin solid #86939e;
 	margin: 0 60px 0 60px;
 }
 
 #right-box {
-	border: thin solid #86939e;
 	margin: 0 60px 0 40px;
 }
 
@@ -348,20 +348,22 @@ height: 200px;
 	padding: 16px 0 16px 0;
 }
 
-.cents-box-2 {
-	border: 2px solid #7dc855;
-	width: 300px;
-	height: 400px;
-	margin: 60px 60px 0 -200px;
-	border-radius: 20px;
-}
-
-.cents-box-5 {
+.cents-box {
 	border: 1px solid gray;
 	width: 300px;
 	height: 400px;
-	margin: 60px 90px 0 90px;
 	border-radius: 20px;
+}
+.cents-box:hover {
+	border: 2px solid #7dc855;
+}
+
+.cents-box-2 {
+	margin: 60px 60px 0 -200px;
+}
+
+.cents-box-5 {
+	margin: 60px 90px 0 90px;
 }
 
 .cents {
@@ -375,8 +377,18 @@ height: 200px;
 	margin: 0 0 0 40px;
 }
 
+input[type='radio']:checked:after {
+	width: 30px;
+	height: 30px;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+	border: 6px solid #7dc855;
+	background-color: #fff;
+}
 .mpower {
-	border: 1px solid green;
+	/*border: 1px solid #7dc855;*/
 }
 
 .profi-box{
@@ -506,9 +518,9 @@ _:-ms-lang(x), .email { width: 500px; }
 
 .hover:hover {
 	background-color: #f2f2f2;
-	height: 100px;
+	/*height: 100px;*/
 	margin: 0 -20px 0 -20px;
-	padding: 40px 0 100px 0;
+	/*padding: 40px 0 100px 0;*/
 }
 
 .hover-2:hover {

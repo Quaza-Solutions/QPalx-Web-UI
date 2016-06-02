@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -36,15 +36,15 @@
    <div class="col-md-8"><hr class="gray-line" /></div>
    <div class="row">
    
-   <div class="col-md-4 cents-box-2"><img class="cents" src="images/2cents.png" /><p class="centered large-text"><b>Monthly</b></p><p class="centered">You will be billed on a monthly basis</p></div>
+   <div class="col-md-4 cents-box cents-box-2"><img class="cents" src="images/2cents.png" /><p class="centered large-text"><b>Monthly</b></p><p class="centered">You will be billed on a monthly basis</p></div>
    <div class="col-md-2"></div>
-   <div class="col-md-4 cents-box-5"><img class="cents" src="images/5cents.png" /><p class="centered large-text"><b>Annually</b></p><p class="centered">You will be charged on a yearly basis at a discounted price.</p></div>
+   <div class="col-md-4 cents-box cents-box-5"><img class="cents" src="images/5cents.png" /><p class="centered large-text"><b>Annually</b></p><p class="centered">You will be charged on a yearly basis at a discounted price.</p></div>
    <div class="col-md-2"></div>
    </div>
    <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" /></div>
+   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options" /></div>
    <div class="col-md-6"><p><b>Credit Card</b></p><p>Safe money transfer using your bank account. Safe payment online. Credit card needed: Visa, Maestro, Discover, American Express.</p></div>
    <div class="col-md-1"><img src="images/visa.png" /></div>
    <div class="col-md-2"></div>
@@ -52,7 +52,7 @@
       <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" /></div>
+   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options"  /></div>
    <div class="col-md-6"><p><b>PayPal</b></p><p>Safe payment online. Credit card needed. PayPal account is not necessary</p></div>
    <div class="col-md-1"><img src="images/paypal.png" /></div>
    <div class="col-md-2"></div>
@@ -60,7 +60,7 @@
          <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" /></div>
+   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options" /></div>
    <div class="col-md-6"><p><b>Mpower</b></p><p>Safe secure payment online with Mpower</p></div>
    <div class="col-md-1"><img src="images/mpower.png" /></div>
    <div class="col-md-2"></div>
@@ -94,7 +94,7 @@
             <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" /></div>
+   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options"  /></div>
    <div class="col-md-6"><p><b>Prepaid Card</b></p><p>Enter Card Number</p></div>
    <div class="col-md-1"><img src="images/prepaid.png" /></div>
    <div class="col-md-2"></div>
