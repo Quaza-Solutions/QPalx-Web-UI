@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
@@ -19,8 +20,8 @@
   <div class="col-md-1"><img src="images/logo.png" alt="quaza" id="logo" /></div>
   <form action="" method="post" id="submit_form">
      
-  <input class="text-box" placeholder="Enter Email Address" type="text"></input>
-  <input class="text-box" placeholder="Enter Password" type="text"></input>
+  <input class="text-box email-3" placeholder="Enter Email Address" type="text"></input>
+  <input class="text-box not-blank" placeholder="Enter Password" type="text"></input>
   <button id="log-in" type="button" class="btn btn-success">Log In</button>
   <br />
   <div class="clearfix"></div>
@@ -55,8 +56,8 @@
 <form action="" method="post" id="submit_form_2">
      
 
-  <div class="col-md-3"><input type="text" size="26" id="first"></input></div>
-  <div class="col-md-3"><input type="text" size="26" id="last"></input></div>
+  <div class="col-md-3"><input type="text" size="26" id="first"></input><span id="first-name"></span></div>
+  <div class="col-md-3"><input type="text" size="26" id="last"></input><span id="last-name"></span></div>
   <div class="col-md-6"><input type="password" size="61" class="password" id="password-1"></input></div>
   
    <div class="clearfix bottom-space"></div>
@@ -106,51 +107,14 @@
    
    <div class="col-md-4"><h3 class="header-3">Subscribe now</h3><div class="footer-color"><br /><p>Sign up to stay up to date with our<br /> latest news
  <br /><br /></p></div>  
-<input id="text-box-1" placeholder="Enter your e-mail here" size="30" type="text"></input><button data-toggle="dropdown" id="button-1">
+<input id="text-box-1" class="email-4" placeholder="Enter your e-mail here" size="30" type="text"></input><button data-toggle="dropdown" id="button-1">
 <i class="fa fa-paper-plane"></i></button>
    
    </div></footer>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    
+ <script src="js/validation.js"></script>   
 
-<script language="javascript" type="text/javascript">
-
-   $('input[type=email]').blur(function() {
-  if (!validateEmail($(this).val())) {
-	  $(this).removeClass("blur").addClass("focus");
-	  var txt = "Please enter a valid email address.";
-		var newDiv = $('<div style=\"position: relative; top: -20px; right: -300px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt);
-		$('#tooltip-1').append(newDiv);
-         } else {
-				 $(this).removeClass("focus").addClass("blur");
-         }
-})
-
-  function validateEmail(emailaddress) {
-     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-     if (emailReg.test(emailaddress) == false) {
-         return false;
-     } else {
-         return true;
-     }
-   }
-   
-  // $('#submit').click(function(event){
-$('#password-2').blur(function() {
-          if($('#password-1').val() != $('#password-2').val()) {
-		var txt2 = "Please enter the same password";
-		var newDiv2 = $('<div style=\"position: relative; top: 0px; right: -300px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt2);
-		$('#password-confirm').append(newDiv2);
-            $(this).removeClass("blur").addClass("focus");
-            // Prevent form submission
-            event.preventDefault();
-        } else {
-			 $(this).removeClass("focus").addClass("blur");
-							   }
-							   })
-				//			   })
-   </script>
   </body>
 </html>

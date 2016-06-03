@@ -153,7 +153,7 @@ margin-top: 40px;
 
 .three-blue {
 	color: #358ed7; 
-	padding: 0px 4px 0px 4px;
+	padding: 0px 5px 0px 5px;
 }
 
 .three-text-blue {
@@ -166,7 +166,7 @@ border: 1px solid #888888;
 }
 .three-gray {
 	color: #888888; 
-	padding: 0px 4px 0px 4px;
+	padding: 0px 5px 0px 5px;
 }
 
 #blue-line {
@@ -429,6 +429,13 @@ input[type='radio']:checked:after {
     visibility: visible;
 	border: 6px solid #7dc855;
 	background-color: #fff;
+	
+}
+.hover:checked {
+	background-color: #f2f2f2;
+	/*height: 100px;*/
+	margin: 0 -20px 0 -20px;
+	/*padding: 40px 0 100px 0;*/
 }
 .mpower {
 	/*border: 1px solid #7dc855;*/
@@ -565,18 +572,24 @@ _:-ms-lang(x), .email { width: 500px; }
 	margin: 0 -20px 0 -20px;
 	/*padding: 40px 0 100px 0;*/
 }
-
+.hvr {
+	background-color: #f2f2f2;
+	/*height: 100px;*/
+	margin: 0 -20px 0 -20px;
+	/*padding: 40px 0 100px 0;*/
+}
 .hover-2:hover {
 	background-color: #f2f2f2;
 	height: 100px;
 }
 		.focus{border: 1px solid red;outline: none;}
 		.focus-2{border: 1px solid red;outline: none;}
+		.focus-3{border: 1px solid red;outline: none;}
         .blur{border: 1px solid #7dc855;outline: none; }
 		.blur-2{border: 1px solid #7dc855;outline: none; }
+		.blur-3{border: 1px solid #7dc855;outline: none; }
 		
-		
-	.focus + label::before{
+	.focus:after{
 	content: "\00D7";
 	position: relative;
 	top: -24px;
@@ -585,6 +598,14 @@ _:-ms-lang(x), .email { width: 500px; }
 }
 
 	.focus-2 + label::before{
+	content: "\00D7";
+	position: relative;
+	top: -24px;
+	left: 230px;
+	color: red;
+}
+
+	.focus-3 + label::before{
 	content: "\00D7";
 	position: relative;
 	top: -24px;
@@ -607,4 +628,10 @@ _:-ms-lang(x), .email { width: 500px; }
 	left: 230px;
 	color: #7dc855;
 }
-
+	.blur-3 + label::before{
+	content: "\2713";
+	position: relative;
+	top: -24px;
+	left: 230px;
+	color: #7dc855;
+}
