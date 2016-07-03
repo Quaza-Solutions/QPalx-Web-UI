@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
@@ -35,28 +35,32 @@
    
    <div class="clearfix bottom-space"></div>
    <div class="col-md-3"><b>Account Information</b></div>
-   <div class="clearfix"></div>
+   <div class="col-md-9"></div>
+   <div class="clearfix bottom-space"></div>
    <div class="col-md-3"><img src="images/avatar.png" /></div>
-   <div class="col-md-3"></div>
-   <div class="col-md-6" id="password">Password</div>
-   <div class="clearfix"></div>
-      <div class="col-md-3"></div>
-   <div class="col-md-3"></div>
-   <div class="col-md-6"><input type="password" size="61" class="password" id="password-1"></input></div>
-    <div class="clearfix bottom-space"></div>
-    <div class="col-md-3">First name</div><div class="col-md-3">Last name</div><div class="col-md-6">Confirm Password</div>
-  <div class="clearfix"></div>
+   <div class="col-md-9"></div>
+   <div class="clearfix bottom-space"></div>
+ 
+    <div class="col-md-3">First name</div>
+    <div class="col-md-3">Last name</div>
+    <div class="col-md-6" id="password">Password</div>
+
+      <div class="clearfix"></div>
 
 
   <div class="col-md-3"><input type="text" size="26" id="first"></input><span id="first-name"></span></div>
   <div class="col-md-3"><input type="text" size="26" id="last"></input><span id="last-name"></span></div>
-  <div class="col-md-6"><input type="password" size="61" class="password" id="password-2"></input><span id="password-confirm"></span></div>
+   <div class="col-md-6"><input type="password" size="61" class="password" id="password-1"></input></div>
   
    <div class="clearfix bottom-space"></div>
   <div class="col-md-6">Email</div>
+  <div class="col-md-6">Confirm Password</div>
+
   <div class="clearfix"></div>
   <div class="col-md-6"><input type="email" class="email" size="61"></input><span id="tooltip-1"></span></div>
-  <div class="col-md-3" id="location"><b>Location</b></div>
+  <!--
+  <div class="col-md-3" id="location"><b>Location</b></div>-->
+  <div class="col-md-6"><input type="password" size="61" class="password" id="password-2"></input><span id="password-confirm"></span></div>
   <div class="clearfix bottom-space"></div>
   <div class="col-md-3">Education Level</div>
   <div class="col-md-3">Grade Level</div>
@@ -342,8 +346,8 @@
   <option value="Accra Academy">Accra Academy</option>
 </select>
 </div>
-  <div class="col-md-3"><input type="text" size="26" id="zip"></input><span id="zip-code"></span></div>
-  <div class="col-md-3"><input type="text" size="26" id="phone"></input><span id="phone-number"></span></div>
+  <div class="col-md-3"><input type="text" size="30" id="zip"></input><span id="zip-code"></span></div>
+  <div class="col-md-3"><input type="text" size="30" id="phone"></input><span id="phone-number"></span></div>
  
    <div class="clearfix bottom-space"></div>
     <div class="col-md-12 continue"><button type="button" class="btn btn-success">Continue</button></div>

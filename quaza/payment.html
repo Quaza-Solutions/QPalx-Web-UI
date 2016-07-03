@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">    
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
@@ -44,16 +43,16 @@
    <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options" /></div>
-   <div class="col-md-6"><p><b>Credit Card</b></p><p>Safe money transfer using your bank account. Safe payment online. Credit card needed: Visa, Maestro, Discover, American Express.</p></div>
+   <div class="col-md-1"><input type="radio" class="radio-btn radio-btn-1" name="payment-options" /></div>
+   <div class="col-md-6"><p><b>Credit Card</b></p><p>Safe money transfer using your bank account. Safe payment online. Credit card needed: Visa, Maestro, Discover, American Express.</p><span class="red"></span></div>
    <div class="col-md-1"><img src="images/visa.png" /></div>
    <div class="col-md-2"></div>
    </div>
       <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options"  /></div>
-   <div class="col-md-6"><p><b>PayPal</b></p><p>Safe payment online. Credit card needed. PayPal account is not necessary</p></div>
+   <div class="col-md-1"><input type="radio" class="radio-btn radio-btn-2" name="payment-options"  /></div>
+   <div class="col-md-6"><p><b>PayPal</b></p><p>Safe payment online. Credit card needed. PayPal account is not necessary</p><span class="red-2"></span></div>
    <div class="col-md-1"><img src="images/paypal.png" /></div>
    <div class="col-md-2"></div>
    </div>
@@ -145,7 +144,19 @@
 $('.radio-btn').click(function() {
 		$('.row').removeClass("hvr");
 		$(this).filter(':checked').closest('.row').addClass("hvr");
-}); 
+		}); 
+$('.radio-btn-1').click(function() {
+		$(".red-2").empty();
+		var txt1 = "Credit card coming soon!";
+		var newDiv1 = $('<div style=\"color: red;\"></div>').text(txt1);
+		$('.red').append(newDiv1);
+		}); 
+$('.radio-btn-2').click(function() {
+		$(".red").empty();
+		var txt2 = "PayPal coming soon!";
+		var newDiv2 = $('<div style=\"color: red;\"></div>').text(txt2);
+		$('.red-2').append(newDiv2);	
+		}); 
 </script>
   </body>
 </html>
