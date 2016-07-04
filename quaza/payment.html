@@ -33,13 +33,25 @@
    <div class="col-md-2"><hr class="gray-line" /></div>
    <div class="col-md-2"><hr id="blue-line" /></div>
    <div class="col-md-8"><hr class="gray-line" /></div>
-   <div class="row">
+  <div class="clearfix"></div>
+   <form action="" method="get">
+    <div class="row">
+    <div class="col-md-6">
+    <input type="radio" id="check-box-one" value="a" name="subscriptions" />
+    <label for="check-box-one" class="cents-box cents-box-2" id="">
+   <img class="cents" src="images/2cents.png" /><p class="centered large-text"><b>Monthly</b></p><p class="centered">You will be billed on a monthly basis</p></label>
    
-   <div class="col-md-4 cents-box cents-box-2"><img class="cents" src="images/2cents.png" /><p class="centered large-text"><b>Monthly</b></p><p class="centered">You will be billed on a monthly basis</p></div>
-   <div class="col-md-2"></div>
-   <div class="col-md-4 cents-box cents-box-5"><img class="cents" src="images/5cents.png" /><p class="centered large-text"><b>Annually</b></p><p class="centered">You will be charged on a yearly basis at a discounted price.</p></div>
-   <div class="col-md-2"></div>
    </div>
+  
+   <div class="col-md-6">
+   <input type="radio" id="check-box-two" value="b" name="subscriptions" />
+   <label for="check-box-two" class="cents-box cents-box-5" id="">
+   <img class="cents" src="images/5cents.png" /><p class="centered large-text"><b>Annually</b></p><p class="centered side-margin">You will be charged on a yearly basis at a discounted price.</p>
+   </label>
+   </div>
+
+   </div>
+   
    <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
@@ -106,10 +118,10 @@
    </div>  
    
    <div class="clearfix bottom-space"></div>
-    <div class="col-md-12 continue"><button type="button" class="btn btn-success">Continue</button></div>
+    <div class="col-md-12 continue"><button type="submit" class="btn btn-success">Continue</button></div>
 </div>
    <div class="clearfix bottom-space"></div>
-   
+   </form>
    
    
    <footer>
