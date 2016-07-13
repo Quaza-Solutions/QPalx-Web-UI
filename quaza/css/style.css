@@ -580,7 +580,8 @@ button[title]:hover:after {
 	background-image:url(../images/Qpalx.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 700px;
+	/*height: 784px;*/
+	height: 990px;
 	margin-top: -100px;
 }
 #header-1 {
