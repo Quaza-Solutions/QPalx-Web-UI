@@ -14,25 +14,22 @@
   <body>
   <header>
   <div class="col-md-1"><img src="images/logo.png" alt="quaza" id="logo" /></div>
-  <input class="text-box email-3" placeholder="Enter Email Address" type="text"></input>
-  <input class="text-box not-blank" placeholder="Enter Password" type="text"></input>
-  <button id="log-in" type="button" class="btn btn-success">Log In</button>
+  <form action="" method="get" id="submit_form">
+  <input class="text-box email-3" name="email-3" placeholder="Enter Email Address" type="text">
+  <input class="text-box not-blank" placeholder="Enter Password" name="pass-1" type="password">
+  <button id="log-in" type="submit" class="btn btn-success">Log In</button>
   <br />
+  </form>
   <div class="clearfix"></div>
   <button class="btn btn-link" style="margin-right: 130px; color: #aaa;">Forgot your password?</button>
   </header>
   <h1>Sign Up</h1>
   <div class="container">
-  <div class="col-md-2"><span class="three-circle-blue"><span class="three-blue"><b>1</b></span></span><span class="three-text-blue"><b> Account</b></span></div>
-  
-    <div class="col-md-2"><span class="three-circle-gray"><span class="three-gray">2</span></span> Payment</div>
+   <div class="col-md-2" onClick="hrFunctionA()" style="cursor: pointer;"><span class="three-circle-blue"><span class="three-blue"><b>1</b></span></span><span class="three-text-blue"><b> Account</b> <hr class="blue-hr-1" id="hr-1" /></div></span>
+ 
+    <div class="col-md-2" onClick="hrFunctionB()" style="cursor: pointer;"><span class="three-circle-gray"><span class="three-gray">2</span></span> Payment<hr class="black-hr-2" id="hr-2" /></div>
     
-<div class="col-md-2"><span class="three-circle-gray"><span class="three-gray">3</span></span> Proficiency</div>
-
-   <div class="clearfix"></div>
-   <div class="col-md-2"><hr id="blue-line" /></div>
-   <div class="col-md-10"><hr id="gray-line" /></div>
-   
+<div class="col-md-2" onClick="hrFunctionC()" style="cursor: pointer;"><span class="three-circle-gray"><span class="three-gray">3</span></span> Proficiency<hr class="black-hr-2" id="hr-3" /></div> 
    <div class="clearfix bottom-space"></div>
    <div class="col-md-3"><b>Account Information</b></div>
    <div class="col-md-9"></div>
@@ -46,21 +43,22 @@
     <div class="col-md-6" id="password">Password</div>
 
       <div class="clearfix"></div>
+      
+<form action="" method="get" id="submit_form_2">
 
-
-  <div class="col-md-3"><input type="text" size="26" id="first"></input><span id="first-name"></span></div>
-  <div class="col-md-3"><input type="text" size="26" id="last"></input><span id="last-name"></span></div>
-   <div class="col-md-6"><input type="password" size="61" class="password" id="password-1"></input></div>
+  <div class="col-md-3"><input type="text" size="26" id="first" name="first"><span id="first-name"></span></div>
+  <div class="col-md-3"><input type="text" size="26" id="last" name="last"><span id="last-name"></span></div>
+   <div class="col-md-6"><input type="password" size="61" class="password" name="pass" id="password-1"></div>
   
    <div class="clearfix bottom-space"></div>
   <div class="col-md-6">Email</div>
   <div class="col-md-6">Confirm Password</div>
 
   <div class="clearfix"></div>
-  <div class="col-md-6"><input type="email" class="email" size="61"></input><span id="tooltip-1"></span></div>
+  <div class="col-md-6"><input type="email" class="email" name="email" size="61"><span id="tooltip-1"></span></div>
   <!--
   <div class="col-md-3" id="location"><b>Location</b></div>-->
-  <div class="col-md-6"><input type="password" size="61" class="password" id="password-2"></input><span id="password-confirm"></span></div>
+  <div class="col-md-6"><input type="password" size="61" class="password" name="pass-2" id="password-2"><span id="password-confirm"></span></div>
   <div class="clearfix bottom-space"></div>
   <div class="col-md-3">Education Level</div>
   <div class="col-md-3">Grade Level</div>
@@ -68,7 +66,7 @@
   <div class="col-md-3">Region</div>
   <div class="clearfix"></div>
   <div class="col-md-3">
-  <select class="dropdown">
+  <select name="degree" class="dropdown">
   <option value="High School">High School</option>
   <option value="Bachelor's">Bachelor's</option>
   <option value="Master's">Master's</option>
@@ -346,12 +344,13 @@
   <option value="Accra Academy">Accra Academy</option>
 </select>
 </div>
-  <div class="col-md-3"><input type="text" size="30" id="zip"></input><span id="zip-code"></span></div>
-  <div class="col-md-3"><input type="text" size="30" id="phone"></input><span id="phone-number"></span></div>
+  <div class="col-md-3"><input type="text" size="30" id="zip" name="zip"><span id="zip-code"></span></div>
+  <div class="col-md-3"><input type="text" size="30" id="phone" name="phone"><span id="phone-number"></span></div>
  
    <div class="clearfix bottom-space"></div>
-    <div class="col-md-12 continue"><button type="button" class="btn btn-success">Continue</button></div>
+    <div class="col-md-12 continue"><button type="submit" class="btn btn-success">Continue</button></div>
 </div>
+</form>
    <div class="clearfix bottom-space"></div>
    
    
@@ -376,7 +375,7 @@
    
    <div class="col-md-4"><h3 class="header-3">Subscribe now</h3><div class="footer-color"><br /><p>Sign up to stay up to date with our<br /> latest news
  <br /><br /></p></div>  
-<input id="text-box-1" class="email-4" placeholder="Enter your e-mail here" size="30" type="text"></input><button data-toggle="dropdown" id="button-1">
+<input id="text-box-1" class="email-4" placeholder="Enter your e-mail here" size="30" type="text"><button data-toggle="dropdown" id="button-1">
 <i class="fa fa-paper-plane"></i></button>
    
    </div></footer>
@@ -384,5 +383,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
      <script src="js/validation.js"></script>
+         
+    <script src="js/hr.js"></script>
   </body>
 </html>

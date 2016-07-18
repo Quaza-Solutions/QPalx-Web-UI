@@ -17,6 +17,59 @@ if ( $.trim(inp).length == 0 )
          }
 							   });
 
+$('.length').blur(function() {
+	$(".course-length").empty();
+	var inp = $(".length").val();
+if ( $.trim(inp).length == 0 )
+{
+   $(this).removeClass("blur-2").addClass("focus-2");
+   		var txt3 = "Please don't leave the field blank";
+		var newDiv3 = $('<div style=\"position: relative; top: 0px; right: 0px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt3);
+		
+		$('.course-length').append(newDiv3);
+	  // Prevent form submission
+      event.preventDefault();
+         } else {
+		//$("#first-name").empty();
+		$(this).removeClass("focus-2").addClass("blur-2");
+         }
+							   });
+
+$('#name').blur(function() {
+	$(".name").empty();
+	var inp = $("#name").val();
+if ( $.trim(inp).length == 0 )
+{
+   $(this).removeClass("blur-2").addClass("focus-2");
+   		var txt3 = "Please don't leave the field blank";
+		var newDiv3 = $('<div style=\"position: relative; top: 0px; right: 0px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt3);
+		
+		$('.name').append(newDiv3);
+	  // Prevent form submission
+      event.preventDefault();
+         } else {
+		//$("#first-name").empty();
+		$(this).removeClass("focus-2").addClass("blur-2");
+         }
+							   });
+$('#duration').blur(function() {
+	$(".minutes").empty();
+	var inp = $("#duration").val();
+if ( $.trim(inp).length == 0 )
+{
+   $(this).removeClass("blur-2").addClass("focus-2");
+   		var txt3 = "Please don't leave the field blank";
+		var newDiv3 = $('<div style=\"position: relative; top: 0px; right: 0px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt3);
+		
+		$('.minutes').append(newDiv3);
+	  // Prevent form submission
+      event.preventDefault();
+         } else {
+		//$("#first-name").empty();
+		$(this).removeClass("focus-2").addClass("blur-2");
+         }
+							   });
+
 $('#zip').blur(function() {
 	$("#zip-code").empty();
 	var inp = $("#zip").val();
@@ -69,7 +122,24 @@ if ( $.trim(inp).length == 0 )
 		//$('#last-name').empty();
 		$(this).removeClass("focus-2").addClass("blur-2");
          }
-							   });
+		   });
+
+$('#description').blur(function() {
+	$(".description").empty();
+	var inp = $("#description").val();
+if ( $.trim(inp).length == 0 )
+{
+   $(this).removeClass("blur-2").addClass("focus-2");
+   		var txt4 = "Please don't leave the field blank";
+		var newDiv4 = $('<div style=\"position: relative; top: 0px; right: 0px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt4);
+		
+		$('.description').append(newDiv4);
+	  // Prevent form submission
+      event.preventDefault();
+         } else {
+		$(this).removeClass("focus-2").addClass("blur-2");
+         }
+							 							   });
 
    $('.email').blur(function() {
 	$("#tooltip-1").empty();

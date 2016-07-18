@@ -23,60 +23,78 @@
   <input class="text-box email-3" name="email-3" placeholder="Enter Email Address" type="text">
   <input class="text-box not-blank" name="pass-1" placeholder="Enter Password" type="password">
   <button id="log-in" type="submit" class="btn btn-success">Log In</button>
-  </form>
   <br />
   <div class="clearfix"></div>
+  </form>
   <button class="btn btn-link" style="margin-right: 130px; color: #aaa;">Forgot your password?</button>
-
-  </header>
-  <h1>Sign Up</h1>
-  <div class="container">
-   <div class="col-md-2" onClick="hrFunctionA()" style="cursor: pointer;"><span class="three-circle-blue"><span class="three-blue"><b>1</b></span></span><span class="three-text-blue"><b> Account</b> <hr class="blue-hr-1" id="hr-1" /></div></span>
- 
-    <div class="col-md-2" onClick="hrFunctionB()" style="cursor: pointer;"><span class="three-circle-gray"><span class="three-gray">2</span></span> Payment<hr class="black-hr-2" id="hr-2" /></div>
-    
-<div class="col-md-2" onClick="hrFunctionC()" style="cursor: pointer;"><span class="three-circle-gray"><span class="three-gray">3</span></span> Proficiency<hr class="black-hr-2" id="hr-3" /></div>
   
-   <div class="clearfix bottom-space"></div>
-   <div class="col-md-3"><b>Account Information</b></div>
-   <div class="clearfix"></div>
-   <div class="col-md-3"><img id="parent" src="images/teacher.png" /></div>
-   <div class="col-md-3"></div>
-   <div class="col-md-6"></div>
-   <div class="clearfix"></div>
+  </header>
+  <h1>Form</h1>
+  <div class="container">
+
       <div class="col-md-3"></div>
    <div class="col-md-3"></div>
    <div class="col-md-6"></div>
     <div class="clearfix bottom-space"></div>
-    <div class="col-md-3">First name</div><div class="col-md-3">Last name</div><div class="col-md-6">Password</div>
+    <form action="" method="get" id="submit_form_2">
+ 
+    <div class="col-md-3">Course name</div><div class="col-md-3">Course Description</div><div class="col-md-6">Type of Course Activity</div>
   <div class="clearfix"></div>
-<form action="" method="get" id="submit_form_2">
-     
+    
 
-  <div class="col-md-3"><input type="text" size="26" id="first" name="first"><span id="first-name"></span></div>
-  <div class="col-md-3"><input type="text" size="26" id="last" name="last"><span id="last-name"></span></div>
-  <div class="col-md-6"><input type="password" size="61" class="password" name="pass" id="password-1"></div>
+  <div class="col-md-3"><input type="text" size="26" id="name" name="name"><span class="name"></span></div>
+  <div class="col-md-3"><input type="text" size="26" id="description" name="description"><span class="description"></span></div>
+  <div class="col-md-6">  <select id="activity" name="activity" class="activity">
+  <option value="video">Video</option>
+  <option value="interactive exercise">Interactive Exercise</option>
+  <option value="quiz">Quiz</option>
+</select>
+</div>
   
    <div class="clearfix bottom-space"></div>
-  <div class="col-md-6">Email</div>
-   <div class="col-md-6">Confirm Password</div>
+  <div class="col-md-6">Course Activity Length</div>
+   <div class="col-md-6">Course Activity Duration in Minutes</div>
   <div class="clearfix"></div>
-  <div class="col-md-6"><input type="email" class="email" name="email" size="61"><span id="tooltip-1"></span></div>
-  <div class="col-md-6"><input type="password" class="password" name="pass-2" size="61" id="password-2"><span id="password-confirm"></span></div>
+  <div class="col-md-6"><input type="text" class="length" size="61" name="length"><span class="course-length"></span></div>
+  <div class="col-md-6"><input type="text" class="duration" name="duration" size="61" id="duration"><span class="minutes"></span></div>
   <div class="clearfix bottom-space"></div>
  
-<div class="col-md-6">Current School</div>
-  
+<div class="col-md-6">Proficiency Rating Floor</div>
+<div class="col-md-6">Proficiency Rating Ceiling</div>
+   
 <div class="clearfix"></div>
 <div class="col-md-6">
-  <select id="school" name="school" class="academy">
-  <option value="Accra Academy">Accra Academy</option>
+  <select id="floor" name="floor" class="floor">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select>
+</div>
+<div class="col-md-6">
+  <select id="ceiling" name="ceiling" class="ceiling">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
 </select>
 </div>
   <div class="clearfix bottom-space"></div>
    
    <div class="clearfix bottom-space"></div>
-    <div class="col-md-12 continue"><button type="submit" id="submit" class="btn btn-success">Continue</button></div>
+    <div class="col-md-12 continue"><button type="submit" id="submit" class="btn btn-success">Add Course</button></div>
     </form>
 </div>
 
@@ -112,7 +130,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
  <script src="js/validation.js"></script>   
-    
-    <script src="js/hr.js"></script>
+
   </body>
 </html>

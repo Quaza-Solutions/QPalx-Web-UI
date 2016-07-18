@@ -230,6 +230,18 @@ width: 248px;
 	width: 522px; 
 	height: 32px;
 }
+.activity {
+	width: 522px; 
+	height: 32px;
+}
+.floor {
+	width: 522px; 
+	height: 32px;
+}
+.ceiling {
+	width: 522px; 
+	height: 32px;
+}
 
 #password {
 /*	margin-top: 198px;*/
@@ -243,7 +255,7 @@ width: 248px;
 	font-size: 13px;
 }
 .med-text {
-	font-size: 16px;
+	font-size: 22px;
 }
 .box {
 	display: block;
@@ -404,10 +416,44 @@ width: 18px;
 }
 
 .green-hr {
-	color: #7dc855;
+	height: 2px;
 	background-color: #7dc855;
 }
 
+.green-hr-1 {
+	height: 1px;
+	width: 130px;
+	margin-left: 0px;
+	background-color: #7dc855;
+}
+
+.black-hr-1 {
+	height: 1px; 
+	width: 900px; 
+	background-color: #000;
+}
+.black-hr-2 {
+	height: 1px; 
+	width: 700px; 
+	background-color: #000;
+}
+.blue-hr-1 {
+	height: 1px;
+	width: 200px;
+	margin-left: 0px;
+	background-color: #358ed7;
+}
+
+
+#hr-1 { 
+ 	cursor: pointer;
+}
+#hr-2 { 
+ 	cursor: pointer;
+}
+#hr-3 { 
+ 	cursor: pointer;
+}
 .light-gray {
 	background-color: #f2f2f2;
 }
