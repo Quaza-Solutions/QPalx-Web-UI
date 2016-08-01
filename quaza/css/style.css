@@ -55,6 +55,13 @@ text-align: right;
 padding: 20px;
 margin-bottom: 100px;
 }
+
+.logo {
+color: #fff;
+font-size: 28px;
+	font-family: 'robotobold', sans-serif;	
+}
+
 #header-4 {
 background-color: #43484d;
 text-align: right;
@@ -414,6 +421,9 @@ width: 18px;
 .green {
 	color: #7dc855;
 }
+.black {
+color: #000;	
+}
 
 .green-hr {
 	height: 2px;
@@ -430,12 +440,25 @@ width: 18px;
 .black-hr-1 {
 	height: 1px; 
 	width: 900px; 
-	background-color: #000;
+/*	background-color: #43484d;*/
+}
+
+.green-hr-1a {
+	height: 1px;
+	width: 200px;
+	margin-left: 0px;
+	background-color: #7dc855;
+}
+
+.black-hr-1a {
+	height: 1px; 
+	width: 700px; 
+	/*background-color: #43484d;*/
 }
 .black-hr-2 {
 	height: 1px; 
 	width: 700px; 
-	background-color: #000;
+/*	background-color: #43484d;*/
 }
 .blue-hr-1 {
 	height: 1px;
@@ -825,3 +848,102 @@ _:-ms-lang(x), .email { width: 500px; }
 
 
 /** end of http://www.jssor.com/demos/full-width-slider.slider **/
+
+.student {
+	text-align: right;
+	display: block;
+	margin-right: 20px;
+	font-weight: bold;
+	font-family: 'robotobold', sans-serif;	
+}
+
+.full-width {
+	margin-left: -20px;
+	width: 1140px;
+}
+.pic {
+margin: auto 0 auto -60px;
+}
+
+.num {
+	margin: 20px auto;
+}
+
+.btn-danger-1 {
+	border-radius: 25px;
+	margin: 20px 0 auto -100px;
+}
+.btn-danger-1:hover {
+	
+}
+
+.btn-default-1 {
+	border-radius: 25px;
+	margin: 20px 0 auto -100px;
+}
+.name {
+	margin: 10px 0 10px 0;
+}
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 0px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  height: 44px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+   white-space: normal;
+}
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+   margin-bottom: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
