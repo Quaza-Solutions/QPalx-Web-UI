@@ -36,11 +36,15 @@
  
 <div class="clearfix"></div>
 <br /><br />
+ <form action="" method="get" name="form_1">
 <div class="row">
 <div class="col-md-1"></div>
-<div class="col-md-3"><div class="profi-box left-box" id="green-box">
-<i class="fa fa-lg fa-check" aria-hidden="true" id="check"></i>
+<div class="col-md-3">
+<input type="radio" id="check-box-1" value="one" name="proficiency" onClick="displayCheckmark1();"/>
+<label for="check-box-1" class="profi-box left-box">
+
 <img src="images/english.png" class="skill" id="english" />
+<span id="one"></span>
 <br /><br /><p class="skill-text"><b>English</b></p>
 <select class="form-control profi-level">
     <option>Select your proficiency level</option>
@@ -48,55 +52,81 @@
     <option value="intermediate">Intermediate</option>
     <option value="advanced">Advanced</option>
 </select>
+</label></div>
+<div class="col-md-3">
+<input type="radio" id="check-box-2" value="two" name="proficiency" onClick="displayCheckmark2();"/>
+<label for="check-box-2" class="profi-box center-box">
 
-</div></div>
-<div class="col-md-3"><div class="profi-box center-box"><img src="images/english.png" class="skill" />
+<img src="images/english.png" class="skill" />
+<span id="two"></span>
 <br /><br /><p class="skill-text"><b>Language</b></p>
 <select class="form-control profi-level">
     <option selected="selected">Select your proficiency level</option>
     <option value="beginner">Beginner</option>
     <option value="intermediate">Intermediate</option>
     <option value="advanced">Advanced</option>
-</select></div></div>
-<div class="col-md-3"><div class="profi-box right-box"><img src="images/english.png" class="skill" />
+</select></label></div>
+
+<div class="col-md-3">
+<input type="radio" id="check-box-3" value="three" name="proficiency" onClick="displayCheckmark3();" />
+<label for="check-box-3" class="profi-box right-box">
+<img src="images/english.png" class="skill" />
+<span id="three"></span>
 <br /><br /><p class="skill-text"><b>Math</b></p>
 <select class="form-control profi-level">
     <option selected="selected">Select your proficiency level</option>
     <option value="beginner">Beginner</option>
     <option value="intermediate">Intermediate</option>
     <option value="advanced">Advanced</option>
-</select></div></div>
+</select></label></div>
 <div class="col-md-1"></div>
 </div>
 <br />
 <div class="row">
 <div class="col-md-1"></div>
-<div class="col-md-3"><div class="profi-box left-box"><img src="images/english.png" class="skill" />
-<br /><br /><p class="skill-text"><b>Science</b></p>
+<div class="col-md-3">
+<input type="radio" id="check-box-4" value="four" name="proficiency" onClick="displayCheckmark4();"/>
+<label for="check-box-4" class="profi-box left-box">
+
+<img src="images/english.png" class="skill" id="english" />
+<span id="four"></span>
+<br /><br /><p class="skill-text"><b>English</b></p>
+<select class="form-control profi-level">
+    <option>Select your proficiency level</option>
+    <option selected="selected" value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="advanced">Advanced</option>
+</select>
+</label></div>
+<div class="col-md-3">
+<input type="radio" id="check-box-5" value="five" name="proficiency" onClick="displayCheckmark5();"/>
+<label for="check-box-5" class="profi-box center-box">
+
+<img src="images/english.png" class="skill" />
+<span id="five"></span>
+<br /><br /><p class="skill-text"><b>Language</b></p>
 <select class="form-control profi-level">
     <option selected="selected">Select your proficiency level</option>
     <option value="beginner">Beginner</option>
     <option value="intermediate">Intermediate</option>
     <option value="advanced">Advanced</option>
-</select></div></div>
-<div class="col-md-3"><div class="profi-box center-box"><img src="images/english.png" class="skill" />
-<br /><br /><p class="skill-text"><b>Technology</b></p>
+</select></label></div>
+
+<div class="col-md-3">
+<input type="radio" id="check-box-6" value="three" name="proficiency" onClick="displayCheckmark6();" />
+<label for="check-box-6" class="profi-box right-box">
+<img src="images/english.png" class="skill" />
+<span id="six"></span>
+<br /><br /><p class="skill-text"><b>Math</b></p>
 <select class="form-control profi-level">
     <option selected="selected">Select your proficiency level</option>
     <option value="beginner">Beginner</option>
     <option value="intermediate">Intermediate</option>
     <option value="advanced">Advanced</option>
-</select></div></div>
-<div class="col-md-3"><div class="profi-box right-box"><img src="images/english.png" class="skill" />
-<br /><br /><p class="skill-text"><b>Social Studies</b></p>
-<select class="form-control profi-level">
-    <option selected="selected">Select your proficiency level</option>
-    <option value="beginner">Beginner</option>
-    <option value="intermediate">Intermediate</option>
-    <option value="advanced">Advanced</option>
-</select></div></div>
+</select></label></div>
 <div class="col-md-1"></div>
 </div>
+</form>
    <div class="clearfix bottom-space"></div>
    <br />
     <div class="col-md-12 continue">
@@ -138,5 +168,83 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     
     <script src="js/hr.js"></script>
+    <script type="text/javascript">
+
+	
+function displayCheckmark1(){
+	$("#two").empty();
+	$("#three").empty();
+	$("#four").empty();
+	$("#five").empty();
+	$("#six").empty();
+if (document.getElementById('check-box-1').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark2\" aria-hidden=\"true\"></i>')
+	$('#one').append(fontAwe);
+}
+}
+function displayCheckmark2(){
+		$("#one").empty();
+		$("#three").empty();
+		$("#four").empty();
+		$("#five").empty();
+		$("#six").empty();
+if (document.getElementById('check-box-2').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
+	$('#two').append(fontAwe);
+}
+}
+function displayCheckmark3(){
+		$("#one").empty();
+		$("#two").empty();
+		$("#four").empty();
+		$("#five").empty();
+		$("#six").empty();
+if (document.getElementById('check-box-3').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
+	$('#three').append(fontAwe);
+}
+}
+function displayCheckmark4(){
+	$("#two").empty();
+	$("#three").empty();
+	$("#one").empty();
+	$("#five").empty();
+	$("#six").empty();
+if (document.getElementById('check-box-4').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark2\" aria-hidden=\"true\"></i>')
+	$('#four').append(fontAwe);
+}
+}
+function displayCheckmark5(){
+		$("#one").empty();
+		$("#three").empty();
+		$("#four").empty();
+		$("#two").empty();
+		$("#six").empty();
+if (document.getElementById('check-box-5').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
+	$('#five').append(fontAwe);
+}
+}
+function displayCheckmark6(){
+		$("#one").empty();
+		$("#two").empty();
+		$("#four").empty();
+		$("#five").empty();
+		$("#three").empty();
+if (document.getElementById('check-box-6').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
+	$('#six').append(fontAwe);
+}
+}
+
+</script>
+
   </body>
 </html>

@@ -33,16 +33,16 @@
    <form action="" method="get">
     <div class="row">
     <div class="col-md-6">
-    <input type="radio" id="check-box-one" value="a" name="subscriptions" />
+    <input type="radio" id="check-box-one" value="a" name="subscriptions" onClick="displayCheckmark1();" />
     <label for="check-box-one" class="cents-box cents-box-2" id="">
-   <img class="cents" src="images/2cents.png" /><p class="centered large-text"><b>Monthly</b></p><p class="centered">You will be billed on a monthly basis</p></label>
+   <img class="cents" src="images/2cents.png" /><span id="one"></span><p class="centered large-text"><b>Monthly</b></p><p class="centered">You will be billed on a monthly basis</p></label>
    
    </div>
   
    <div class="col-md-6">
-   <input type="radio" id="check-box-two" value="b" name="subscriptions" />
+   <input type="radio" id="check-box-two" value="b" name="subscriptions" onClick="displayCheckmark2();" />
    <label for="check-box-two" class="cents-box cents-box-5" id="">
-   <img class="cents" src="images/5cents.png" /><p class="centered large-text"><b>Annually</b></p><p class="centered side-margin">You will be charged on a yearly basis at a discounted price.</p>
+   <img class="cents" src="images/5cents.png" /><span id="two"></span><p class="centered large-text"><b>Annually</b></p><p class="centered side-margin">You will be charged on a yearly basis at a discounted price.</p>
    </label>
    </div>
 
@@ -147,8 +147,29 @@
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    
-    <script>
+  <script type="text/javascript">
+
+	
+function displayCheckmark1(){
+	$("#two").empty();
+	
+if (document.getElementById('check-box-one').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark1\" aria-hidden=\"true\"></i>')
+	$('#one').append(fontAwe);
+}
+}
+function displayCheckmark2(){
+		$("#one").empty();
+		
+if (document.getElementById('check-box-two').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark1\" aria-hidden=\"true\"></i>')
+	$('#two').append(fontAwe);
+}
+}
+
+
 $('.radio-btn').click(function() {
 		$('.row').removeClass("hvr");
 		$(this).filter(':checked').closest('.row').addClass("hvr");

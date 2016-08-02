@@ -281,6 +281,15 @@ width: 248px;
 #check-box-1 {
     display: none;
 }
+#check-box-4 {
+    display: none;
+}
+#check-box-5 {
+    display: none;
+}
+#check-box-6 {
+    display: none;
+}
 #check-box-one {
     display: none;
 }
@@ -314,7 +323,15 @@ width: 248px;
 #check-box-3:checked + label{
     border: 2px solid #7dc855;
 }
-
+#check-box-4:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-5:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-6:checked + label{
+    border: 2px solid #7dc855;
+}
 .selected {
     border: thin solid #7dc855;
 }
@@ -963,4 +980,22 @@ margin: auto 0 auto -60px;
 	position: relative;
 	top: -250px;
 	right: -216px;
+}
+
+.checkmark1 {
+	position: relative;
+	top: -250px;
+	right: -260px;
+}
+
+.checkmark2 {
+	position: relative;
+	top: -70px;
+	right: -40px;
+}
+
+.checkmark3 {
+	position: relative;
+	top: -70px;
+	right: -20px;
 }
