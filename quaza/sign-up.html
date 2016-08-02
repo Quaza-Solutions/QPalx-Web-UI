@@ -28,21 +28,21 @@
 
  </div>
  <br /><br />
- <form action="" method="get">
+ <form action="" method="get" name="form_1">
  <div class="row">
  <div class="col-sm-4">
-<input type="radio" id="check-box-1" value="one" name="options" />
-<label for="check-box-1" class="box" id="left-box"><img src="images/student.png" class="user" /><h4 class="centered">Student</h4><p class="centered gray small-text">Sign up and learn from content created by expert teachers and content creators.</p></label>
+<input type="radio" id="check-box-1" value="one" name="options" onclick="displayCheckmark1();"/>
+<label for="check-box-1" class="box" id="left-box"><img src="images/student.png" class="user" /><span id="one"></span><h4 class="centered">Student</h4><p class="centered gray small-text">Sign up and learn from content created by expert teachers and content creators.</p></label>
 </div>
 
  <div class="col-sm-4">
-<input type="radio" id="check-box-2" value="two" name="options" />
-<label for="check-box-2" class="box" id="center-box"><img src="images/student.png" class="user" /><h4 class="centered">Parent</h4><p class="centered gray small-text">Manage and track your son or daughter's performance using Qpalx.</p></label>
+<input type="radio" id="check-box-2" value="two" name="options" onclick="displayCheckmark2();"/>
+<label for="check-box-2" class="box" id="center-box"><img src="images/student.png" class="user" /><span id="two"></span><h4 class="centered">Parent</h4><p class="centered gray small-text">Manage and track your son or daughter's performance using Qpalx.</p></label>
 </div>
 
  <div class="col-sm-4">
-<input type="radio" id="check-box-3" value="three" name="options" />
-<label for="check-box-3" class="box" id="right-box"><img src="images/student.png" class="user" /><h4 class="centered">Teacher</h4><p class="centered gray small-text">Manage your class performance and gain an understanding of how well your students are doing. </p></label>
+<input type="radio" id="check-box-3" value="three" name="options" onclick="displayCheckmark3();" />
+<label for="check-box-3" class="box" id="right-box"><img src="images/student.png" class="user" /><span id="three"></span><h4 class="centered">Teacher</h4><p class="centered gray small-text">Manage your class performance and gain an understanding of how well your students are doing. </p></label>
 </div>
 
    </div>
@@ -83,6 +83,36 @@
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script type="text/javascript">
 
+	
+function displayCheckmark1(){
+	$("#two").empty();
+	$("#three").empty();
+if (document.getElementById('check-box-1').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark\" aria-hidden=\"true\"></i>')
+	$('#one').append(fontAwe);
+}
+}
+function displayCheckmark2(){
+		$("#one").empty();
+			$("#three").empty();
+if (document.getElementById('check-box-2').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark\" aria-hidden=\"true\"></i>')
+	$('#two').append(fontAwe);
+}
+}
+function displayCheckmark3(){
+		$("#one").empty();
+		$("#two").empty();
+if (document.getElementById('check-box-3').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark\" aria-hidden=\"true\"></i>')
+	$('#three').append(fontAwe);
+}
+}
+</script>
   </body>
 </html>

@@ -954,3 +954,13 @@ margin: auto 0 auto -60px;
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+.fa-check-circle {
+	color: #7dc855;
+}
+
+.checkmark {
+	position: relative;
+	top: -250px;
+	right: -216px;
+}
