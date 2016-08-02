@@ -1,5 +1,6 @@
 body {
 	font-family: 'robotoregular', sans-serif;
+	font-size: 16px;
 }
 @font-face {
 	font-family: 'robotoregular';
@@ -98,6 +99,9 @@ body {
 .bottom-space {
 	margin-bottom: 40px;
 }
+.bottom-space-big {
+	margin-bottom: 400px;
+}
 
 h1 {
 	text-align: center;
@@ -195,6 +199,9 @@ margin-top: 40px;
 
 .three-text-blue {
 	color: #358ed7;
+}
+.black {
+color: #000;	
 }
 
 .three-circle-gray {
@@ -438,7 +445,7 @@ color: #000;
 }
 
 .black-hr-1 {
-	height: 1px; 
+/*	height: 1px; */
 	width: 900px; 
 /*	background-color: #43484d;*/
 }
