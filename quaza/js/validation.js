@@ -1,4 +1,27 @@
-
+$('.floor').blur(function() {
+	$("#floor").empty();
+	$("#ceiling").empty();
+	var inp1 = $(".floor").val();
+	var inp2 = $(".ceiling").val();
+	if (inp1 >= inp2){
+		var txt3 = "Floor must be less than ceiling";
+		var newDiv3 = $('<div style=\"position: relative; top: 0px; right: 0px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt3);
+		
+		$('#floor').append(newDiv3);
+	}
+	});
+$('.ceiling').blur(function() {
+	$("#floor").empty();
+	$("#ceiling").empty();
+	var inp1 = $(".floor").val();
+	var inp2 = $(".ceiling").val();
+	if (inp1 >= inp2){
+		var txt3 = "Floor must be less than ceiling";
+		var newDiv3 = $('<div style=\"position: relative; top: 0px; right: 0px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt3);
+		
+		$('#ceiling').append(newDiv3);
+	}
+	});
 $('#first').blur(function() {
 	$("#first-name").empty();
 	var inp = $("#first").val();
@@ -12,7 +35,6 @@ if ( $.trim(inp).length == 0 )
 	  // Prevent form submission
       event.preventDefault();
          } else {
-		//$("#first-name").empty();
 		$(this).removeClass("focus-2").addClass("blur-2");
          }
 							   });
