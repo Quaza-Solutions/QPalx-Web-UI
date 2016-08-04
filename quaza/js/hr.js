@@ -76,6 +76,47 @@ function hrFunction3a() {
 		$("#title-3").removeClass("black").addClass("green");
 }
 }
+
+
+function hrFunctionI() {
+	if( $("#hr-I").hasClass("black-hr-I") ) {
+		$("#hr-I").removeClass("black-hr-I").addClass("green-hr-I");
+		$("#title-I").removeClass("black").addClass("green");
+		$("#hr-II").removeClass("green-hr-I").addClass("black-hr-I");
+		$("#title-II").removeClass("green").addClass("black");
+		$("#hr-III").removeClass("green-hr-I").addClass("black-hr-I");
+		$("#title-III").removeClass("green").addClass("black");
+} else {
+		$("#title-I").removeClass("black").addClass("green");
+		$("#hr-I").removeClass("black-hr-I").addClass("green-hr-I");
+
+}
+}
+
+function hrFunctionII() {
+		$("#hr-I").removeClass("green-hr-I").addClass("black-hr-I");
+		$("#hr-II").removeClass("black-hr-I").addClass("green-hr-I");
+		$("#hr-III").removeClass("green-hr-I").addClass("black-hr-I");
+		$("#title-I").removeClass("green").addClass("black");
+		$("#title-II").removeClass("black").addClass("green");
+		$("#title-III").removeClass("green").addClass("black");
+
+}
+
+function hrFunctionIII() {
+	if( $("#hr-III").hasClass("black-hr-I") ) {
+		$("#hr-III").removeClass("black-hr-I").addClass("green-hr-I");
+		$("#hr-II").removeClass("green-hr-I").addClass("black-hr-I");
+		$("#hr-I").removeClass("green-hr-I").addClass("black-hr-I");
+		$("#title-III").removeClass("black").addClass("green");
+		$("#title-II").removeClass("green").addClass("black");
+		$("#title-I").removeClass("green").addClass("black");
+} else {
+		$("#hr-III").removeClass("black-hr-I").addClass("green-hr-I");
+		$("#title-III").removeClass("black").addClass("green");
+}
+}
+
 function hrFunctionA() {
 	if( $("#hr-1").hasClass("black-hr-2") ) {
 		$("#hr-1").removeClass("black-hr-2").addClass("blue-hr-1");
