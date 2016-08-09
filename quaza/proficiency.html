@@ -43,7 +43,7 @@
 <input type="radio" id="check-box-1" value="one" name="proficiency" onClick="displayCheckmark1();"/>
 <label for="check-box-1" class="profi-box left-box">
 
-<img src="images/english.png" class="skill" id="english" />
+<img src="images/subjects/English.png" class="skill" id="skill-1" />
 <span id="one"></span>
 <br /><br /><p class="skill-text"><b>English</b></p>
 <select class="form-control profi-level">
@@ -57,7 +57,7 @@
 <input type="radio" id="check-box-2" value="two" name="proficiency" onClick="displayCheckmark2();"/>
 <label for="check-box-2" class="profi-box center-box">
 
-<img src="images/english.png" class="skill" />
+<img src="images/subjects/Language.png" class="skill" id="skill-2" />
 <span id="two"></span>
 <br /><br /><p class="skill-text"><b>Language</b></p>
 <select class="form-control profi-level">
@@ -70,7 +70,7 @@
 <div class="col-md-3">
 <input type="radio" id="check-box-3" value="three" name="proficiency" onClick="displayCheckmark3();" />
 <label for="check-box-3" class="profi-box right-box">
-<img src="images/english.png" class="skill" />
+<img src="images/subjects/Math.png" class="skill" id="skill-3" />
 <span id="three"></span>
 <br /><br /><p class="skill-text"><b>Math</b></p>
 <select class="form-control profi-level">
@@ -88,9 +88,9 @@
 <input type="radio" id="check-box-4" value="four" name="proficiency" onClick="displayCheckmark4();"/>
 <label for="check-box-4" class="profi-box left-box">
 
-<img src="images/english.png" class="skill" id="english" />
+<img src="images/subjects/Science.png" class="skill" id="skill-4" />
 <span id="four"></span>
-<br /><br /><p class="skill-text"><b>English</b></p>
+<br /><br /><p class="skill-text"><b>Science</b></p>
 <select class="form-control profi-level">
     <option>Select your proficiency level</option>
     <option selected="selected" value="beginner">Beginner</option>
@@ -102,9 +102,9 @@
 <input type="radio" id="check-box-5" value="five" name="proficiency" onClick="displayCheckmark5();"/>
 <label for="check-box-5" class="profi-box center-box">
 
-<img src="images/english.png" class="skill" />
+<img src="images/subjects/Technology.png" class="skill" id="skill-5" />
 <span id="five"></span>
-<br /><br /><p class="skill-text"><b>Language</b></p>
+<br /><br /><p class="skill-text"><b>Technology</b></p>
 <select class="form-control profi-level">
     <option selected="selected">Select your proficiency level</option>
     <option value="beginner">Beginner</option>
@@ -115,9 +115,9 @@
 <div class="col-md-3">
 <input type="radio" id="check-box-6" value="three" name="proficiency" onClick="displayCheckmark6();" />
 <label for="check-box-6" class="profi-box right-box">
-<img src="images/english.png" class="skill" />
+<img src="images/subjects/SocialStudies.png" class="skill" id="skill-6" />
 <span id="six"></span>
-<br /><br /><p class="skill-text"><b>Math</b></p>
+<br /><br /><p class="skill-text"><b>Social Studies</b></p>
 <select class="form-control profi-level">
     <option selected="selected">Select your proficiency level</option>
     <option value="beginner">Beginner</option>
@@ -203,7 +203,7 @@ function displayCheckmark3(){
 		$("#six").empty();
 if (document.getElementById('check-box-3').checked) {
 
-	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark4\" aria-hidden=\"true\"></i>')
 	$('#three').append(fontAwe);
 }
 }
@@ -215,7 +215,7 @@ function displayCheckmark4(){
 	$("#six").empty();
 if (document.getElementById('check-box-4').checked) {
 
-	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark2\" aria-hidden=\"true\"></i>')
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
 	$('#four').append(fontAwe);
 }
 }
@@ -227,7 +227,7 @@ function displayCheckmark5(){
 		$("#six").empty();
 if (document.getElementById('check-box-5').checked) {
 
-	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark5\" aria-hidden=\"true\"></i>')
 	$('#five').append(fontAwe);
 }
 }
@@ -239,7 +239,7 @@ function displayCheckmark6(){
 		$("#three").empty();
 if (document.getElementById('check-box-6').checked) {
 
-	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark3\" aria-hidden=\"true\"></i>')
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark6\" aria-hidden=\"true\"></i>')
 	$('#six').append(fontAwe);
 }
 }
