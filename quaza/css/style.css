@@ -1109,5 +1109,13 @@ margin: auto 0 auto -60px;
 }
 
 .subjects {
-	margin: 0 0 0 20px;
+	margin: 20px 0 0 20px;
+	width: 60px;
+	height: 60px;
+}
+
+.subjects-2 {
+	margin: 10px 0 0 20px;
+	width: 60px;
+	height: 47px;
 }
