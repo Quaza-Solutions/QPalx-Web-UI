@@ -627,7 +627,7 @@ height: 200px;
 	margin: 0 0 0 40px;
 }
 
-input[type='radio']:checked:after {
+.radio-btn:checked:after {
 	width: 30px;
 	height: 30px;
     border-radius: 50%;
@@ -1118,4 +1118,9 @@ margin: auto 0 auto -60px;
 	margin: 10px 0 0 20px;
 	width: 60px;
 	height: 47px;
+}
+
+
+.ceiling {
+width: 470px;	
 }
