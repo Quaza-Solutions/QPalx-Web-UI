@@ -1110,17 +1110,22 @@ margin: auto 0 auto -60px;
 
 .subjects {
 	margin: 20px 0 0 20px;
-	width: 60px;
-	height: 60px;
+	width: 40px;
 }
 
 .subjects-2 {
-	margin: 10px 0 0 20px;
-	width: 60px;
-	height: 47px;
+	margin: 30px 0 0 20px;
+	width: 40px;
 }
 
-
+.types {
+	margin: 40px 0 0 20px;
+	height: 40px;
+}
+.types-2 {
+	margin: 40px 0 0 20px;
+	width: 40px;
+}
 .ceiling {
 width: 470px;	
 }
