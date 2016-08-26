@@ -72,6 +72,7 @@ padding: 20px;
 footer {
 background-color: #43484d;
 height: 340px;
+margin: 0;
 }
 
 .btn-success {
@@ -1128,4 +1129,12 @@ margin: auto 0 auto -60px;
 }
 .ceiling {
 width: 470px;	
+}
+
+.container-fluid {
+
+}
+
+html {
+	margin: 0;
 }
