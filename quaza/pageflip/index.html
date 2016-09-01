@@ -42,9 +42,12 @@
 		
 		<!-- start script needed to run pageflip -->
 		<script type="text/javascript">
+		
+		
 			var $pageflip = $('#pageflip'),
 				pageflip = $pageflip.pageflip();
 
+			
 			/* MEET PAGEFLIP CUSTOM FUNCTIONS */
 			var animmode = 1, 
 				animbtns = [ "#animateontop", "#animateonvisible" ],
@@ -155,8 +158,10 @@
 			$pageflip.pageflipInit( {
 				/* Configuration options */
 					PageDataFile: "template1_meet_pageflip/meetpageflip.html",
-					PageWidth: 450,
-					PageHeight: 600,
+					//PageWidth: 450,
+					//PageHeight: 600,
+					PageWidth: 900,
+					PageHeight: 1200,
 					FullScreenEnabled: true,
 					Transparency: true,
 					Margin: 32,
@@ -185,7 +190,15 @@
 					Key: Key.Key
 				/* book ID - used as CSS class name */
 			}, "meetpageflip" );
-			
+	$("#pageflip").pageflipInit( {
+	PageWidth: 800,
+	PageHeight: 1200,
+	CoverWidth: 840,
+	CoverHeight: 1280,
+	PageDataFile: "demobook.html",
+	Copyright: Key.Copyright,
+	Key: Key.Key
+} );
 		</script>
 		<!-- end script needed to run pageflip -->
 		<!--div class="pageflip-credits">Powered by <a href="http://pageflip-books.com" target="_blank">Pageflip 5</a></div-->

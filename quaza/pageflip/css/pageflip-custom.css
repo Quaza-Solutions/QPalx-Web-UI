@@ -725,3 +725,13 @@ div#demo2-page11 a {
 div#demo2-page11 a:hover {
 	text-decoration: underline;
 }
+
+.cover {
+	width: 800px;
+	height: 1000px;
+}
+
+.outerpage {
+	width: 800px;
+	height: 1000px;
+}
