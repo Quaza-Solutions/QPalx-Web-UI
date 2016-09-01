@@ -36,6 +36,7 @@
    <header>
   <div class="col-md-1"><img src="../images/logo.png" alt="quaza" id="logo" /></div><br /><br /><br />
   </header>
+
 		<!-- start embed pageflip -->
 		<div id="pageflip"></div>
 		<!-- end embed pageflip -->
@@ -160,14 +161,15 @@
 					PageDataFile: "template1_meet_pageflip/meetpageflip.html",
 					//PageWidth: 450,
 					//PageHeight: 600,
-					PageWidth: 900,
-					PageHeight: 1200,
+					PageWidth: 675,
+					PageHeight: 900,
 					FullScreenEnabled: true,
 					Transparency: true,
 					Margin: 32,
 					MarginBottom: 64,
 					AutoScale: true,
-					FullScale: true,
+					//FullScale: true,					
+					FullScale: false,
 					AlwaysOpened: false,
 					AutoFlipLoop: -1,
 					CenterSinglePage: true,
@@ -190,15 +192,7 @@
 					Key: Key.Key
 				/* book ID - used as CSS class name */
 			}, "meetpageflip" );
-	$("#pageflip").pageflipInit( {
-	PageWidth: 800,
-	PageHeight: 1200,
-	CoverWidth: 840,
-	CoverHeight: 1280,
-	PageDataFile: "demobook.html",
-	Copyright: Key.Copyright,
-	Key: Key.Key
-} );
+
 		</script>
 		<!-- end script needed to run pageflip -->
 		<!--div class="pageflip-credits">Powered by <a href="http://pageflip-books.com" target="_blank">Pageflip 5</a></div-->

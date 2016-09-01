@@ -10,10 +10,8 @@ $( function() {
 			meetpageflip: {
 				/* Configuration options */
 					PageDataFile: "template1_meet_pageflip/meetpageflip.html",
-					//PageWidth: 450,
-					//PageHeight: 600,
-					PageWidth: 900,
-					PageHeight: 1200,
+					PageWidth: 450,
+					PageHeight: 600,
 					FullScreenEnabled: true,
 					Transparency: true,
 					Margin: 32,
@@ -44,10 +42,8 @@ $( function() {
 			demo2: {
 					/* Configuration options */
 					PageDataFile: "template2_demobook2/demobook2.html",
-					///PageWidth: 434,
-					//PageHeight: 568,
-					PageWidth: 868,
-					PageHeight: 1136,
+					PageWidth: 434,
+					PageHeight: 568,
 					HardPages: true,
 					FullScreenEnabled: true,
 					Transparency: true,
@@ -78,10 +74,8 @@ $( function() {
 			book: {
 					/* Configuration options */
 					PageDataFile: "template3_empty/book.html",
-					///PageWidth: 400,
-					//PageHeight: 500,
-					PageWidth: 800,
-					PageHeight: 1000,
+					PageWidth: 400,
+					PageHeight: 500,
 					FullScreenEnabled: true,
 					Margin: 34,
 					MarginBottom: 64,
