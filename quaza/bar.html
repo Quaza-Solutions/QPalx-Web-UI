@@ -1,0 +1,80 @@
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <header>
+  <div class="col-md-1"><img src="images/logo.png" alt="quaza" id="logo" /></div><br /><br /><br />
+  </header>
+
+    <!--Div that will hold the pie chart-->
+    <div id="chart_div"></div>
+      <footer>
+   
+   <div class="col-md-4" id="icons">
+   
+<span class="icon" id="facebook"><i class="fa fa-facebook fa-lg"></i></span>
+ 
+<span class="icon" id="twitter"><i class="fa fa-twitter fa-lg"></i></span>
+
+<span class="icon" id="instagram"><i class="fa fa-instagram fa-lg"></i></span>
+
+
+  <div id="copyright"><p class="footer">&copy; 2016 Qpalx. All rights reserved</p></div> 
+  
+   </div>
+   
+   <div class="col-md-4"><h3 class="header-3">Contact Us</h3><div class="footer-color"><br /><p>hello@qpalx.com</p><br /><p>Studio M, 4th Floor, 8 Lower<br />Manchester Street, M1 5QF</p><br />+34 393 323 3222</div></div>
+   
+   
+   <div class="col-md-4"><h3 class="header-3">Subscribe now</h3><div class="footer-color"><br /><p>Sign up to stay up to date with our<br /> latest news
+ <br /><br /></p></div>  
+<input id="text-box-1" placeholder="Enter your e-mail here" size="30" type="text"></input><button data-toggle="dropdown" id="button-1">
+<i class="fa fa-paper-plane"></i></button>
+   
+   </div></footer>
+ 
+  </body>
+</html>
+
