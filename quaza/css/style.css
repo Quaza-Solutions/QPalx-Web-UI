@@ -1,3 +1,4 @@
+
 body {
 	font-family: 'robotoregular', sans-serif;
 	font-size: 14px;
@@ -1191,3 +1192,7 @@ html {
 	float: right;
 }
 */
+#waec {
+	width: 100px;
+	height: 57px;
+}
