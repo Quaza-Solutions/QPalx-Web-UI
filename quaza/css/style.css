@@ -1196,3 +1196,22 @@ html {
 	width: 100px;
 	height: 57px;
 }
+
+.radio-small {
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px 0 0px;	
+	position: relative;
+	top: 4px;
+}
+
+.radio-small:checked:after  {
+	width: 10px;
+	height: 10px;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+	border: 6px solid #7dc855;
+	background-color: #fff;
+}
