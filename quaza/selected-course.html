@@ -12,9 +12,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header>
-  <div class="col-md-1"><img src="images/logo.png" alt="quaza" id="logo" /></div><br /><br /><br />
+<header>
+<div class="row">
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo"></div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img class="header-buttons" src="assets/account-button.png" /></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img id="header-button" class="header-buttons" src="assets/sign-out-button.png" /></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  </div>
   </header>
+
   
    <div class="container" style="margin-bottom: 10px;">
    <div class="row">
@@ -53,33 +61,32 @@
     <div class="col-md-12 continue"><button type="button" class="btn btn-success">Continue</button></div>
 </div>
     </div>
-   
-   
-   
-   <footer>
-   
-   <div class="col-md-4" id="icons">
-   
-<span class="icon" id="facebook"><i class="fa fa-facebook fa-lg"></i></span>
- 
-<span class="icon" id="twitter"><i class="fa fa-twitter fa-lg"></i></span>
+<div class="row bottom-6">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bottom-4">
+<img src="assets/Social-Icons-01.png" class="social-icons" />
+<img src="assets/Social-Icons-02.png" class="social-icons" />
+<img src="assets/Social-Icons-03.png" class="social-icons" />
+<br /><br />
+<p class="copyright">&copy; 2016 QPALX. All rights reserved</p>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bottom-5">
+<p>Contact Us<br />
+hello@qpalx.com<br />
+Studio M, 4th Floor 8 Lower<br />
+Manchester Street, M1 SQF<br />
++34 393 323 32 22</p>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 float-right">
+<p>Subscribe Now<br />
+Sign up to stay up to date with our<br />
+latest news</p>
 
-<span class="icon" id="instagram"><i class="fa fa-instagram fa-lg"></i></span>
-
-
-  <div id="copyright"><p class="footer">&copy; 2016 Qpalx. All rights reserved</p></div> 
-  
-   </div>
-   
-   <div class="col-md-4"><h3 class="header-3">Contact Us</h3><div class="footer-color"><br /><p>hello@qpalx.com</p><br /><p>Studio M, 4th Floor, 8 Lower<br />Manchester Street, M1 5QF</p><br />+34 393 323 3222</div></div>
-   
-   
-   <div class="col-md-4"><h3 class="header-3">Subscribe now</h3><div class="footer-color"><br /><p>Sign up to stay up to date with our<br /> latest news
- <br /><br /></p></div>  
-<input id="text-box-1" placeholder="Enter your e-mail here" size="30" type="text"></input><button data-toggle="dropdown" id="button-1">
-<i class="fa fa-paper-plane"></i></button>
-   
-   </div></footer>
+<input type="text" name="email" class="textbox" value="&nbsp;&nbsp;&nbsp;Enter Email Address">
+<img src="assets/sign-up-button.png" class="sign-up" />
+</div>
+</div>
+<footer>
+</footer>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>

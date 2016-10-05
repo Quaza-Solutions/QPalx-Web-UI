@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <header>
+<div class="row">
+  <div class="col-md-1"><span class="logo">Qpalx</span></div><br /><br />
+  </div>
+  </header>
+  
+   <div class="container" style="margin-bottom: 20px;">
+   <div class="row">
+     <div class="col-md-12"><img src="images/kwame.png" />&nbsp;&nbsp;&nbsp;<span class="large-text"><b>Joseph Sarpong</b></span> &middot; Account &middot; Sign Out</div>
+   </div>
+ </div>
+  <div class="container" style="margin-bottom: 20px;">
+     <div class="row">
+     <div class="col-md-12"> <span class="student"><i style="color: #43484d;" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Add Student</span>
+     </div>
+     </div>
+     </div>
+     
+  <div class="container">
+  <div class="row">
+ <div class="col-md-3" style="cursor: pointer;" onClick="hrFunction1a()"><b class="green" id="title-1">Student Management</b>
+ <hr class="green-hr-1a" id="hr-1" />
+ </div>
+ <div class="col-md-3" style="margin-left: -80px; cursor: pointer;" onClick="hrFunction2a()"><b id="title-2">Core Courses</b><hr class="black-hr-1a" id="hr-2" /></div>
+ 
+ <div class="col-md-3" onClick="hrFunction3a()" style="margin-left: -80px; cursor: pointer;"><b id="title-3">Electives</b>
+ <hr class="black-hr-1a" id="hr-3" /></div>
+ </div>
+<form action="" method="get">
+  <div class="row">
+  <div class="col-md-1 num">
+  1
+  </div>
+  <div class="col-md-1">
+  <img src="images/kwame.png" class="pic" />
+  </div>
+  <div class="col-md-2 name">
+  <b>Kwame Antwi</b><br />
+100% - A
+  </div>
+  <div class="col-md-1">
+   </div>
+   <div class="col-md-6">
+   </div>
+   <div class="col-md-1">
+    <div class="default-btn-1"></div>
+   <button type="submit" value="0" id="default-btn-1" class="btn btn-default btn-default-1 btn-sm">
+   Remove Student
+   </button>
+   </div>
+  </div>
+   <div class="row">
+  <div class="col-md-12">
+  <hr class="full-width" />
+  </div>
+  </div>
+  
+    <div class="row">
+  <div class="col-md-1 num">
+  2
+  </div>
+  <div class="col-md-1">
+  <img src="images/kwame.png" class="pic" />
+  </div>
+  <div class="col-md-2 name">
+  <b>Ama Genfi</b><br />
+90% - A
+  </div>
+  <div class="col-md-1">
+   </div>
+   <div class="col-md-6">
+   </div>
+   <div class="col-md-1">
+   <div class="default-btn-2"></div>
+     <button type="submit" value="0" id="default-btn-2" class="btn btn-default btn-default-1 btn-sm">
+
+   Remove Student
+   </button>
+   </div>
+  </div>
+     <div class="row">
+  <div class="col-md-12">
+  <hr class="full-width" />
+  </div>
+  </div>
+    <div class="row">
+  <div class="col-md-1 num">
+  3
+  </div>
+  <div class="col-md-1">
+  <img src="images/kwame.png" class="pic" />
+  </div>
+  <div class="col-md-2 name">
+  <b>Princess Boateng</b><br />
+80% - B
+  </div>
+  <div class="col-md-1">
+   </div>
+   <div class="col-md-6">
+   </div>
+   <div class="col-md-1">
+    <div class="default-btn-3"></div>
+   <button type="submit" value="0" id="default-btn-3" class="btn btn-default btn-default-1 btn-sm">
+   Remove Student
+   </button>
+   </div>
+  </div>
+     <div class="row">
+  <div class="col-md-12">
+  <hr class="full-width" />
+  </div>
+  </div>
+    <div class="row">
+  <div class="col-md-1 num">
+  4
+  </div>
+  <div class="col-md-1">
+  <img src="images/kwame.png" class="pic" />
+  </div>
+  <div class="col-md-2 name">
+  <b>Kwadwo Obeng</b><br />
+100% - A
+  </div>
+  <div class="col-md-1">
+   </div>
+   <div class="col-md-6">
+   </div>
+   <div class="col-md-1">
+    <div class="default-btn-4"></div>
+   <button type="submit" value="0" id="default-btn-4" class="btn btn-default btn-default-1 btn-sm">
+   Remove Student
+   </button>
+   </div>
+  </div>
+     <div class="row">
+  <div class="col-md-12">
+  <hr class="full-width" />
+  </div>
+  </div>
+    <div class="row">
+  <div class="col-md-1 num">
+  5
+  </div>
+  <div class="col-md-1">
+  <img src="images/kwame.png" class="pic" />
+  </div>
+  <div class="col-md-2 name">
+  <b>Cadienne Okofur</b><br />
+100% - A
+  </div>
+  <div class="col-md-1">
+   </div>
+   <div class="col-md-6">
+   </div>
+   <div class="col-md-1">
+    <div class="default-btn-5"></div>
+   <button type="submit" value="0" id="default-btn-5" class="btn btn-default btn-default-1 btn-sm">
+   Remove Student
+   </button>
+   </div>
+  </div>
+     <div class="row">
+  <div class="col-md-12">
+  <hr class="full-width" />
+  </div>
+  </div>
+    <div class="row">
+  <div class="col-md-1 num">
+  6
+  </div>
+  <div class="col-md-1">
+  <img src="images/kwame.png" class="pic" />
+  </div>
+  <div class="col-md-2 name">
+  <b>Olumide Akinbaqde</b><br />
+100% - A
+  </div>
+  <div class="col-md-1">
+   </div>
+   <div class="col-md-6">
+   </div>
+   <div class="col-md-1">
+    <div class="default-btn-6"></div>
+   <button type="submit" value="0" id="default-btn-6" class="btn btn-default btn-default-1 btn-sm">
+   Remove Student
+   </button>
+   </div>
+  </div>
+     <div class="row">
+  <div class="col-md-12">
+  <hr class="full-width" />
+  </div>
+  </div>
+    <div class="row">
+  <div class="col-md-1 num">
+ 7
+  </div>
+  <div class="col-md-1">
+  <img src="images/kwame.png" class="pic" />
+  </div>
+  <div class="col-md-2 name">
+  <b>Joseph Anim</b><br />
+100% - A
+  </div>
+  <div class="col-md-1">
+   </div>
+   <div class="col-md-6">
+   </div>
+   <div class="col-md-1">
+    <div class="default-btn-7"></div>
+   <button type="submit" value="0" id="default-btn-7" class="btn btn-default btn-default-1 btn-sm">
+   Remove Student
+   </button>
+   </div>
+  </div>
+ 
+ 
+
+   </div>
+   </form>
+   
+   
+   <footer>
+   
+   <div class="col-md-4" id="icons">
+   
+<span class="icon" id="facebook"><i class="fa fa-facebook fa-lg"></i></span>
+ 
+<span class="icon" id="twitter"><i class="fa fa-twitter fa-lg"></i></span>
+
+<span class="icon" id="instagram"><i class="fa fa-instagram fa-lg"></i></span>
+
+
+  <div id="copyright"><p class="footer">&copy; 2016 Qpalx. All rights reserved</p></div> 
+  
+   </div>
+   
+   <div class="col-md-4"><h3 class="header-3">Contact Us</h3><div class="footer-color"><br /><p>hello@qpalx.com</p><br /><p>Studio M, 4th Floor, 8 Lower<br />Manchester Street, M1 5QF</p><br />+34 393 323 3222</div></div>
+   
+   
+   <div class="col-md-4"><h3 class="header-3">Subscribe now</h3><div class="footer-color"><br /><p>Sign up to stay up to date with our<br /> latest news
+ <br /><br /></p></div>  
+<input id="text-box-1" placeholder="Enter your e-mail here" size="30" type="text"></input><button data-toggle="dropdown" id="button-1">
+<i class="fa fa-paper-plane"></i></button>
+   
+   </div></footer>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+     <script src="js/hr.js"></script>
+      <script src="js/hover.js"></script>
+  </body>
+</html>
