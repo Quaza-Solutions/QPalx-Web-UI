@@ -10,12 +10,13 @@
           value = progressbar.val(),
           animate = setInterval(loading, time);
 
-        function loading() {
-          value += 1;
+	function loading() {
           progressbar.val(value);
           progressbarValue.html(value + '%');
-          if (value == max) {
+          if (value >= max) {
             clearInterval(animate);
+          } else {
+            value += 1;
           }
         };
       })
