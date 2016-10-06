@@ -799,6 +799,16 @@ color: #fff;
 .question-bank-top-bar a {
 color: #fff;
 }
+
+.question-bank-second-bar {
+background-color: #000;	
+height: 40px;
+}
+
+.question-bank-bottom-bar {
+background-color: #000;	
+height: 40px;
+}
 .all-lessons {
 	position: relative;	
 }
@@ -1513,7 +1523,10 @@ html {
 .modal-box .modal-header h4 { margin: 0; }
 
 .modal-box .modal-body { padding: 2em 1.5em; color: #000; }
-
+.my-container-4 {
+	height: 400px;
+	background-color: #fff;
+}
 .modal-box footer,
 .modal-box .modal-footer {
   padding: 1em;
