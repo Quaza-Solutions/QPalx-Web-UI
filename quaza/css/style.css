@@ -12,7 +12,7 @@ body {
 
 @font-face {
 font-family: 'myriadpro';
-src: url('../web fonts/Myriad Pro/MyriadPro-Regular copy.eot');
+src: url('../web fonts/Myriad Pro/MyriadPro-Regular copy.otf');
 }
 /*
 @font-face {
@@ -31,11 +31,11 @@ font-family: 'myriadprobold', sans-serif;
 }
 @font-face {
 font-family: 'myriadprobold';
-src: url('../web fonts/Myriad Pro/MyriadPro-Bold copy.eot');
+src: url('../web fonts/Myriad Pro/MyriadPro-Bold copy.otf');
 }
 @font-face {
 font-family: 'myriadprolight';
-src: url('../web fonts/Myriad Pro/MyriadPro-Regular copy.eot');
+src: url('../web fonts/Myriad Pro/MyriadPro-Regular copy.otf');
 }
 /*
 @font-face {
