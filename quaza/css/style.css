@@ -622,8 +622,9 @@ width: 18px;
 }
 
 .gray-bgrnd {
-	background: #f2f2f2;
+/*	background: #f2f2f2;*/
 	border: none;
+	background-color: #e6e7e9;
 }
 
 .time {
