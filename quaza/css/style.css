@@ -3,7 +3,7 @@ body {
 /*	font-family: 'robotoregular', sans-serif;
 
 */
-	font-family: 'opensans', sans-serif;
+	font-family: 'myriadpro', sans-serif;
 	font-size: 14px;
 	background-color: #e6e7e9;
 /*	background-color: #fff;*/
@@ -11,8 +11,8 @@ body {
 }
 
 @font-face {
-font-family: 'opensans';
-src: url('../assets/fonts/open_sans/OpenSans.woff');
+font-family: 'myriadpro';
+src: url('../web fonts/Myriad Pro/MyriadPro-Regular copy.eot');
 }
 /*
 @font-face {
@@ -27,15 +27,15 @@ src: url('../assets/fonts/open_sans/OpenSans.woff');
 */
 b, strong, h1, h2, h3, h4, h5, h6 {
 /*	font-family: 'robotobold', sans-serif;*/
-font-family: 'opensansbold', sans-serif;
+font-family: 'myriadprobold', sans-serif;
 }
 @font-face {
-font-family: 'opensansbold';
-src: url('../assets/fonts/open_sans/OpenSans-bold.woff');
+font-family: 'myriadprobold';
+src: url('../web fonts/Myriad Pro/MyriadPro-Bold copy.eot');
 }
 @font-face {
-font-family: 'opensanslight';
-src: url('../assets/fonts/open_sans/OpenSans-light.woff');
+font-family: 'myriadprolight';
+src: url('../web fonts/Myriad Pro/MyriadPro-Regular copy.eot');
 }
 /*
 @font-face {
@@ -73,12 +73,12 @@ src: url('../assets/fonts/open_sans/OpenSans-light.woff');
 
 }
 */
-
+/*
 @font-face {
 font-family: 'opensanslight';
 src: url('../assets/fonts/open_sans/OpenSans-light.woff');
 }
-
+*/
 header {
 	/*
 background-color: #43484d;
@@ -588,7 +588,7 @@ width: 248px;
 	margin: 0px auto 40px auto;
 	text-align: center;
 /*	font-family: 'robotolight', sans-serif;*/
-font-family: 'opensanslight', sans-serif;
+/*font-family: 'opensanslight', sans-serif;*/
 }
 .very-large-text {
 	font-size: 28px;
@@ -1226,7 +1226,7 @@ _:-ms-lang(x), .email { width: 500px; }
 	margin-right: 20px;
 	font-weight: bold;
 /*	font-family: 'robotobold', sans-serif;	*/
-font-family: 'opensansbold', sans-serif;
+font-family: 'myriadprobold', sans-serif;
 }
 
 .full-width {
