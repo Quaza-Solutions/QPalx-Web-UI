@@ -145,6 +145,7 @@ function hrFunctionA() {
 }
 }
 
+
 function hrFunctionB() {
 		$("#hr-1").removeClass("blue-hr-1").addClass("black-hr-2");
 		$("#hr-2").removeClass("black-hr-2").addClass("blue-hr-1");
@@ -186,6 +187,37 @@ function hrFunctionC() {
 		$("#circle-3").removeClass("three-circle-gray").addClass("three-circle-blue");
 		
 		$("#number-3").removeClass("three-gray").addClass("three-blue");
+		
+		$("#text-3").removeClass("black").addClass("three-text-blue");
+}
+}
+
+function hrFunctionAB() {
+	if( $("#text-1").hasClass("three-text-blue") ) {
+	
+		$("#text-1").removeClass("three-text-blue").addClass("black");
+} else {
+		
+		$("#text-1").removeClass("black").addClass("three-text-blue");
+		$("#text-2").removeClass("three-text-blue").addClass("black");
+		$("#text-3").removeClass("three-text-blue").addClass("black");
+}
+}
+
+function hrFunctionBB() {		
+		$("#text-1").removeClass("three-text-blue").addClass("black");
+		$("#text-2").removeClass("black").addClass("three-text-blue");
+		$("#text-3").removeClass("three-text-blue").addClass("black");
+}
+
+function hrFunctionCB() {
+	if( $("#text-3").hasClass("black") ) {
+		
+		$("#text-3").removeClass("black").addClass("three-text-blue");
+		$("#text-2").removeClass("three-text-blue").addClass("black");
+		$("#text-1").removeClass("three-text-blue").addClass("black");
+} else {
+
 		
 		$("#text-3").removeClass("black").addClass("three-text-blue");
 }

@@ -370,20 +370,20 @@ margin-top: 40px;
 }
 .three-circle-blue {
 	border-radius: 50%; 
-	border: 1px solid #358ed7;
+	border: 1px solid #06bfd3;
 }
 
 .three-blue {
-	color: #358ed7; 
+	color: #06bfd3; 
 	padding: 0px 5px 0px 5px;
 }
 
 .three-text-blue {
-	color: #358ed7;
+	color: #06bfd3;
 }
 
 .blue {
-	color: #358ed7;
+	color: #06bfd3;
 }
 .black {
 color: #000;	
@@ -399,7 +399,7 @@ border: 1px solid #888888;
 }
 
 #blue-line {
-background-color: #358ed7;
+background-color: #06bfd3;
 }
 
 #gray-line {
@@ -700,7 +700,8 @@ color: #000;
 	height: 1px;
 	width: 200px;
 	margin-left: 0px;
-	background-color: #358ed7;
+/*	background-color: #358ed7;*/
+background-color: #06bfd3;
 }
 
 
