@@ -821,7 +821,7 @@ height: 40px;
 
 .my-container-2 {
 	background-color: #fff;
-	width: 324px;
+	width: 325px;
 /*	margin: 0px 100px 20px 920px;*/
 	padding: 20px;
 	position: absolute;
@@ -831,15 +831,28 @@ height: 40px;
 
 .my-container-3 {
 	background-color: #fff;
-	width: 324px;
+	width: 325px;
 	padding: 20px;
 	position: absolute;
 	top: 600px;
 	left: 920px;
 	height: 248px;
-	
-
 }
+
+@-moz-document url-prefix() { 
+  .my-container-2 {
+  	width: 320px;
+  }
+}
+@-moz-document url-prefix() { 
+  .my-container-3 {
+  	width: 320px;
+  }
+}
+
+:root *> .my-container {margin: auto auto 20px 112px; }
+:root *> .my-container-2 {left: 930px;}
+:root *> .my-container-3 {left: 930px; }
 
 #video-icon {
 	width: 100px;
