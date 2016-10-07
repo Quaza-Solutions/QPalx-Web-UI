@@ -43,19 +43,16 @@
  
  </div>
  <div class="container" style="margin-top: 10px; margin-bottom: 0px;">
- <div class="row">
- <div class="col-md-2"><b>In Progress</b>
+   <div class="row">
+ <div class="col-md-3" style="cursor: pointer;" onClick="hrFunction1a()"><b class="green" id="title-1">In Progress</b>
+ <hr class="green-hr-1a" id="hr-1" />
  </div>
- <div class="col-md-2" style="margin-left: -80px; color: #7dc855;"><b>Completed</b>
+ <div class="col-md-3" style="margin-left: -80px; cursor: pointer;" onClick="hrFunction2a()"><b id="title-2">Completed</b><hr class="black-hr-1a" id="hr-2" /></div>
+ 
+ <div class="col-md-3" onClick="hrFunction3a()" style="cursor: pointer;"><b id="title-3">Courses</b>
+ <hr class="black-hr-1a" id="hr-3" /></div>
  </div>
- <div class="col-md-2" style="margin-left: -80px;"><b>Courses</b>
- </div>
- </div>
- <div class="row">
- <br />
- <div class="col-md-1"></div><div class="col-md-1" style="width: 100px; border-bottom: 2px solid #7dc855; margin-left: 20px;"></div>
- </div>
- </div>
+
  <div class="clearfix"></div>
  <div class="container" style="margin-top: 10px; margin-bottom: 0px;">
 <table class="" style="width: 100%;">
@@ -99,5 +96,6 @@ latest news</p>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      <script src="js/hr.js"></script>
   </body>
 </html>
