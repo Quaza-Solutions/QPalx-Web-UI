@@ -1567,3 +1567,27 @@ a.close:hover {
 a.pop-up-one {
 	color: #fff;
 }
+
+/* Mozilla progress bar */
+
+progress[value]
+{
+    /* Reset the default appearence */
+    -moz-appearance: none;
+         appearance: none;
+
+    /* Get rid of default border in Firefox and Opera. */
+    border: thin solid black;
+
+    /* Dimensions
+    width: 250px;
+    height: 20px;   */
+}
+
+progress[value]::-moz-progress-bar 
+{ 
+
+    background-image:  -moz-linear-gradient( top, 
+                                            rgba(255, 255, 255, 255), 
+                                            rgba(255, 255, 255, 255) );
+}
