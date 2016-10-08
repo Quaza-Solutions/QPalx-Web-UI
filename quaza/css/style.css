@@ -8,6 +8,7 @@ body {
 	background-color: #e6e7e9;
 /*	background-color: #fff;*/
 	overflow-x: hidden;
+	width: 1350px;
 }
 
 @font-face {
@@ -274,10 +275,11 @@ margin-top: -5px;
 
 .container {
 	background-color: #ffffff;
-	border-right: thin solid #aaa;
-	border-bottom: thin solid #aaa;
+/*	border-right: thin solid #aaa;
+	border-bottom: thin solid #aaa;*/
 	padding: 20px;
-	margin-bottom: 400px;
+	margin-bottom: 100px;
+	width: 1150px;
 }
 
 .bottom-space {
@@ -1603,4 +1605,27 @@ progress[value]::-moz-progress-bar
     background-image:  -moz-linear-gradient( top, 
                                             rgba(255, 255, 255, 255), 
                                             rgba(255, 255, 255, 255) );
+}
+@media all and (max-width: 799px) and (min-width: 500px) {
+header {
+	height: 100%;
+	width: 100%;
+  }
+.header-buttons {
+	margin: -90px 0 0 350px;
+}
+
+#header-button {
+	margin: -20px 0 0 350px;
+}
+.bottom-6 {
+margin-left: -120px;
+}
+.bottom-5 {
+	margin: 40px 0 0 -50px;
+}
+.container {
+	margin: auto auto auto 200px;
+	background-color: #e6e7e9;
+}
 }
