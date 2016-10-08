@@ -5,8 +5,7 @@
           progressbarValue = progressbar.next(),
           value = progressbar.data('min') || 0,
           max = progressbar.data('max'),
-         // time = (1000 / max) * 5,
-		 time = (100 / max) * 5,
+          time = (1000 / max) * 5,
           value = progressbar.val(),
           animate = setInterval(loading, time);
 

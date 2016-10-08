@@ -819,11 +819,13 @@ height: 40px;
 	width: 800px;
 	margin: auto auto 20px 100px;
 	padding: 20px;
+	position: relative;
+	left: -6px;
 }
 
 .my-container-2 {
 	background-color: #fff;
-	width: 325px;
+	width: 316px;
 /*	margin: 0px 100px 20px 920px;*/
 	padding: 20px;
 	position: absolute;
@@ -833,7 +835,7 @@ height: 40px;
 
 .my-container-3 {
 	background-color: #fff;
-	width: 325px;
+	width: 316px;
 	padding: 20px;
 	position: absolute;
 	top: 600px;
