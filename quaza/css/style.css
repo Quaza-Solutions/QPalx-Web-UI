@@ -10,7 +10,9 @@ body {
 	overflow-x: hidden;
 	width: 1350px;
 }
-
+html {
+	margin: 0;
+}
 @font-face {
 font-family: 'myriadpro';
 src: url('../web fonts/Myriad Pro/MyriadPro-Regular copy.otf');
