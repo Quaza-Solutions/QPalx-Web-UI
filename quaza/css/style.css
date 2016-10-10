@@ -839,7 +839,7 @@ height: 40px;
 	padding: 20px;
 	position: absolute;
 	top: 410px;
-	margin-left: -2%;
+	margin-left: -2em;
 	left: -2%;
 	width: 28%;
 	
@@ -855,8 +855,8 @@ height: 40px;
 	padding: 20px;
 	position: absolute;
 	top: 600px;
-	margin-left: -2%;
-	left: -2%;
+	margin-left: -2em;
+	
 	width: 28%;
 	height: 280px;
 
