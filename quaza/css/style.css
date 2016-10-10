@@ -1607,6 +1607,14 @@ a.pop-up-one {
 	color: #fff;
 }
 
+.youtube {
+width: 606px;
+height: 470px;	
+
+}
+a {
+	color: #06bfd3;
+}
 /* Mozilla progress bar */
 
 progress[value]
