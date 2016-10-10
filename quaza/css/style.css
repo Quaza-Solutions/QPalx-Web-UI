@@ -840,8 +840,9 @@ height: 40px;
 	position: absolute;
 	top: 410px;
 	margin-left: -2%;
-	float: right;
+	left: -2%;
 	width: 28%;
+	
 /*	top: 400px;
 	left: 920px;
 	width: 325px;
@@ -855,9 +856,10 @@ height: 40px;
 	position: absolute;
 	top: 600px;
 	margin-left: -2%;
+	left: -2%;
 	width: 28%;
 	height: 280px;
-	float: right;
+
 /*	top: 600px;
 	left: 920px;
 	height: 248px;
