@@ -823,28 +823,44 @@ height: 40px;
 }
 .my-container {
 	background-color: #fff;
-	width: 800px;
+/*	width: 800px;
 	margin: auto auto 20px 100px;
+*/
+	width: 60%;
+	position: relative;
+	top: 10px;
+	left: -3.5%;
 	padding: 20px;
 }
 
 .my-container-2 {
 	background-color: #fff;
-	width: 325px;
+	
 	padding: 20px;
 	position: absolute;
-	top: 400px;
+	top: 410px;
+	margin-left: -2%;
+	width: 28%;
+/*	top: 400px;
 	left: 920px;
+	width: 325px;
+	*/
 }
 
 .my-container-3 {
 	background-color: #fff;
-	width: 325px;
+
 	padding: 20px;
 	position: absolute;
 	top: 600px;
+	margin-left: -2%;
+	width: 28%;
+	height: 280px;
+/*	top: 600px;
 	left: 920px;
 	height: 248px;
+	width: 325px;
+	*/
 }
 
 @-moz-document url-prefix() { 
@@ -1190,22 +1206,22 @@ _:-ms-lang(x), .email { width: 500px; }
 /** beginning of http://www.jssor.com/demos/full-width-slider.slider **/
 
         /* jssor slider bullet navigator skin 05 css */
-        /*
+        
         .jssorb05 div           (normal)
         .jssorb05 div:hover     (normal mouseover)
         .jssorb05 .av           (active)
         .jssorb05 .av:hover     (active mouseover)
         .jssorb05 .dn           (mousedown)
-        */
+        
         .jssorb05 {
             position: absolute;
         }
         .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-          /*  position: absolute;
-            /* size of bullet elment */
+            position: absolute;
+            /* size of bullet element */
             width: 16px;
             height: 16px;
-           /* background: url('images/b05.png') no-repeat;
+            background: url('images/b05.png') no-repeat;
             overflow: hidden;
             cursor: pointer;
         }
@@ -1215,14 +1231,14 @@ _:-ms-lang(x), .email { width: 500px; }
         .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
         /* jssor slider arrow navigator skin 22 css */
-        /*
+        
         .jssora22l                  (normal)
         .jssora22r                  (normal)
         .jssora22l:hover            (normal mouseover)
         .jssora22r:hover            (normal mouseover)
         .jssora22l.jssora22ldn      (mousedown)
         .jssora22r.jssora22rdn      (mousedown)
-        */
+        
         .jssora22l, .jssora22r {
             display: block;
             position: absolute;
@@ -1434,9 +1450,9 @@ html {
 	*/
 	border-radius: 9px;
 	background-color: #fff;
-	
+	/*
 	border: thin solid black;
-
+*/
 }
 
 
