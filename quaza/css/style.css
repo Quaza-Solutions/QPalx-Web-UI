@@ -102,7 +102,7 @@ color: #84c756;
 /*	height: 161px;
 	width: 1370px;*/
 	width: 100%;
-	margin-top: 0px;
+	margin: 0px;
 }
 
 .header-buttons {
@@ -232,6 +232,7 @@ background-color: #fff;
     background-position: left top;
 	background-size: cover;
 /*	height: 161px;*/
+	margin: 0;
 	width: 100%;
 	/*
 background-color: #43484d;
