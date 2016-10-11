@@ -160,7 +160,7 @@ font-family: 'opensansbold', sans-serif;
 	background-color: #000;
 	height: 40px;
 	width: 900px;
-	margin: 132px 0 0 0;
+	margin: 138px 0 0 0;
 }
 .header-5 {
 color: #fff;
@@ -1558,6 +1558,9 @@ html {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+
 }
 
 
@@ -1570,7 +1573,8 @@ html {
 
 .modal-box header,
 .modal-box .modal-header {
-  padding: 1.25em 1.5em;
+/*  padding: 1.25em 1.5em;*/
+padding: 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -1579,14 +1583,16 @@ html {
 .modal-box .modal-header h3,
 .modal-box .modal-header h4 { margin: 0; }
 
-.modal-box .modal-body { padding: 2em 1.5em; color: #000; }
+.modal-box .modal-body { /*padding: 2em 1.5em; */ padding: 0; color: #000; }
 .my-container-4 {
 	height: 400px;
 	background-color: #fff;
 }
 .modal-box footer,
 .modal-box .modal-footer {
-  padding: 1em;
+/*  padding: 1em;*/
+padding: 0;
+margin: 0;
   border-top: 1px solid #ddd;
   background: rgba(0, 0, 0, 0.02);
   text-align: right;
@@ -1628,8 +1634,21 @@ a.pop-up-one {
 .youtube {
 width: 606px;
 height: 470px;	
-
 }
+
+.paypal {
+width: 870px;
+height: 596px;
+padding: 0;
+  margin-top: 560px;
+}
+.mpower {
+width: 870px;
+height: 596px;
+padding: 0;
+  margin-top: 560px;
+}
+
 a {
 	color: #06bfd3;
 }
@@ -1658,14 +1677,14 @@ progress[value]::-moz-progress-bar
 }
 
 .header-text-box {
-		margin: 65px 0 0 0px;
+		margin: 65px 0 0 160px;
 		height: 38px;
 		width: 200px;
 		background-color: #e6e7e9;
 }
 
 .header-text-box-2 {
-		margin: 65px 0 0 -100px;
+		margin: 65px 0 0 60px;
 		height: 38px;
 		width: 200px;
 		background-color: #e6e7e9;
