@@ -1,37 +1,37 @@
 
 		 $(".anchor-1").hover(function() {	
 		var txt3 = "Click here to launch mini-lesson. ";
-		var newDiv3 = $('<div style=\"position: absolute; top: 0px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
+		var newDiv3 = $('<div style=\"position: absolute; top: -20px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
 		$('.anchor-default-1').append(newDiv3);
 });
 		 $(".anchor-2").hover(function() {	
 		var txt3 = "Click here to launch mini-lesson. ";
-		var newDiv3 = $('<div style=\"position: absolute; top: 0px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
+		var newDiv3 = $('<div style=\"position: absolute; top: -20px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
 		$('.anchor-default-2').append(newDiv3);
 });	
 		 $(".anchor-3").hover(function() {	
 		var txt3 = "Click here to launch mini-lesson. ";
-		var newDiv3 = $('<div style=\"position: absolute; top: 0px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
+		var newDiv3 = $('<div style=\"position: absolute; top: -20px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
 		$('.anchor-default-3').append(newDiv3);
 });
 		 $(".anchor-4").hover(function() {	
 		var txt3 = "Click here to launch mini-lesson. ";
-		var newDiv3 = $('<div style=\"position: absolute; top: 0px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
+		var newDiv3 = $('<div style=\"position: absolute; top: -20px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
 		$('.anchor-default-4').append(newDiv3);
 });
 		 $(".anchor-5").hover(function() {	
 		var txt3 = "Click here to launch mini-lesson. ";
-		var newDiv3 = $('<div style=\"position: absolute; top: 0px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
+		var newDiv3 = $('<div style=\"position: absolute; top: -20px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
 		$('.anchor-default-5').append(newDiv3);
 });
 		 $(".anchor-6").hover(function() {	
 		var txt3 = "Click here to launch mini-lesson. ";
-		var newDiv3 = $('<div style=\"position: absolute; top: 0px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
+		var newDiv3 = $('<div style=\"position: absolute; top: -20px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
 		$('.anchor-default-6').append(newDiv3);
 });
 		 $(".anchor-7").hover(function() {	
 		var txt3 = "Click here to launch mini-lesson. ";
-		var newDiv3 = $('<div style=\"position: absolute; top: 0px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
+		var newDiv3 = $('<div style=\"position: absolute; top: -20px; left: 140px; background-color: #444; padding: 4px; width: 280px; height: 30px; color: #fff;\"></div>').text(txt3);
 		$('.anchor-default-7').append(newDiv3);
 });
 		 
