@@ -162,6 +162,7 @@ font-family: 'opensansbold', sans-serif;
 	width: 900px;
 	margin: 138px 0 0 0;
 }
+
 .header-5 {
 color: #fff;
 font-size: 36px;
@@ -1656,12 +1657,23 @@ a.close:hover {
 a.pop-up-one {
 	color: #fff;
 }
-
+.bar-1 {
+	background-color: #000;
+	height: 40px;
+	width: 900px;	
+}
+.bar-3 {
+	background-color: #000;
+	height: 40px;
+	width: 900px;
+	margin: 44px 0 0 0;
+}
 .youtube {
-width: 606px;
-height: 470px;
+width: 900px;
+height: 600px;
 padding: 0;
 text-align: center;
+	box-shadow: -5px 5px 20px 0 #000000;
 }
 
 .paypal {
