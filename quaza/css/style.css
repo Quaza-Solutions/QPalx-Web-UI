@@ -1609,7 +1609,7 @@ padding: 0;
 .modal-box .modal-header h3,
 .modal-box .modal-header h4 { margin: 0; }
 
-.modal-box .modal-body { /*padding: 2em 1.5em; */ padding: 0; color: #000; }
+.modal-box .modal-body { /*padding: 2em 1.5em; */ padding: 40px 0 0 0; color: #000; }
 .my-container-4 {
 	height: 400px;
 	background-color: #fff;
@@ -1660,7 +1660,8 @@ a.pop-up-one {
 .youtube {
 width: 606px;
 height: 470px;
-padding: 22px;
+padding: 0;
+text-align: center;
 }
 
 .paypal {
