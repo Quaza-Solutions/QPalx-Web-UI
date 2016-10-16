@@ -168,13 +168,13 @@ Success ID: GH-ACC-1230037<br />
     <div class="row">
     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"> 
     </div>
-    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="#" style="float:right;" class="btn btn-small js-modal-close">Close</a>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="#" style="float:right;" class="btn btn-small js-modal-close" onClick="stopVideo();">Close</a>
     </div>
     </div>
 
    <div class="modal-body">
    
-<video width="700" controls>
+<video width="700" controls id="modal-box">
   <source src="videos/lesson 1 with audio.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -188,12 +188,12 @@ Success ID: GH-ACC-1230037<br />
     <div class="row">
     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"> 
     </div>
-    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="#" style="float:right;" class="btn btn-small js-modal-close">Close</a>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="#" style="float:right;" class="btn btn-small js-modal-close" onClick="stopVideo2();">Close</a>
     </div>
     </div>
 
    <div class="modal-body">
-<video width="700" controls>
+<video width="700" controls id="modal-box-2">
   <source src="videos/lesson 2 with aduio.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -236,6 +236,14 @@ latest news</p>
      <script src="js/modal.js"></script>
          <script src="js/progress-bar.js" type="text/javascript"></script>
     <script src="js/modernizr.js" type="text/javascript"></script>
-    
+    <script>
+
+     function stopVideo(){
+        $("#modal-box")[0].pause();
+     }
+     function stopVideo2(){
+        $("#modal-box-2")[0].pause();
+     }
+</script>
   </body>
 </html>
