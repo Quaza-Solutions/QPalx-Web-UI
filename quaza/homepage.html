@@ -9,6 +9,8 @@
 	<!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
+
   </head>
   <body>
 <header>
@@ -17,8 +19,8 @@
 <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo"></div>
   <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-  <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"><input class="header-text-box-2" type="text" name="email" id="header-text" value="&nbsp;&nbsp;&nbsp;Enter Email Address" onFocus="this.value='';"></div>
-  <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"><input class="header-text-box" type="text" name="password" value="&nbsp;&nbsp;&nbsp;Enter Password" onFocus="this.value='';"></div>
+  <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"><input class="header-text-box-2" type="text" name="email" id="header-text" placeholder="&nbsp;&nbsp;&nbsp;Enter Email Address" onFocus="this.value='';"></div>
+  <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"><input class="header-text-box" type="text" name="password" placeholder="&nbsp;&nbsp;&nbsp;Enter Password" onFocus="onFocus(this)" /></div>
   <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"><img style="margin-left: 260px;" id="header-button" class="header-buttons" src="assets/log-in-button.png" /></div>
   <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
   </div>
@@ -86,6 +88,14 @@ latest news</p>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+function onFocus(el) {
+    if (el.value == el.defaultValue) {
+        el.value = '';
+    }
+}
+</script>
 
 </body>
 </html>
