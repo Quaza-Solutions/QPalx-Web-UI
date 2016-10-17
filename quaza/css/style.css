@@ -1660,16 +1660,20 @@ a.pop-up-one {
 .bar-1 {
 	background-color: #000;
 	height: 40px;
-	width: 900px;	
+/*	width: 900px;	*/
+width: 100%;
 }
 .bar-3 {
 	background-color: #000;
 	height: 40px;
-	width: 900px;
+/*	width: 900px;*/
+width: 100%;
 	margin: 44px 0 0 0;
 }
 .youtube {
-width: 900px;
+	/*
+width: 900px;*/
+width: 70%;
 height: 600px;
 padding: 0;
 text-align: center;
