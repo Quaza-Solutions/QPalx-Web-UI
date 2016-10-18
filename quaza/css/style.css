@@ -855,16 +855,16 @@ height: 40px;
 }
 
 .my-container-2 {
-	background-color: #fff;
+	background-color: #e6e7e9;
 	
 	padding: 20px;
 	position: absolute;
 	top: 410px;
-
-	width: 28%;
+	margin-left: 8%;
+	width: 18%;
 	
 	
-/*	top: 400px;
+/*	top: 410px;
 	left: 920px;
 	width: 325px;
 	*/
