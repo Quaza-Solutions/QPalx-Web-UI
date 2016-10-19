@@ -860,7 +860,7 @@ height: 40px;
 	padding: 20px;
 	position: absolute;
 	top: 410px;
-	margin-left: 8%;
+	margin-left: -2%;
 	width: 18%;
 	
 	
@@ -1592,6 +1592,7 @@ html {
 
 
 @media (min-width: 32em) {
+	{
 
 .modal-box {width: 70%;
 
