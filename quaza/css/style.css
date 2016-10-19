@@ -214,6 +214,7 @@ background-color: #fff;
 .bottom-6 {
 	background-color: #fff;
 	margin-top: 0px;
+	z-index: 1;
 }
 
 .bottom-7 {
@@ -1571,7 +1572,8 @@ html {
 }
 /*Modal*/
 
-
+/* old modal */
+/*
 .modal-box {
   display: none;
   position:absolute;
@@ -1601,7 +1603,7 @@ html {
 
 .modal-box header,
 .modal-box .modal-header {
-/*  padding: 1.25em 1.5em;*/
+ padding: 1.25em 1.5em;
 padding: 0;
   border-bottom: 1px solid #ddd;
 }
@@ -1611,14 +1613,14 @@ padding: 0;
 .modal-box .modal-header h3,
 .modal-box .modal-header h4 { margin: 0; }
 
-.modal-box .modal-body { /*padding: 2em 1.5em; */ padding: 40px 0 0 0; color: #000; }
+.modal-box .modal-body { padding: 2em 1.5em;  padding: 40px 0 0 0; color: #000; }
 .my-container-4 {
 	height: 400px;
 	background-color: #fff;
 }
 .modal-box footer,
 .modal-box .modal-footer {
-/*  padding: 1em;*/
+  padding: 1em;
 padding: 0;
 margin: 0;
   border-top: 1px solid #ddd;
@@ -1658,29 +1660,8 @@ a.close:hover {
 a.pop-up-one {
 	color: #fff;
 }
-.bar-1 {
-	background-color: #000;
-	height: 40px;
-/*	width: 900px;	*/
-width: 100%;
-}
-.bar-3 {
-	background-color: #000;
-	height: 40px;
-/*	width: 900px;*/
-width: 100%;
-	margin: 44px 0 0 0;
-}
-.youtube {
-	/*
-width: 900px;*/
-width: 70%;
-height: 600px;
-padding: 0;
-text-align: center;
-	box-shadow: -5px 5px 20px 0 #000000;
-}
-
+*/
+/* old modal */
 .paypal {
 width: 870px;
 height: 596px;
@@ -1766,4 +1747,108 @@ margin-left: -120px;
 body {
 	overflow-x: scroll;
 }
+}
+
+
+.modalBox,
+.modalCloseOuter {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+.modalBox {
+	position:fixed;
+	left: -100%;
+	top:0;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
+	-ms-flex-align:center;
+	-webkit-align-items:center;
+	-webkit-box-align:center;
+	align-items:center;
+	-ms-justify-content:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+	/*
+	background:rgba(0,0,0,0.5);
+	opacity:0;
+	transition:opacity 0.5s, left 0s 0.5s;
+	*/
+	opacity:1;
+	background-color: #fff;
+	z-index: 2;
+}
+
+.modalCloseOuter {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.modalBox:target {
+	left:0;
+	opacity:1;
+	transition:opacity 0.5s, left 0s;
+}
+
+.modalBody {
+
+	position:relative;
+	display:inline-block;
+/*	padding:1em;overflow:auto;*/
+	padding: 0px;
+	max-width:90%;
+	max-height:90%;
+	
+	overflow-y: hidden;
+	background:#FFF;
+/*	box-shadow:0 0.25em 0.25em rgba(0,0,0,0.5);*/
+
+}
+
+
+.bar-1 {
+	background-color: #000;
+	height: 40px;
+ margin: 0 auto;
+/*	width: 900px;	*/
+width: 100%;
+text-align: center;
+padding: 0;
+vertical-align: top;
+display: inline-block;
+}
+.bar-3 {
+	background-color: #000;
+	height: 40px;
+/*	width: 900px;*/
+width: 100%;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+
+.mp4 {
+width: 80%;
+height: 600px;
+	box-shadow: -5px 5px 20px 0 #000000;
+	text-align: center;
+	margin: auto;
+overflow-y: hidden;
+}
+
+#modal-box {
+margin-top: 40px;
+overflow-y: hidden;
+}
+#modal-box-2 {
+margin-top: 40px;
+overflow-y: hidden;
+}
+
+#modal-box-3 {
+margin-top: 40px;
+overflow-y: hidden;
 }
