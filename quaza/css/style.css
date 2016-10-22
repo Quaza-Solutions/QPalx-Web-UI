@@ -853,18 +853,18 @@ height: 40px;
 	top: 10px;
 	left: -3.5%;
 	padding: 20px;
-	margin: auto;
+	margin: auto auto auto auto;
 }
 
 .my-container-2 {
 	background-color: #e6e7e9;
 	
 	padding: 20px;
-	position: relative;
+	position: absolute;
 /*	top: 410px;
 	margin-left: -2%;*/
-	top: -500px;
-	left: 0;
+	top: 440px;
+	left: 30%;
 	width: 18%;
 	
 	
