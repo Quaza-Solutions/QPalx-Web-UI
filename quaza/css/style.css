@@ -864,6 +864,7 @@ height: 40px;
 /*	top: 410px;
 	margin-left: -2%;*/
 	top: -500px;
+	left: 0;
 	width: 18%;
 	
 	
@@ -1879,7 +1880,7 @@ line-height: 2.0;
   vertical-align: top;
 }
 
-.circle-bar strong {
+.circle strong {
   position: absolute;
   top: 50px;
   left: 20px;
