@@ -853,15 +853,17 @@ height: 40px;
 	top: 10px;
 	left: -3.5%;
 	padding: 20px;
+	margin: auto;
 }
 
 .my-container-2 {
 	background-color: #e6e7e9;
 	
 	padding: 20px;
-	position: absolute;
-	top: 410px;
-	margin-left: -2%;
+	position: relative;
+/*	top: 410px;
+	margin-left: -2%;*/
+	top: -500px;
 	width: 18%;
 	
 	
@@ -932,11 +934,17 @@ height: 40px;
 }
 
 .cents-box-2 {
-	margin: 60px 0 0 190px;
+/*	margin: 60px 0 0 190px;*/
+	position: absolute;
+	top: 60px;
+	left: 190px;
 }
 
 .cents-box-5 {
-	margin: 60px 0 0 40px;
+/*	margin: 60px 0 0 40px;*/
+position: relative;
+top: 60px;
+left: 80px;
 }
 
 .cents {
@@ -1666,7 +1674,7 @@ a.pop-up-one {
 width: 870px;
 height: 596px;
 padding: 0;
-  margin-top: 560px;
+background-color: #fff;
 }
 
 .mpower {
@@ -1709,14 +1717,17 @@ progress[value]::-moz-progress-bar
 }
 
 .header-text-box {
-		margin: 65px 0 0 160px;
+	/*	margin: 65px 0 0 160px;*/
+	position: absolute;
+	top: 65px;
+	left: 160px;
 		height: 38px;
 		width: 200px;
 		background-color: #e6e7e9;
 }
 
 .header-text-box-2 {
-		margin: 65px 0 0 60px;
+		margin: 65px 0 0 40px;
 		height: 38px;
 		width: 200px;
 		background-color: #e6e7e9;
@@ -1851,4 +1862,30 @@ overflow-y: hidden;
 #modal-box-3 {
 margin-top: 40px;
 overflow-y: hidden;
+}
+
+.circle-bar {
+  width: 100px;
+/*  margin: 6px 6px 20px;*/
+margin: 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+/*  line-height: 1.2; */
+line-height: 2.0;
+}
+
+.circle-bar canvas {
+  vertical-align: top;
+}
+
+.circle-bar strong {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: #06bfd3;
 }
