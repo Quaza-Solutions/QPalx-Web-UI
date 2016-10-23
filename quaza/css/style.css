@@ -813,6 +813,7 @@ height: 200px;
 
 .topmargin-2 {
 	margin-top: 24px;
+	margin-right: 140px;
 }
 .topmargin-3 {
 	margin-top: 20px;
@@ -857,14 +858,13 @@ height: 40px;
 }
 
 .my-container-2 {
-	background-color: #e6e7e9;
+	background-color: #fff;
 	
 	padding: 20px;
 	position: absolute;
 /*	top: 410px;
 	margin-left: -2%;*/
-	top: 440px;
-	left: 30%;
+	top: 480px;
 	width: 18%;
 	
 	
