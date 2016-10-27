@@ -1740,13 +1740,14 @@ header {
 	height: 100%;
 	width: 100%;
   }
+  /*
 .header-buttons {
 	margin: -90px 0 0 350px;
 }
 
 #header-button {
 	margin: -20px 0 0 350px;
-}
+}*/
 .bottom-6 {
 margin-left: -120px;
 }
@@ -1758,10 +1759,13 @@ margin-left: -120px;
 	background-color: #e6e7e9;
 }
 body {
-	overflow-x: scroll;
-}
+	overflow: scroll;
 }
 
+.full-width {
+100%;	
+}
+}
 
 .modalBox,
 .modalCloseOuter {
