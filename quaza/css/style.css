@@ -1317,8 +1317,10 @@ font-family: 'myriadprobold', sans-serif;
 }
 
 .full-width {
-	margin-left: -20px;
-	width: 1140px;
+/*	margin-left: -20px;
+	width: 1140px;*/
+	width: 100%;
+
 }
 .pic {
 margin: auto 0 auto -60px;
