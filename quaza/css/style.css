@@ -95,11 +95,14 @@ color: #84c756;
 	background-image:url("../assets/Header.png");
 	background-attachment: scroll;
 	background-repeat: no-repeat;
-	background-origin: border-box;
+	background-origin: content-box;
     background-position: left top;
 	background-size: cover;
-/*	height: 161px;
-	width: 1370px;*/
+/*	height: 158px;
+	width: 1370px;
+	background-origin: border-box;
+	background-attachment: scroll;
+	*/
 	height: 158px;
 	width: 100%;
 	margin: 0px;
@@ -852,7 +855,7 @@ height: 40px;
 	width: 60%;
 	position: relative;
 	top: 10px;
-	left: -3.4%;
+	left: -3.5%;
 	padding: 20px;
 	margin: auto auto auto auto;
 }
@@ -862,18 +865,16 @@ height: 40px;
 	
 	padding: 20px;
 	position: absolute;
-/*	top: 410px;
-	margin-left: -2%;*/
-/*	top: 480px;*/
 
-	width: 27.4%;
+
+	width: 380px;
 	top: 410px;
-	margin-left: -20px;
+	margin-left: -2%;
 	
 	/*
-	top: 410px;
+	width: 27.8%;
 	left: 920px;
-	width: 325px;
+	
 	*/
 }
 
