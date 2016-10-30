@@ -444,7 +444,7 @@ background-color: #06bfd3;
 }
 .dropdown {
 width: 248px; 
-height: 32px;	
+height: 30px;	
 }
 
 #zip {
@@ -456,8 +456,8 @@ width: 248px;
 }
 
 .academy {
-	width: 522px; 
-	height: 32px;
+	width: 552px; 
+	height: 30px;
 }
 .activity {
 	width: 522px; 
@@ -1218,7 +1218,7 @@ margin: 100px 0 0 50px;
 }
 
 .password {
-	width: 520px;
+	width: 550px;
 }
 
 
