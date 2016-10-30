@@ -818,8 +818,21 @@ height: 200px;
 
 .topmargin-2 {
 	margin-top: 24px;
-	margin-right: 140px;
+	margin-left: -100px;
 }
+
+.audio {
+	width: 40px;
+	margin-top: 10px;
+	margin-left: -80px;
+}
+
+.hand {
+	width: 40px;
+	margin-top: 8px;
+	margin-left: -100px;
+}
+
 .topmargin-3 {
 	margin-top: 20px;
 }
