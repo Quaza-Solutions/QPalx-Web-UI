@@ -832,6 +832,18 @@ height: 200px;
 	margin-top: 8px;
 	margin-left: -100px;
 }
+.microlesson {
+position: absolute; 
+top: -20px; 
+left: 140px; 
+background-color: #444; 
+padding: 4px; 
+width: 240px; 
+height: 26px; 
+color: #fff; 
+font-size: 16px; 
+font-weight: normal;	
+}
 
 .topmargin-3 {
 	margin-top: 20px;
@@ -873,6 +885,7 @@ height: 40px;
 	left: -3.5%;
 	padding: 20px;
 	margin: auto auto auto auto;
+	height: 600px;
 }
 
 .my-container-2 {
@@ -893,7 +906,29 @@ height: 40px;
 	
 	*/
 }
+.audio-icon {
+position: absolute; 
+top: -20px; 
+left: -20px; 
+background-color: #444; 
+padding: 4px; 
+width: 230px; 
+height: 50px; 
+color: #fff;
+font-size: 16px;
+}
 
+.hand-icon {
+position: absolute; 
+top: -20px; 
+left: -50px; 
+background-color: #444; 
+padding: 4px; 
+width: 230px; 
+height: 50px; 
+color: #fff;
+font-size: 16px;
+}
 .my-container-3 {
 	background-color: #fff;
 

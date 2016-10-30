@@ -109,7 +109,7 @@ Success ID: GH-ACC-1230037<br />
    <div class="bar-1"></div>
     <a href="#" style="float:right; margin: 20px 40px 20px 0;" onClick="stopVideo();">Close</a>
    <div class="modalBody">
-<video width="800" id="modal-box-2" controls>
+<video width="800" id="modal-box" controls>
   <source src="videos/lesson 2 with aduio.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -157,11 +157,24 @@ latest news</p>
 
      function stopVideo(){
         $("#modal-box")[0].pause();
+				
+        alert('Making API call.');
+         $.getJSON("http://localhost:8080/recordData?microLessonID=1",
+         function(data) {
+            alert(data);         
+          }); 
      }
+	 /*
      function stopVideo2(){
         $("#modal-box-2")[0].pause();
+			
+        alert('Making API call.');
+         $.getJSON("http://localhost:8080/recordData?microLessonID=1",
+         function(data) {
+            alert(data);         
+          }); 
      }
-	 
+	 */
 	 $('.third.circle-bar').circleProgress({
   value: 1.00,
   fill: {gradient: [['#06bfd3', .5], ['#06bfd3', .5]], gradientAngle: Math.PI / 4}
