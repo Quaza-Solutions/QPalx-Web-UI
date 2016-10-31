@@ -207,7 +207,7 @@ Success ID: GH-ACC-1230037<br />
      <div class="large-fonts">Quiz 5</div>
 </div>   
 
- <div id="popup1" class="modalBox">
+ <div id="popup1" class="modalBox" href="http://localhost:8080/recordData?microLessonID=1">
  <a href="#" class="modalCloseOuter" onClick="stopVideo();"></a>
  <div class="mp4">
    <div class="bar-1"></div>
@@ -222,8 +222,8 @@ Success ID: GH-ACC-1230037<br />
   </div>
   </div> 
   
-   <div id="popup2" class="modalBox">
- <a href="#" class="modalCloseOuter" onClick="stopVideo();"></a>
+   <div id="popup2" class="modalBox" href="http://localhost:8080/recordData?microLessonID=1">
+ <a href="#" class="modalCloseOuter" onClick="stopVideo2();"></a>
  <div class="mp4">
    <div class="bar-1"></div>
     <a href="#" style="float:right; margin: 20px 40px 20px 0;" onClick="stopVideo();">Close</a>
@@ -276,12 +276,12 @@ latest news</p>
 
      function stopVideo(){
         $("#modal-box")[0].pause();
-		
+		 var href = parent.document.getElementById('popup1').getAttribute("href");
 		 alert('Making API call.');
          $.ajax({ 
              type: "GET",
              dataType: "json",
-             url: "http://localhost:8080/recordData?microLessonID=1",
+             url: href,
              success: function(data){        
                 alert(data);
              }
@@ -289,12 +289,12 @@ latest news</p>
      }
      function stopVideo2(){
         $("#modal-box-2")[0].pause();
-		
+		 var href = parent.document.getElementById('popup2').getAttribute("href");
 		 alert('Making API call.');
          $.ajax({ 
              type: "GET",
              dataType: "json",
-             url: "http://localhost:8080/recordData?microLessonID=1",
+             url: href,
              success: function(data){        
                 alert(data);
              }
