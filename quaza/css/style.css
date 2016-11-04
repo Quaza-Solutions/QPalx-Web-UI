@@ -1952,3 +1952,35 @@ line-height: 2.0;
   font-size: 30px;
   color: #06bfd3;
 }
+
+.blue-box {
+	background-color: #06bfd3;
+	width: 32%;
+/*	width: 32.2%; height: 32%;*/
+	height: 360px;
+	color: #fff;
+	text-align: center;
+	float: left;
+	font-size: 24px;
+}
+
+#box-1 {
+	margin-right: 2%;
+}
+#box-2 {
+	margin-right: 2%;
+}
+#box-3 {
+	margin-right: 0;
+}
+.box-icon {
+	margin-top: 30px;
+}
+.grade {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 56px;
+	color: #06bfd3;
+	margin-top: 20px;
+
+}
