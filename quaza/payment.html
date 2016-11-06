@@ -183,8 +183,11 @@ $(document).ready(function(){
 $("#radio-1").click(function(){ 
 $("#form-text").prop('disabled', true);
 $("#form-text-1").prop('disabled', true);
+$("#form-text-2").prop('disabled', false);
 });  
 $("#radio-2").click(function(){ 
+$("#form-text").prop('disabled', false);
+$("#form-text-1").prop('disabled', false);
 $("#form-text-2").prop('disabled', true);
 });
 });  
