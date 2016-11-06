@@ -4,7 +4,7 @@ body {
 
 */
 	font-family: 'myriadpro', sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	background-color: #e6e7e9;
 /*	background-color: #fff;*/
 	overflow-x: hidden;
@@ -448,6 +448,14 @@ width: 248px;
 height: 30px;	
 }
 
+.dropdown-2 {
+width: 90%; 
+height: 30px;	
+}
+.dropdown-3 {
+width: 82%; 
+height: 30px;	
+}
 #zip {
 width: 248px;	
 }
@@ -506,6 +514,24 @@ width: 248px;
 #check-box-6 {
     display: none;
 }
+#check-box-7 {
+    display: none;
+}
+#check-box-8 {
+    display: none;
+}
+#check-box-9 {
+    display: none;
+}
+#check-box-10 {
+    display: none;
+}
+#check-box-11 {
+    display: none;
+}
+#check-box-12 {
+    display: none;
+}
 #check-box-one {
     display: none;
 }
@@ -546,6 +572,24 @@ width: 248px;
     border: 2px solid #7dc855;
 }
 #check-box-6:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-7:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-8:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-9:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-10:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-11:checked + label{
+    border: 2px solid #7dc855;
+}
+#check-box-12:checked + label{
     border: 2px solid #7dc855;
 }
 .selected {
@@ -933,7 +977,7 @@ z-index: 1;
 
 
 	width: 380px;
-	top: 410px;
+	top: 430px;
 	left: -2%;
 	margin-left: -2%;
 	
@@ -1018,7 +1062,8 @@ font-size: 16px;
 
 .cents-box {
 	border: 1px solid gray;
-	width: 300px;
+/*	width: 300px;*/
+	width: 50%;
 	height: 400px;
 	border-radius: 20px;
 }
@@ -1027,17 +1072,17 @@ font-size: 16px;
 }
 
 .cents-box-2 {
-/*	margin: 60px 0 0 190px;*/
+/*	margin: 60px 0 0 190px; left: 190px;*/
 	position: absolute;
 	top: 60px;
-	left: 190px;
+	left: 36%;
 }
 
 .cents-box-5 {
-/*	margin: 60px 0 0 40px;*/
+/*	margin: 60px 0 0 40px; left: 80px;*/
 position: relative;
 top: 60px;
-left: 80px;
+left: 12%;
 }
 
 .cents {
@@ -1074,7 +1119,8 @@ left: 80px;
 
 .profi-box{
 	border: 1px solid gray;
-	width: 260px;
+/*	width: 260px;*/
+	width: 94%;
 	height: 360px;
 	border-radius: 20px;
 }
@@ -1085,20 +1131,24 @@ left: 80px;
 .left-box {
 position: relative;
 right: 40px;
-left: 40px;
+/* left: 40px; */
+left: 20%;
 }
 
 .center-box {
 
 position: relative;
 right: 80px;
-left: 40px;
+left: 20%;
+/* left: 40px; */
 }
 
 .right-box {
 position: relative;
+left: 20%;
+/* 
 right: 40px;
-left: 40px;
+left: 40px; */
 }
 .profi-level {
 	margin: 70px 0 0 0;

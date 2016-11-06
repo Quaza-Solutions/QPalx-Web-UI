@@ -122,7 +122,11 @@
 		var newDiv3 = $('<div class=\"microlesson\"></div>').text(txt3);
 		$('.anchor-default-7').append(newDiv3);
 });
-		 
+	    $(".anchor-8").hover(function() {	
+		var txt3 = "Click here to launch mini-lesson. ";
+		var newDiv3 = $('<div class=\"microlesson\"></div>').text(txt3);
+		$('.anchor-default-8').append(newDiv3);
+}); 
 	 $("button").hover(function() {
   	$(this).removeClass("btn-default").addClass("btn-danger");
 
@@ -187,6 +191,7 @@
 		$(".anchor-default-5").empty();
 		$(".anchor-default-6").empty();
 		$(".anchor-default-7").empty();
+		$(".anchor-default-8").empty();
 		});
 		 
 		 

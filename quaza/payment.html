@@ -69,7 +69,7 @@
          <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options" /></div>
+   <div class="col-md-1"><input type="radio" id="radio-2" class="radio-btn" name="payment-options" /></div>
    <div class="col-md-6"><p><b><a class="anchor-5" href="#popup2">Mpower</a></b></p><p>Safe secure payment online with Mpower</p></div>
    <div class="col-md-1"><img src="images/mpower.png" /></div>
    <div class="col-md-2"></div>
@@ -84,7 +84,7 @@
  
     <div class="row">
    <div class="col-md-3"></div>
-   <div class="col-md-6"><input type="text" class="form-control mpower-2" /></div>
+   <div class="col-md-6"><input type="text" id="form-text-1" class="form-control mpower-2" /></div>
     <div class="col-md-3"></div>
    </div>   
  <br />
@@ -96,14 +96,14 @@
    
        <div class="row">
    <div class="col-md-3"></div>
-   <div class="col-md-6"><input type="text" class="form-control" />
+   <div class="col-md-6"><input type="text" id="form-text" class="form-control" />
     <div class="col-md-3"></div></div>
    </div>     
    
             <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
-   <div class="col-md-1"><input type="radio" class="radio-btn" name="payment-options"  /></div>
+   <div class="col-md-1"><input type="radio" id="radio-1" class="radio-btn" name="payment-options"  /></div>
    <div class="col-md-6"><p><b><a class="anchor-5" href="#popup3">Prepaid Card</a></b></p><p>Enter Card Number</p></div>
    <div class="col-md-1"><img src="images/prepaid.png" /></div>
    <div class="col-md-2"></div>
@@ -111,7 +111,7 @@
    
          <div class="row">
    <div class="col-md-3"></div>
-   <div class="col-md-6"><input type="text" class="form-control" />
+   <div class="col-md-6"><input type="text" class="form-control" id="form-text-2" />
     <div class="col-md-3"></div></div>
    </div>  
    
@@ -179,7 +179,15 @@ latest news</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript">
-
+$(document).ready(function(){     
+$("#radio-1").click(function(){ 
+$("#form-text").prop('disabled', true);
+$("#form-text-1").prop('disabled', true);
+});  
+$("#radio-2").click(function(){ 
+$("#form-text-2").prop('disabled', true);
+});
+});  
 	
 function displayCheckmark1(){
 	$("#two").empty();
