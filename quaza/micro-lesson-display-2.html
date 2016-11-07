@@ -198,15 +198,15 @@ Success ID: GH-ACC-1230037<br />
         
      <div class="large-fonts-2">Quizzes</div>
    
-    <div class="large-fonts">Quiz 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #06bfd3;">80%</span>
+    <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #06bfd3;">80%</span>
     </div>
     
        
-     <div class="large-fonts">Quiz 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #06bfd3;">100%</span>
+     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #06bfd3;">100%</span>
      </div>
-     <div class="large-fonts">Quiz 3</div>
-     <div class="large-fonts">Quiz 4</div>
-     <div class="large-fonts">Quiz 5</div>
+     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 3</a></div>
+     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 4</a></div>
+     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 5</a></div>
 </div>   
 
  <div id="popup1" class="modalBox" href="http://localhost:8080/recordData?microLessonID=1">
@@ -332,6 +332,10 @@ latest news</p>
 }).on('circle-animation-progress', function(event, progress, stepValue) {
   $(this).find('strong').html(parseInt(100 * progress) + '<i>%</i>');
 });
+
+function newPopup(url) {
+    popupWindow = window.open(url,'popUpWindow1','height=615,width=970,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
 </script>
   </body>
 </html>
