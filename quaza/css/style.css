@@ -129,16 +129,16 @@ font-family: 'opensansbold', sans-serif;
 }*/
 
 .logo {
-	background-image:url("../assets/QPalx-Final-Logo.png");
+	background-image:url("../assets/new_logo.png");
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-origin: border-box;
     background-position: left top;
 	background-size: cover;
 	position: relative;
-	top: 40px;
-	height: 80px;
-	width: 273px;
+	top: 20px;
+	height: 107px;
+	width: 274px;
 }
 .middle {
 	background-image:url("../assets/Qpalx-background.png");
@@ -893,6 +893,9 @@ font-weight: normal;
 .topmargin-3 {
 	margin-top: 20px;
 }
+.topmargin-4 {
+	margin-top: 12px;
+}
 .large-font {
 	font-size: 28px;
 	color: #777;
@@ -965,7 +968,7 @@ z-index: 1;
 	top: 10px;
 	left: -3.5%;
 	padding: 20px;
-	margin: 0;
+	margin: auto auto auto auto;
 	height: 600px;
 }
 
