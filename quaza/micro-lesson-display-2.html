@@ -57,7 +57,7 @@ Success ID: GH-ACC-1230037<br />
      <div class="row">
      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 topmargin-4">1
      </div>
-     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 large-fonts topmargin"><a class="anchor-1" onClick="listQuizzes();"><div class="anchor-default-1"></div>Micro Lesson</a>
+     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 large-fonts topmargin"><a href="#" id="get-data-1">MicroLesson </a>
      </div>
      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
      <a class="audio-1" href="#popup1"><div class="audio-default-1"></div><img src="images/audio.png" class="audio" /></a>
@@ -196,17 +196,10 @@ Success ID: GH-ACC-1230037<br />
 </a>
    <br /><br />
         
-     <div class="large-fonts-2 my-new-list" id="quiz-1">Quizzes</div>
+     <div class="large-fonts-2">Quizzes</div>
    
-    <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #06bfd3;">80%</span>
-    </div>
-    
-       
-     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #06bfd3;">100%</span>
-     </div>
-     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 3</a></div>
-     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 4</a></div>
-     <div class="large-fonts"><a href="JavaScript:newPopup('quiz.html');">Quiz 5</a></div>
+  <div class="quiz-list-1"></div>
+
 </div>   
 
  <div id="popup1" class="modalBox" href="http://localhost:8080/recordData?microLessonID=1">
@@ -287,20 +280,23 @@ latest news</p>
     <script src="js/modernizr.js" type="text/javascript"></script>
     <script>
 	
-	 function listQuizzes() {
-		 alert("test");
-		 $.getJSON( "ajax/test.json", function( data ) {
- 		 var items = [];
-  		$.each( data, function( key, val ) {
-    		items.push( "<li id='" + key + "'>" + val + "</li>" );
-  		});
+$(document).ready(function() {
+$('#get-data-1').click(function () {
+								 
+$.getJSON( "ajax/microLesson1.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<tr><td>" + key + "</td><td>" + val + "</td></tr>" );
+  });
  
- 		 $( "<ul/>", {
-    	"class": "my-new-list",
-    	html: items.join( "" )
-  		}).append( "#quiz-1" );
-		});
-	 }
+  $( "<table />", {
+    "class": "my-new-list",
+    html: items.join( "" ),
+ }).appendTo( ".quiz-list-1" );
+});
+});
+});
+
      function stopVideo(){
         $("#modal-box")[0].pause();
 		 var href = parent.document.getElementById('popup1').getAttribute("href");

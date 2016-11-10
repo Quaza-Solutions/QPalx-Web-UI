@@ -2091,3 +2091,7 @@ line-height: 2.0;
 	margin-top: 20px;
 
 }
+
+table.my-new-list {
+	width: 100%;
+}
