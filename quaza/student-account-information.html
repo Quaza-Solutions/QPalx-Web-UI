@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"-->
     <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/Jcrop.style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-example.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.Jcrop.css" />
   </head>
   <body>
  <header>
@@ -27,7 +30,9 @@
 <div class="container" style="margin: 20px auto 20px auto;">
    <div class="row">
      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-     <div class="circle"></div>
+           <div class="cropme" style="width: 120px; height: 120px;"></div>
+
+      <div class="clear"></div>
      </div>
      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
      <br />
@@ -471,10 +476,17 @@ latest news</p>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script-->
+    <script type="text/javascript" src="js/jquery.Jcrop.js"></script>
+    <script type="text/javascript" src="js/jquery.SimpleCropper.js"></script>
      <script src="js/hr.js"></script>
      <script src="js/hover.js"></script>
      <script src="js/modal.js"></script>
      <script src="js/progress-bar.js" type="text/javascript"></script>
      <script src="js/modernizr.js" type="text/javascript"></script>
+      <script>
+        // Init Simple Cropper
+        $('.cropme').simpleCropper();
+      </script>
   </body>
 </html>
