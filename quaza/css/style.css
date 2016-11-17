@@ -2098,3 +2098,8 @@ line-height: 2.0;
 table.my-new-list {
 	width: 100%;
 }
+
+.e-book {
+	margin: 0 auto 0 13%;
+	text-align: center;
+}
