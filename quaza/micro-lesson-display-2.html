@@ -286,7 +286,7 @@ latest news</p>
     <script src="js/modernizr.js" type="text/javascript"></script>
     <script>
 	
-//$(document).ready(function() {
+$(document).ready(function() {
 $('.fetchjson').click(function () {
 var idNumber = $(this).attr('id').split('-').reverse()[0];
 $.getJSON( "ajax/microLesson"+idNumber+".json", function( data ) {
@@ -301,7 +301,7 @@ html: items.join( "" ),
 }).appendTo( ".quiz-list-"+idNumber+"" );
 });
 });
-//});
+});
 
      function stopVideo(){
         $("#modal-box")[0].pause();
