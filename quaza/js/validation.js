@@ -243,14 +243,14 @@ $(this).removeClass("focus-3").addClass("blur-3");
    }
    
 $('#password-2').blur(function() {
-		$("#password-confirm").empty();
+		//$("#password-confirm").empty();
 		var txt2 = "Please enter the same password";
-		var newDiv2 = $('<div style=\"position: absolute; top: 0px; right: -300px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt2);
+		var newDiv2 = $('<div style=\"position: absolute; top: 0px; background-color: #444; padding: 6px; width: 180px; height: 60px; color: #fff;\"></div>').text(txt2);
 		
 		   if($('#password-1').val() != $('#password-2').val()) {
 		  $(this).removeClass("blur").addClass("focus");
 		
-		$('#password-confirm').append(newDiv2);
+		$('.password-confirm').append(newDiv2);
             // Prevent form submission
             event.preventDefault();
         } else {
@@ -259,5 +259,16 @@ $('#password-2').blur(function() {
 			  	//$("#password-confirm").empty();						  
 				}
 							   })
+
+	var input = $("#zip").val();
+	var input1 = $("#phone").val();
+	var input2 = $("#first").val();
+	var input3 = $("#last").val();
+	var input4 = $("#password-1").val();
+	var input5 = $("#password-2").val();
+	var input6 = $(".email").val();
+		if ( $.trim(input).length == 0 || $.trim(input1).length == 0 || $.trim(input2).length == 0 || $.trim(input3).length == 0 || $.trim(input4).length == 0 || $.trim(input5).length == 0 || $.trim(input6).length == 0){
+			event.preventDefault();
+		}
 				
   

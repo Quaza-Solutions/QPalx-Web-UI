@@ -58,9 +58,9 @@
       
 <form action="" method="get" id="submit_form_2">
 <div class="row">
-  <div class="col-md-3"><input type="text" size="39" id="first" name="first"><span id="first-name"></span></div>
-  <div class="col-md-3"><input type="text" size="39" id="last" name="last"><span id="last-name"></span></div>
-   <div class="col-md-6"><input type="password" class="password" name="pass" id="password-1"></div>
+  <div class="col-md-3"><input type="text" size="39" id="first" required name="first"><span id="first-name"></span></div>
+  <div class="col-md-3"><input type="text" size="39" id="last" required name="last"><span id="last-name"></span></div>
+   <div class="col-md-6"><input type="password" id="password" class="password" required name="pass" id="password-1"></div>
 
    </div>
   
@@ -70,10 +70,10 @@
   <div class="col-md-6">Confirm Password</div>
   </div>
   <div class="row">
-  <div class="col-md-6"><input type="email" class="email" name="email" size="89"><span id="tooltip-1"></span></div>
+  <div class="col-md-6"><input type="email" class="email" name="email" required size="89"><span id="tooltip-1"></span></div>
   <!--
   <div class="col-md-3" id="location"><b>Location</b></div>-->
-  <div class="col-md-6"><input type="password" size="61" class="password" name="pass-2" id="password-2"><span id="password-confirm"></span></div>
+  <div class="col-md-6"><input type="password" size="61" class="password" id="password-2" name="pass-2" id="password-2" required><span class="password-confirm"></span></div>
   
   </div>
   <div class="bottom-space"></div>
@@ -366,8 +366,8 @@
   <option value="Accra Academy">Accra Academy</option>
 </select>
 </div>
-  <div class="col-md-3"><input type="text" size="30" id="zip" name="zip"><span id="zip-code"></span></div>
-  <div class="col-md-3"><input type="text" size="30" id="phone" name="phone"><span id="phone-number"></span></div>
+  <div class="col-md-3"><input type="text" size="30" id="zip" required name="zip"><span id="zip-code"></span></div>
+  <div class="col-md-3"><input type="text" size="30" id="phone" required name="phone"><span id="phone-number"></span></div>
    </div>
     <div class="bottom-space"></div>
    <div class="row">
