@@ -259,7 +259,7 @@ $('#password-2').blur(function() {
 			  	//$("#password-confirm").empty();						  
 				}
 							   })
-
+$('button[type=submit]').click(function(event) {
 	var input = $("#zip").val();
 	var input1 = $("#phone").val();
 	var input2 = $("#first").val();
@@ -270,5 +270,6 @@ $('#password-2').blur(function() {
 		if ( $.trim(input).length == 0 || $.trim(input1).length == 0 || $.trim(input2).length == 0 || $.trim(input3).length == 0 || $.trim(input4).length == 0 || $.trim(input5).length == 0 || $.trim(input6).length == 0){
 			event.preventDefault();
 		}
+})
 				
   
