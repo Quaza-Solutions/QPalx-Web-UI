@@ -50,7 +50,7 @@
 <img src="images/subjects/English.png" class="skill" id="skill-1" />
 <span id="one"></span>
 <br /><br /><p class="skill-text"><b>English</b></p>
-<select class="form-control profi-level">
+<select class="form-control profi-level" name="disable">
     <option>Select your proficiency level</option>
     <option selected="selected" value="beginner">Beginner</option>
     <option value="intermediate">Intermediate</option>
@@ -266,6 +266,9 @@ latest news</p>
     <script src="js/hr.js"></script>
     <script src="js/checkmarks.js"></script>
   
-
+<script>
+    var sel = $('select[name="disable"]');
+    sel.prop('disabled', true);
+</script>
   </body>
 </html>

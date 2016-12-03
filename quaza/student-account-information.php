@@ -130,7 +130,7 @@ Success ID: GH-ACC-1230037<br />
      </div>
 </div>
 </div>
-  <!--
+  
 <div class="container" style="margin: 20px auto 20px auto; background-color: #e6e7e9; padding: 0;">
 <div class="blue-box" id="box-1"><img src="images/circled-checkmark.png" class="box-icon" /><br />View Overall <br />
 Student Proficiency</div>
@@ -531,7 +531,7 @@ Johnson
 </div>
 <br /><br /><br />
 </form>
-</div>-->
+</div>
 <div class="row bottom-6">
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bottom-4">
 <img src="assets/Social-Icons-01.png" class="social-icons" />
