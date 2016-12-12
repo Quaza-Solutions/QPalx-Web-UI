@@ -878,7 +878,9 @@ height: 200px;
 .large-fonts-2  {
 	font-size: 24px;
 }
-
+.large-fonts-3  {
+	font-size: 30px;
+}
 .topmargin {
 	margin-top: 14px;
 }
@@ -2164,4 +2166,9 @@ table.my-new-list {
 
 .e-book:hover {
 	opacity: 0.7;
+}
+
+.highlighting {
+background-color: #e5e6e8; 
+padding: 4px 10px;
 }
