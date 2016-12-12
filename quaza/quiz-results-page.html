@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+ <header>
+<div class="row">
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo"></div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img class="header-buttons" src="assets/account-button.png" /></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img id="header-button" class="header-buttons" src="assets/sign-out-button.png" /></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  </div>
+  </header>
+  
+   <div class="container" style="margin: 20px auto;">
+   <div class="row">
+ <div class="col-md-1"></div>
+ <div class="col-md-2"><img id="" src="images/Science.png" /></div>
+ <div class="col-md-9"><span class="very-large-text-2">Quiz Results - Chemistry as a Discipline</span></div>
+ </div>
+  </div>
+  <div class="container" style="margin: 20px auto; font-size: 26px;">
+  
+  <div class="row">
+  <div class="col-md-4">
+
+<div class="third circle-bar">
+      <strong></strong>
+  </div>   
+  </div>
+  <div class="col-md-8">
+  <table border="0" width="50%" style="margin: 40px auto auto 0;">
+  <tr>
+  <td>Result:</td><td>Pass</td>
+  </tr>
+  <tr>
+  <td>Total Questions:</td><td>5</td>
+  </tr>
+  <tr>
+  <td>Correct Answers:</td><td>5</td>
+  </tr>
+    <tr>
+  <td>Incorrect Answers:</td><td>0</td>
+  </tr>
+  </table>
+  </div>
+  </div> <br />
+ 
+ <br />
+
+</div>
+
+
+   <div class="container" style="margin: 20px auto;">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10" style="font-size: 24px;">
+<h1 style="color: #07bed3">Feedback</h1>
+
+<p><b>THE CORRECT ANSWER IS: B.</b></p>
+<br />
+
+<p>Chemistry is regarded as the central science; and almost all the disciplines in science require a knowledge in chemistry.</p>
+
+<p>Without a basic knowledge in chemistry, understanding of the other sciences would be difficult.</p>
+<br />
+<p><b>EXPLANATION OF INCORRECT ANSWERS:</b></p>
+<br />
+<p>A: This is incorrect - because the centrality of chemistry DOES NOT depend on where it is studied, rather the application of the knowledge in chemistry in the other sciences.</p>
+<br />
+<p>C: This is incorrect - because the centrality of chemistry DOES NOT depend on where it is studied, rather the application of the knowledge of chemistry in the other sciences.</p>
+<br />
+<p>D: This is incorrect - because the advancement of chemistry DOES NOT make it a central science; rather, its role in linking the physical sciences to the biological sciences is what makes it a central science.
+</p>
+</div>
+<div class="col-md-1"></div>
+</div>
+<br />
+<div class="row">
+<div class="col-md-12" style="margin: auto; text-align: center;"><img src="assets/retake-quiz.png" /></div>
+</div>
+
+<br />
+</div>   
+    
+
+
+<div class="row bottom-6">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bottom-4">
+<img src="assets/Social-Icons-01.png" class="social-icons" />
+<img src="assets/Social-Icons-02.png" class="social-icons" />
+<img src="assets/Social-Icons-03.png" class="social-icons" />
+<br /><br />
+<p class="copyright">&copy; 2016 QPALX. All rights reserved</p>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bottom-5">
+<p>Contact Us<br />
+hello@qpalx.com<br />
+Studio M, 4th Floor 8 Lower<br />
+Manchester Street, M1 SQF<br />
++34 393 323 32 22</p>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 float-right">
+<p>Subscribe Now<br />
+Sign up to stay up to date with our<br />
+latest news</p>
+
+<input type="text" name="email" class="textbox" value="&nbsp;&nbsp;&nbsp;Enter Email Address">
+<img src="assets/sign-up-button.png" class="sign-up" />
+</div>
+</div>
+<footer>
+</footer>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script src="js/circle-progress.js"></script>
+         <script>
+		 	 $('.third.circle-bar').circleProgress({
+  value: 1.00,
+  fill: {gradient: [['#06bfd3', .5], ['#06bfd3', .5]], gradientAngle: Math.PI / 4}
+}).on('circle-animation-progress', function(event, progress, stepValue) {
+  $(this).find('strong').html(parseInt(100 * progress) + '<i>%</i>');
+});
+</script>
+  </body>
+</html>
