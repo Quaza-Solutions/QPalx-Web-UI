@@ -920,6 +920,11 @@ font-weight: normal;
 .topmargin-4 {
 	margin-top: 12px;
 }
+
+.topmargin-5 {
+	margin-top: 4px;
+}
+
 .large-font {
 	font-size: 28px;
 	color: #777;
@@ -2171,4 +2176,9 @@ table.my-new-list {
 .highlighting {
 background-color: #e5e6e8; 
 padding: 4px 10px;
+}
+
+.text-box-2 {
+	background-color:#e6e7e9; 
+	padding: 6px 12px 6px 12px;
 }
