@@ -2210,3 +2210,68 @@ padding: 4px 10px;
 	text-align: center;
 	margin: auto;
 }
+
+	nav.blue-tabs ul {
+			list-style: none;
+			padding: 0 0 0 10px;
+			min-width: 460px;
+		}
+
+		nav.blue-tabs  li {
+			float: left;
+			position: relative;
+			height: 30px;
+			border-radius: 10px 30px 0 0;
+			margin-left: 4px;
+			/*
+			text-shadow: 1px 1px 0 #bbb;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			transition: .2s;*/
+		}
+
+		nav.blue-tabs  a {
+			display: block;
+			position: relative;
+			width: 190px;
+			height: 40px;
+			padding: 10px 10px 20px 0;
+			border-radius: 10px 10px 0 0;
+			background: #1ebed4;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			transition: .2s;
+		}
+
+		nav.blue-tabs  li:hover {
+			z-index: 1;
+		}
+
+		nav.blue-tabs  li:hover a {
+			background: #ccc;
+			color: #000;
+		}
+
+.small-boxes {
+	height: 40px;
+	border: 2px solid #1ebed4;
+	padding: 8px 20px;
+}
+
+#clock {
+		width: 200px;
+		margin-top: -20px;
+		margin-left: 14px;
+}
+
+#result {
+		width: 120px;
+		margin-top: -20px;
+		margin-left: 44px;
+}
+
+#order {
+		width: 120px;
+		margin-top: -20px;
+		margin-left: -6px;
+}
