@@ -48,7 +48,7 @@
   <div class="col-md-1"></div>
   <div class="col-md-10 centered-2">
 
-  <img src="assets/thumb_video-icon-01.png" id="video-icon-2" />
+  <a class="pop-up-2" href="#popup2"><img src="assets/thumb_video-icon-01.png" id="video-icon-2" /></a>
     <br />  <br />
   Click Here To View Video Hint
   </div>
@@ -100,7 +100,17 @@ Chemistry is the most improved of all the sciences
 </div>
 
     
-    
+     <div id="popup2" class="modalBox" href="http://localhost:8080/recordData?microLessonID=2">
+ <a href="#" class="modalCloseOuter" onClick="stopVideo2();"></a>
+ <div class="mp4">
+   <div class="bar-1"></div>
+    <a href="#" style="color: #000; float:right; margin: 20px 40px 20px 0;" onClick="stopVideo();">Close</a>
+   <div class="modalBody">
+<video width="800" id="modal-box-2" controls>
+  <source src="videos/lesson 2 with aduio.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
 
 
 <div class="row bottom-6">
@@ -132,5 +142,20 @@ latest news</p>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script>
+		    function stopVideo2(){
+        $("#modal-box-2")[0].pause();
+		 var href = parent.document.getElementById('popup2').getAttribute("href");
+		 //alert('Making API call.');
+         $.ajax({ 
+             type: "GET",
+             dataType: "json",
+             url: href,
+             success: function(data){        
+                alert(data);
+             }
+         });
+     }
+     </script>
   </body>
 </html>
