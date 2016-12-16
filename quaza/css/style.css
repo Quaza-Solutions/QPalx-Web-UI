@@ -2248,14 +2248,18 @@ padding: 4px 10px;
 		}
 
 		nav.blue-tabs  li:hover a {
-			background: #ccc;
-			color: #000;
+			background: #74be43;
+			color: #fff;
 		}
 
 .small-boxes {
 	height: 40px;
 	border: 2px solid #1ebed4;
 	padding: 8px 20px;
+}
+.small-boxes:hover {
+background-color: #74be43;
+border: none;
 }
 
 #clock {
