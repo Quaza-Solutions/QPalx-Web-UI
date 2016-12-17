@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"-->
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"-->
+    <script src="js/ckeditor.js"></script>
+	<script src="js/sample.js"></script>
     <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
-  <body>
+ <body>
  <header>
 <div class="row">
 <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -97,7 +100,8 @@
   <br />
   <div class="row">
    <div class="col-md-1"></div>
- <div class="col-md-10"><span class="large-fonts-3"><textarea rows="2" cols="67" class="text-box-2">Enter Feedback Here</textarea></span><br />
+ <div class="col-md-10">	<div id="editor"><span class="large-fonts-3">Enter Feedback Here</span>
+				</div><br />
  </div>
 <div class="col-md-1"></div>
 
@@ -147,8 +151,12 @@ latest news</p>
 </div>
 <footer>
 </footer>
+
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	initSample();
+</script>
   </body>
 </html>
