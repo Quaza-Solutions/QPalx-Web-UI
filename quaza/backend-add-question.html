@@ -100,7 +100,8 @@
   <br />
   <div class="row">
    <div class="col-md-1"></div>
- <div class="col-md-10">	<div id="editor"><span class="large-fonts-3">Enter Feedback Here</span>
+ <div class="col-md-10">	<div id="editor" onKeyDown="limitText();" 
+onKeyUp="limitText();">Enter Feedback Here
 				</div><br />
  </div>
 <div class="col-md-1"></div>
@@ -157,6 +158,16 @@ latest news</p>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 	initSample();
+	var myDiv = $('#editor');	
+//myDiv.text(myDiv.text().substring(0,3))
+
+function limitText() {
+	
+
+    if (myDiv.text.length > 5) {
+        myDiv.text(myDiv.text.substring(0, 5));
+    }
+}
 </script>
   </body>
 </html>

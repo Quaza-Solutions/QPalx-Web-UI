@@ -2279,3 +2279,10 @@ border: none;
 		margin-top: -20px;
 		margin-left: -6px;
 }
+
+#editor {
+white-space: nowrap;
+width: 150px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
