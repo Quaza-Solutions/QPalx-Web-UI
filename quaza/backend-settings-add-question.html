@@ -35,8 +35,8 @@
  <div class="col-md-12">
  	<nav class="blue-tabs">
 			<ul>
-				<li><a href="">Types of Quizzes</a></li>
-				<li><a href="">Settings</a></li>
+				<li><a id="hide" href="#">Types of Quizzes</a></li>
+				<li><a id="show" href="#">Settings</a></li>
 			</ul>
 		</nav><br />
          <hr style="color: black; background-color: black; height: 2px;">
@@ -55,6 +55,21 @@
          <i class="fa fa-bars" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Order
          </div>
          </div>
+         </div>
+         
+           <div class="row">
+ <div class="col-md-2">
+         <div class="small-boxes-2" id="list"><i class="fa fa-list-ul" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Multiple Choice</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes-2" id="video"><i class="fa fa-video-camera" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Video Quiz</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes-2" id="image-quiz">
+        <i class="fa fa-picture-o" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Image Quiz
+         </div>
+         </div>
+         
  </div>
  </div>
   </div>
@@ -162,6 +177,18 @@ latest news</p>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 	initSample();
+	$(document).ready(function(){
+		$(".small-boxes").hide();
+        //$(".small-boxes-2").show();						   
+    $("#hide").click(function(){
+		$(".small-boxes").hide();
+        $(".small-boxes-2").show();
+    });
+    $("#show").click(function(){
+        $(".small-boxes-2").hide();
+        $(".small-boxes").show();
+    });
+});
 </script>
   </body>
 </html>

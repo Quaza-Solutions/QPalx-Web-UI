@@ -2258,7 +2258,7 @@ padding: 4px 10px;
 			background: #74be43;
 			color: #fff;
 		}
-
+		
 .small-boxes {
 	height: 40px;
 	border: 2px solid #1ebed4;
@@ -2269,6 +2269,16 @@ background-color: #74be43;
 border: none;
 }
 
+.small-boxes-2 {
+	height: 40px;
+	width: 200px;
+	border: 2px solid #1ebed4;
+	padding: 8px 20px;
+}
+.small-boxes-2:hover {
+background-color: #74be43;
+border: none;
+}
 #clock {
 		width: 200px;
 		margin-top: -20px;
@@ -2276,15 +2286,32 @@ border: none;
 }
 
 #result {
-		width: 120px;
+		width: 140px;
 		margin-top: -20px;
-		margin-left: 44px;
+		margin-left: 34px;
 }
 
 #order {
 		width: 120px;
 		margin-top: -20px;
 		margin-left: -6px;
+}
+#list{
+		width: 210px;
+		margin-top: -20px;
+		margin-left: 14px;
+}
+
+#video {
+		width: 190px;
+		margin-top: -20px;
+		margin-left: 28px;
+}
+
+#image-quiz {
+		width: 190px;
+		margin-top: -20px;
+		margin-left: 12px;
 }
 
 #editor {
