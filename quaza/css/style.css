@@ -2243,13 +2243,18 @@ padding: 4px 10px;
 			height: 40px;
 			padding: 10px 10px 20px 0;
 			border-radius: 10px 10px 0 0;
-			background: #1ebed4;
+			/*background: #1ebed4;*/
 			color: #fff;
 			text-align: center;
 			text-decoration: none;
 			transition: .2s;
 		}
-
+nav a.blue-tabs-2 {
+background: #74be43;
+}
+nav a.blue-tabs-3 {
+background: #1ebed4;
+}
 		nav.blue-tabs  li:hover {
 			z-index: 1;
 		}

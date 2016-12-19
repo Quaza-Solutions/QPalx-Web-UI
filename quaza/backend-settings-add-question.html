@@ -35,8 +35,8 @@
  <div class="col-md-12">
  	<nav class="blue-tabs">
 			<ul>
-				<li><a id="hide" href="#">Types of Quizzes</a></li>
-				<li><a id="show" href="#">Settings</a></li>
+				<li><a class="blue-tabs-2" style="cursor: pointer;" onClick="Quizzes()" id="hide" href="#"><!--<img src="images/checkbox.png" />&nbsp;&nbsp;-->Types of Quizzes</a></li>
+				<li><a class="blue-tabs-3" style="cursor: pointer;" onClick="Settings()" id="show" href="#">Settings</a></li>
 			</ul>
 		</nav><br />
          <hr style="color: black; background-color: black; height: 2px;">
@@ -189,6 +189,24 @@ latest news</p>
         $(".small-boxes").show();
     });
 });
+	function Quizzes(){
+			if( $("#hide").hasClass("blue-tabs-2") ) {
+		$("#hide").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+		$("#show").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+			} else {	
+		$("#hide").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+		$("#show").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+			}
+	}
+	function Settings(){
+			if( $("#show").hasClass("blue-tabs-3") ) {
+		$("#show").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+		$("#hide").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+			} else {	
+		$("#show").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+		$("#hide").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+			}
+	}
 </script>
   </body>
 </html>
