@@ -33,8 +33,8 @@
  <div class="col-md-12">
  	<nav class="blue-tabs">
 			<ul>
-				<li><a href="">Types of Quizzes</a></li>
-				<li><a href="">Settings</a></li>
+				<li><a class="blue-tabs-2" style="cursor: pointer;" onClick="Quizzes()" id="hide" href="#">Types of Quizzes</a></li>
+				<li><a class="blue-tabs-3" style="cursor: pointer;" onClick="Settings()" id="show" href="#">Settings</a></li>
 			</ul>
 		</nav><br />
          <hr style="color: black; background-color: black; height: 2px;">
@@ -53,6 +53,26 @@
          <i class="fa fa-bars" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Order
          </div>
          </div>
+
+         </div>
+         
+           <div class="row">
+ <div class="col-md-2">
+         <div class="small-boxes-2" id="list"><i class="fa fa-list-ul" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Multiple Choice</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes-2" id="video"><i class="fa fa-video-camera" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Video Quiz</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes-2" id="image-quiz">
+        <i class="fa fa-picture-o" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Image Quiz
+         </div>
+         </div>
+               <div class="col-md-2">
+         <div class="small-boxes-2" id="checkbox">
+        &nbsp;&nbsp;<img src="images/checkbox.png" style="margin-top: -4px;" />
+         </div>
+         </div>        
  </div>
  </div>
   </div>
@@ -119,5 +139,39 @@ latest news</p>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	//initSample();
+	$(document).ready(function(){
+		$(".small-boxes-2").hide();
+        //$(".small-boxes-2").show();						   
+    $("#hide").click(function(){
+		$(".small-boxes").hide();
+        $(".small-boxes-2").show();
+    });
+    $("#show").click(function(){
+        $(".small-boxes-2").hide();
+        $(".small-boxes").show();
+    });
+});
+	function Quizzes(){
+			if( $("#hide").hasClass("blue-tabs-3") ) {
+		$("#hide").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+		$("#show").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+			} else {	
+		$("#hide").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+		$("#show").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+			}
+	}
+	function Settings(){
+			if( $("#show").hasClass("blue-tabs-2") ) {
+		$("#show").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+		$("#hide").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+			} else {	
+		$("#show").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+		$("#hide").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+			}
+	}
+</script>
+
   </body>
 </html>

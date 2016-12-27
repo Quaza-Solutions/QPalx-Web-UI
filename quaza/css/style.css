@@ -2301,6 +2301,11 @@ border: none;
 		margin-top: -20px;
 		margin-left: -6px;
 }
+#checkbox {
+		width: 100px;
+		margin-top: -20px;
+		margin-left: 14px;
+}
 #list{
 		width: 210px;
 		margin-top: -20px;
@@ -2316,7 +2321,7 @@ border: none;
 #image-quiz {
 		width: 190px;
 		margin-top: -20px;
-		margin-left: 12px;
+		margin-left: 20px;
 }
 
 #editor {

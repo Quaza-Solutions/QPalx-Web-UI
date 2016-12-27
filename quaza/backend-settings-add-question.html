@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <script src="js/ckeditor.js"></script>
 	<script src="js/sample.js"></script>
+ 
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +36,7 @@
  <div class="col-md-12">
  	<nav class="blue-tabs">
 			<ul>
-				<li><a class="blue-tabs-2" style="cursor: pointer;" onClick="Quizzes()" id="hide" href="#"><img src="images/checkbox.png" style="margin-top: -4px;" />&nbsp;&nbsp;Types of Quizzes</a></li>
+				<li><a class="blue-tabs-2" style="cursor: pointer;" onClick="Quizzes()" id="hide" href="#">Types of Quizzes</a></li>
 				<li><a class="blue-tabs-3" style="cursor: pointer;" onClick="Settings()" id="show" href="#">Settings</a></li>
 			</ul>
 		</nav><br />
@@ -55,6 +56,7 @@
          <i class="fa fa-bars" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Order
          </div>
          </div>
+
          </div>
          
            <div class="row">
@@ -69,12 +71,16 @@
         <i class="fa fa-picture-o" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Image Quiz
          </div>
          </div>
-         
+               <div class="col-md-2">
+         <div class="small-boxes-2" id="checkbox">
+        &nbsp;&nbsp;<img src="images/checkbox.png" style="margin-top: -4px;" />
+         </div>
+         </div>        
  </div>
  </div>
   </div>
 <div class="container large-fonts-2" style="margin: 20px auto;">
-  <form>
+  <form method="GET">
     <br />
   <div class="row">
   <div class="col-md-5"></div>
@@ -85,7 +91,7 @@
   <br />
   <div class="row">
    <div class="col-md-1"></div>
- <div class="col-md-10"><span class="large-fonts-3"><textarea rows="1" cols="67" class="text-box-2">Enter Question Here:</textarea></span><br />
+ <div class="col-md-10"><span class="large-fonts-3"><textarea rows="1" cols="67" class="text-box-2" name="enter-question">Enter Question Here:</textarea></span><br />
  </div>
 <div class="col-md-1"></div>
 
@@ -95,7 +101,7 @@
 <div class="col-md-2"></div>
 <div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
 <div class="col-md-9">
-<textarea rows="1" cols="67" class="text-box-2">Option 1</textarea>
+<textarea rows="1" cols="67" class="text-box-2" name="option-1">Option 1</textarea>
 </div>
 
 </div>
@@ -104,7 +110,7 @@
 <div class="col-md-2"></div>
 <div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
 <div class="col-md-9">
-<textarea rows="1" cols="67" class="text-box-2">Option 2</textarea>
+<textarea rows="1" cols="67" class="text-box-2" name="option-2">Option 2</textarea>
 </div>
 </div>
 <br />
@@ -112,7 +118,7 @@
 <div class="col-md-2"></div>
 <div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
 <div class="col-md-9">
-<textarea rows="1" cols="67" class="text-box-2">Option 3</textarea>
+<textarea rows="1" cols="67" class="text-box-2" name="option-3">Option 3</textarea>
 </div>
 </div>
 <br />
@@ -120,14 +126,13 @@
 <div class="col-md-2"></div>
 <div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
 <div class="col-md-9">
-<textarea rows="1" cols="67" class="text-box-2">Option 4</textarea>
+<textarea rows="1" cols="67" class="text-box-2" name="option-4">Option 4</textarea>
 </div>
 </div>
   <br />
   <div class="row">
    <div class="col-md-1"></div>
- <div class="col-md-10">	<div id="editor">Enter Feedback Here
-				</div><br />
+ <div class="col-md-10">	<textarea id="editor" name="editor">Enter Feedback Here</textarea><br />
  </div>
 <div class="col-md-1"></div>
 
@@ -137,7 +142,7 @@
 <div class="row">
 <div class="col-md-12">
  <div style="margin: auto; text-align: center">
- <img src="assets/save.png" />
+ <button type="submit" style="color: #fff; background-color: #07bed3; padding-top: 8px;width: 140px;">Save</button>
  </div>
  <br />
  </div>
@@ -177,6 +182,7 @@ latest news</p>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 	initSample();
+	
 	$(document).ready(function(){
 		$(".small-boxes").hide();
         //$(".small-boxes-2").show();						   
