@@ -12,14 +12,16 @@
   </head>
   <body>
  <header>
+ <form>
 <div class="row">
 <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo"></div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img class="header-buttons" src="assets/account-button.png" /></div>
-  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img id="header-button" class="header-buttons" src="assets/sign-out-button.png" /></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button type="button" class="sign-up header-buttons">Account</button></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button type="button" id="header-button" class="sign-up header-buttons">Sign Out</button></div>
   <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
   </div>
+  </form>
   </header>
   
   
@@ -34,7 +36,13 @@
   <br />
   <div id="shadowed" style="background-color: #ffffff;">
   <div class="black-bar"></div>
-  <div id="quiz-image">Quiz Intro Video Here</div>
+  <div class="quiz-image">
+  
+  <video width="800" id="quiz-image" controls>
+  <source src="videos/lesson 1 with audio.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
   <div class="black-bar"></div>
   </div>
   </div>
@@ -54,7 +62,7 @@
 <div class="row bottom-6">
 <div class="col-md-2"></div> 
 <div class="col-md-6"><b>Total Questions: 5</b></div> 
-<div class="col-md-2"><img src="assets/start-quiz.png" /></div> 
+<div class="col-md-2"><button type="submit" class="start-quiz">Start Quiz</button></div> 
 <div class="col-md-2"></div> 
 </div>
 <div class="row bottom-6">
@@ -79,7 +87,7 @@ Sign up to stay up to date with our<br />
 latest news</p>
 
 <input type="text" name="email" class="textbox" value="&nbsp;&nbsp;&nbsp;Enter Email Address">
-<img src="assets/sign-up-button.png" class="sign-up" />
+<button type="submit" class="sign-up">Sign Up</button>
 </div>
 </div>
 <footer>

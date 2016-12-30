@@ -15,14 +15,16 @@
   </head>
  <body>
  <header>
+ <form>
 <div class="row">
 <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo"></div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img class="header-buttons" src="assets/account-button.png" /></div>
-  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><img id="header-button" class="header-buttons" src="assets/sign-out-button.png" /></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button type="button" class="sign-up header-buttons">Account</button></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button type="button" id="header-button" class="sign-up header-buttons">Sign Out</button></div>
   <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
   </div>
+  </form>
   </header>
   
    <div class="container" style="margin: 20px auto;">
@@ -111,7 +113,7 @@
 <div class="row">
 <div class="col-md-12">
  <div style="margin: auto; text-align: center">
- <img src="assets/save.png" />
+ <button type="submit" class="sign-up">Save</button>
  </div>
  <br />
  </div>
@@ -144,9 +146,10 @@ Manchester Street, M1 SQF<br />
 <p>Subscribe Now<br />
 Sign up to stay up to date with our<br />
 latest news</p>
-
+<form>
 <input type="text" name="email" class="textbox" value="&nbsp;&nbsp;&nbsp;Enter Email Address">
-<img src="assets/sign-up-button.png" class="sign-up" />
+<button type="submit" class="sign-up">Sign Up</button>
+</form>
 </div>
 </div>
 <footer>
