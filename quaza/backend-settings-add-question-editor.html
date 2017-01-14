@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <script src="js/ckeditor.js"></script>
+	<script src="js/sample.js"></script>
+ 
+     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    
+    <link title="aguas" rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/aguas/easyui.css"/>
+<link title="aguas" rel="stylesheet" type="text/css" href="js/jquery-easyui-MathEditorExtend/themes/aguas/easyui.css" id="EasyuiCSS"/>
+<link title="gray" rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/gray/easyui.css" disabled="true"/>
+<link title="gray" rel="stylesheet" type="text/css" href="js/jquery-easyui-MathEditorExtend/themes/gray/easyui.css" disabled="true"/>
+<link title="metro" rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/metro/easyui.css" disabled="true"/>
+<link title="metro" rel="stylesheet" type="text/css" href="js/jquery-easyui-MathEditorExtend/themes/metro/easyui.css" disabled="true"/>
+<link title="bootstrap" rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/bootstrap/easyui.css" disabled="true"/>
+<link title="bootstrap" rel="stylesheet" type="text/css" href="js/jquery-easyui-MathEditorExtend/themes/bootstrap/easyui.css" disabled="true"/>
+<link title="black" colortype="black" rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/black/easyui.css" disabled="true"/>
+<link title="black" colortype="black" rel="stylesheet" type="text/css" href="js/jquery-easyui-MathEditorExtend/themes/black/easyui.css" disabled="true"/>
+<link rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/icon.css"/>
+<link rel="stylesheet" type="text/css" href="js/jquery-easyui-MathEditorExtend/themes/icon.css"/>
+<link rel="stylesheet" type="text/css" href="js/jquery-easyui-MathEditorExtend/themes/rtl.css" id="RTLstyle" disabled="true"/>
+<script type="text/javascript">{var runLocal=(window.location.search.indexOf("runLocal",0)>0);var runNotCodeMirror=(window.location.search.indexOf("runNotCodeMirror",0)>0);var runNotMathJax=(window.location.search.indexOf("runNotMathJax",0)>0);var runNotVirtualKeyboard=(window.location.search.indexOf("runNotVirtualKeyboard",0)>0);var runNotColorPicker=(window.location.search.indexOf("runNotColorPicker",0)>0);runLocal?document.write("<script type=\"text\/javascript\" src=\"js\/jquery-plugin\/jquery.min.js\"><\/script>"):document.write("<script type=\"text\/javascript\" src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.0\/jquery.min.js\"><\/script>");document.write("<script type=\"text\/javascript\" src=\"js\/jquery-plugin\/jquery.url.js\"><\/script>");document.write("<script type=\"text\/javascript\" src=\"js\/jquery-easyui\/jquery.easyui.min.js\"><\/script>");if(!runNotColorPicker){document.write("<link rel=\"stylesheet\" id=\"colorpickerCSSblack\" type=\"text\/css\" href=\"js\/jquery-colorpicker\/css\/colorpicker.css\" disabled=\"true\" >");document.write("<link rel=\"stylesheet\" id=\"colorpickerCSSgray\" type=\"text\/css\" href=\"js\/jquery-colorpicker\/css\/colorpicker_gray.css\" disabled=\"true\" >");document.write("<script type=\"text\/javascript\" src=\"js\/jquery-colorpicker\/js\/colorpicker.js\"><\/script>");}
+if(!runNotMathJax){var vmeURL=window.location.protocol+"//"+window.location.host+window.location.pathname.substring(0,window.location.pathname.lastIndexOf("/")+1);runLocal?document.write("<script type=\"text\/javascript\" id=\"MathJaxScript\" src=\"js\/mathjax\/MathJax.js?config="+vmeURL+"js\/mathjax-MathEditorExtend\/x-mathjax-config.js\"><\/script>"):document.write("<script type=\"text\/javascript\" id=\"MathJaxScript\" src=\"http:\/\/cdn.mathjax.org\/mathjax\/latest\/MathJax.js?config="+vmeURL+"js\/mathjax-MathEditorExtend\/x-mathjax-config.js\"><\/script>");}
+var vmeRunParam="";if(runLocal)vmeRunParam+="runLocal=true";if(runNotCodeMirror){if(vmeRunParam.length>0)vmeRunParam+="&";vmeRunParam+="runNotCodeMirror=true";}
+if(runNotMathJax){if(vmeRunParam.length>0)vmeRunParam+="&";vmeRunParam+="runNotMathJax=true";}
+if(runNotVirtualKeyboard){if(vmeRunParam.length>0)vmeRunParam+="&";vmeRunParam+="runNotVirtualKeyboard=true";}
+if(runNotColorPicker){if(vmeRunParam.length>0)vmeRunParam+="&";vmeRunParam+="runNotColorPicker=true";}
+if(vmeRunParam.length>0)vmeRunParam="?"+vmeRunParam;document.write("<script type=\"text\/javascript\" id=\"vmeScript\" src=\"js\/VisualMathEditor.js"+vmeRunParam+"\"><\/script>");if(!runNotCodeMirror){document.write("<link rel=\"stylesheet\" type=\"text\/css\" href=\"js\/codemirror\/lib\/codemirror.css\">");document.write("<link rel=\"stylesheet\" type=\"text\/css\" href=\"js\/codemirror\/theme\/twilight.css\">");document.write("<script src=\"js\/codemirror\/lib\/codemirror.js\"><\/script>");}
+if(!runNotVirtualKeyboard){document.write("<link rel=\"stylesheet\" type=\"text\/css\" href=\"js\/keyboard\/keyboard.css\">");}}</script>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="easyui-layout" id="bodyPage">
+  <!--header>
+ <form>
+<div class="row">
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo"></div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button type="button" class="sign-up header-buttons">Account</button></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button type="button" id="header-button" class="sign-up header-buttons">Sign Out</button></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  </div>
+  </form>
+  </header>
+  
+   <div class="container" style="margin: 20px auto;">
+   <div class="row">
+ <div class="col-md-1"></div>
+ <div class="col-md-10"><span class="very-large-text-2">Chemistry as a Discipline : Add Multiple Choice Question</span></div>
+ <div class="col-md-1"></div>
+ </div>
+
+  <div class="row">
+ <div class="col-md-12">
+ 	<nav class="blue-tabs">
+			<ul>
+				<li><a class="blue-tabs-2" style="cursor: pointer;" onClick="Quizzes()" id="hide" href="#">Types of Quizzes</a></li>
+				<li><a class="blue-tabs-3" style="cursor: pointer;" onClick="Settings()" id="show" href="#">Settings</a></li>
+			</ul>
+		</nav><br />
+         <hr style="color: black; background-color: black; height: 2px;">
+         <br />
+         </div>
+         </div>
+           <div class="row">
+ <div class="col-md-2">
+         <div class="small-boxes" id="clock"><i class="fa fa-clock-o" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Scoring &amp; Time</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes" id="result"><i class="fa fa-check-circle-o" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Result</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes" id="order">
+         <i class="fa fa-bars" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Order
+         </div>
+         </div>
+
+         </div>
+         
+           <div class="row">
+ <div class="col-md-2">
+         <div class="small-boxes-2" id="list"><i class="fa fa-list-ul" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Multiple Choice</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes-2" id="video"><i class="fa fa-video-camera" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Video Quiz</div>
+         </div>
+          <div class="col-md-2">
+         <div class="small-boxes-2" id="image-quiz">
+        <i class="fa fa-picture-o" style="color: #000;" aria-hidden="true"></i>&nbsp;&nbsp;Image Quiz
+         </div>
+         </div>
+               <div class="col-md-2">
+         <div class="small-boxes-2" id="checkbox">
+       <img src="images/checkbox.png" style="margin-top: -4px;" />  &nbsp;&nbsp;Check Box
+         </div>
+         </div>        
+ </div>
+ </div>
+  </div>
+<div class="container large-fonts-2" style="margin: 20px auto;">
+  <form method="GET">
+    <br />
+  <div class="row">
+  <div class="col-md-5"></div>
+   <div class="col-md-1" style="text-align: center; margin: auto;">
+  <input type="file" name="datafile" size="40">
+  </div>
+  </div>
+  </form-->
+  <br />
+  <!--div class="row">
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"--->
+ <div region="west" title="<span locate='FORMULA' class='rtl-title-withicon'></span>&nbsp;" split="false" style="width:210px;" id="westRegion">
+<div class="easyui-accordion" id="f_SYMBOLS" border="false">
+<div collapsed="true" title="<span information='OPERATOR_SYMBOLS' class='rtl-title-withicon'>$\pm$ &nbsp;&nbsp; $\times$  &nbsp;&nbsp; $\div$</span>" style="overflow:auto" id="f_OPERATOR_SYMBOLS"></div>
+<div title="<span information='RELATION_SYMBOLS' class='rtl-title-withicon'>$\leq$ &nbsp;&nbsp; $\cong$ &nbsp;&nbsp; $\approx$</span>" style="overflow:auto;" id="f_RELATION_SYMBOLS"></div>
+<div title="<span information='GROUP_LOGICAL_SYMBOLS' class='rtl-title-withicon'>$\infty$ &nbsp;&nbsp; $\subseteq$ &nbsp;&nbsp; $\in$</span>" style="overflow:auto;" id="f_GROUP_LOGICAL_SYMBOLS"></div>
+<div title="<span information='LOGICAL_SYMBOLS' class='rtl-title-withicon'>$\prec$ &nbsp;&nbsp; $\asymp$ &nbsp;&nbsp; $\measuredangle$</span>" style="overflow:auto;" id="f_LOGICAL_SYMBOLS"></div>
+<div title="<span information='ARROW_SYMBOLS' class='rtl-title-withicon'>$\Rightarrow$ &nbsp;&nbsp; $\circlearrowleft$ &nbsp;&nbsp; $\looparrowright$</span>" style="overflow:auto;" id="f_ARROW_SYMBOLS"></div>
+<div title="<span information='ARROW_RELATION_SYMBOLS' class='rtl-title-withicon'>$A \xrightleftharpoons{} B \xleftrightarrow{} C$</span>" style="overflow:auto;" id="f_ARROW_RELATION_SYMBOLS"></div>
+<div title="<span information='MATH_PHYSIC_SYMBOLS' class='rtl-title-withicon'>$\hbar$ &nbsp;&nbsp; $\mho$ &nbsp;&nbsp; $\backepsilon$</span>" style="overflow:auto;" id="f_MATH_PHYSIC_SYMBOLS"></div>
+<div title="<span information='L_U_GREEK_CHAR' class='rtl-title-withicon'>$\varepsilon$ &nbsp;&nbsp; $\pi$  &nbsp;&nbsp; $\Psi$ </span>" style="overflow:auto;" id="f_L_U_GREEK_CHAR"></div>
+</div>
+</div>
+<div region="center" title="<span locate='EDITION'></span>&nbsp;" style="overflow:hidden" id="divEquationInputOutput">
+<style>.keyboardInputInitiator{display:none;}
+.keyboardInput{height:0px;width:0px;border:none;background-color:transparent;color:transparent;}</style>
+<input value="" class="keyboardInput" id="tKEYBOARD">
+<div id="HTML_TAG" style="display:none; overflow:hidden;">
+<a href="#" title="Latex" class="easyui-linkbutton easyui-tooltip" id="btHTML_Latex"><strong>$</strong></a>
+<a href="#" title="AsciiMath" class="easyui-linkbutton easyui-tooltip" id="btHTML_AsciiMath"><strong>`</strong></a>
+|
+<a href="#" title="span color" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_color" id="btHTML_TEXTCOLOR"></a>
+<a href="#" title="span background-color" class="easyui-linkbutton easyui-tooltip" iconcls="icon-fore_color" id="btHTML_FORECOLOR"></a>
+|
+<a href="#" title="h1" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_heading_1" id="btHTML_H1"></a>
+<a href="#" title="h2" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_heading_2" id="btHTML_H2"></a>
+<a href="#" title="h3" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_heading_3" id="btHTML_H3"></a>
+|
+<a href="#" title="strong" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_bold" id="btHTML_STRONG"></a>
+<a href="#" title="em" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_italic" id="btHTML_EM"></a>
+<a href="#" title="s" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_strikethrough" id="btHTML_S"></a>
+<a href="#" title="u" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_underline" id="btHTML_U"></a>
+|
+<a href="#" title="br" class="easyui-linkbutton easyui-tooltip" iconcls="icon-break_line" id="btHTML_BR"></a>
+<a href="#" title="p" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_paragraph" id="btHTML_P"></a>
+<a href="#" title="hr" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_horizontalrule" id="btHTML_HR"></a>
+<a href="#" title="p margin-left" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_indent" id="btHTML_INDENT"></a>
+|
+<a href="#" title="p left" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_align_left" id="btHTML_LEFT"></a>
+<a href="#" title="p center" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_align_center" id="btHTML_CENTER"></a>
+<a href="#" title="p right" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_align_right" id="btHTML_RIGHT"></a>
+<a href="#" title="p justify" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_align_justify" id="btHTML_JUSTIFY"></a>
+|
+<a href="#" title="ul" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_list_bullets" id="btHTML_UL"></a>
+<a href="#" title="ol" class="easyui-linkbutton easyui-tooltip" iconcls="icon-text_list_numbers" id="btHTML_OL"></a>
+|
+<a href="#" title="a" class="easyui-linkbutton easyui-tooltip" iconcls="icon-link" id="btHTML_A"></a>
+<a href="#" title="img" class="easyui-linkbutton easyui-tooltip" iconcls="icon-picture" id="btHTML_IMG"></a>
+</div>
+<div style="margin:0;padding:0;height:50%;overflow:hidden;" id="divMathTextInput">
+<form action="#" method="get" style="margin:0;padding:0;height:100%;" id="formMathTextInput">
+<fieldset style="height:100%;">
+<textarea id="mathTextInput" name="equation" style="margin:0;padding:5px;border:none;" rows="30" cols="30" dir="ltr"></textarea>
+</fieldset><!--TEST
+<input type="submit" value="Submit"-->
+</form>
+</div>
+<div id="mathVisualOutput" style="margin:0;padding:5px;height:50%;font-size:250%;overflow:auto" dir="ltr"></div>
+</div>
+<div region="east" title="<span locate='FORMULA' class='rtl-title-withicon'></span>&nbsp;" split="false" style="width:210px;" id="eastRegion">
+<div class="easyui-accordion" id="f_SYMBOLS2" border="false">
+<div title="<span information='SUB_SUP_SYMBOLS' class='rtl-title-withicon'>$\vec{a}$ &nbsp;&nbsp; $x_b$ &nbsp;&nbsp; $\dot{y}$ </span>" style="overflow:auto;" id="f_SUB_SUP_SYMBOLS"></div>
+<div title="<span information='SQRT_FRAC_SYMBOLS' class='rtl-title-withicon'>$a/b$ &nbsp;&nbsp; $\sqrt{a}$ </span>" style="overflow:auto;" id="f_SQRT_FRAC_SYMBOLS"></div>
+<div title="<span information='DIFFERENTIAL_SYMBOLS' class='rtl-title-withicon'>$\partial$ &nbsp;&nbsp; $\nabla a$ &nbsp;&nbsp; $dx$ </span>" style="overflow:auto;" id="f_DIFFERENTIAL_SYMBOLS"></div>
+<div title="<span information='INTEGRAL_SYMBOLS' class='rtl-title-withicon' style='font-size:60%;'>$\int$ &nbsp;&nbsp; $\oint$</span>" style="overflow:auto;" id="f_INTEGRAL_SYMBOLS"></div>
+<div title="<span information='SUM_PROD_SYMBOLS' class='rtl-title-withicon' style='font-size:70%;'>$\sum$ &nbsp;&nbsp; $\prod$ </span>" style="overflow:auto;" id="f_SUM_PROD_SYMBOLS"></div>
+<div title="<span information='MATRIX_SYMBOLS' class='rtl-title-withicon'><img class='symbol_btn icon-matrix_13_black' src='js/jquery-easyui/themes/aguas/images/blank.gif' width='15' height='20' />  &nbsp;&nbsp; <img class='symbol_btn icon-matrix_33_black' src='js/jquery-easyui/themes/aguas/images/blank.gif' width='15' height='20' /></span>" style="overflow:auto;" id="f_MATRIX_SYMBOLS"></div>
+<div title="<span information='BRACKET_SYMBOLS' class='rtl-title-withicon'>$(\ )$ &nbsp;&nbsp; $[\ \ ]$ &nbsp;&nbsp; $\|\ \|$ </span>" style="overflow:auto;" id="f_BRACKET_SYMBOLS"></div>
+<div title="<span information='FONCTION_SYMBOLS' class='rtl-title-withicon'>$\ln$ &nbsp;&nbsp; $\cos$ &nbsp;&nbsp; $\lim$ </span>" style="overflow:auto;" id="f_FONCTION_SYMBOLS"></div>
+</div>
+</div>
+<div region="south" split="false" style="height:40px;" id="southRegion">
+<div id="divInformation" style="padding-top:2px; text-align:center; height:18px; overflow:hidden">&nbsp;</div>
+<div style="padding-top:2px; text-align:center;">
+<span locate="AUTHOR"></span>
+</div>
+</div>
+<div class="easyui-dialog" iconcls="icon-option" closed="true" modal="true" buttons="#btEDITOR_PARAMETERS" id="wEDITOR_PARAMETERS" title="<span locate='EDITOR_PARAMETERS' class='rtl-title-withicon'></span>" style="width:420px;height:320px;">
+<form id="formEDITOR_PARAMETERS" action="#" method="post">
+<fieldset>
+<legend><span locate='SYNTAX'></span></legend>
+<input type="radio" name="codeType" id="AsciiMath_codeType" value="AsciiMath"/> <label for="AsciiMath_codeType">AsciiMath</label>
+<input type="radio" name="codeType" id="Latex_codeType" value="Latex"/> <label for="Latex_codeType">Latex</label>
+<br/><input type="checkbox" name="encloseType" id="encloseType"/> <label for="encloseType"><span locate='ENCLOSE_ALL_FORMULAS'></span></label>
+</fieldset>
+<hr/>
+<fieldset>
+<legend><span locate='UPDATE'></span></legend>
+<input type="checkbox" name="menuupdateType" id="menuupdateType"/> <label for="menuupdateType"><span locate='MENU_UPDATE'></span></label>
+<br/><input type="checkbox" name="autoupdateType" id="autoupdateType"/> <label for="autoupdateType"><span locate='AUTO_UPDATE'></span></label>
+<br/><input name="autoUpdateTime" id="autoUpdateTime" size="4" maxlength="4" style="margin-left:4px;font-size:90%"/> <label for="autoUpdateTime"><span locate='UPDATE_INTERVAL'></span></label>
+</fieldset>
+<hr/>
+<fieldset>
+<legend>MathJax</legend>
+<input type="checkbox" name="menuMathjaxType" id="menuMathjaxType"/> <label for="menuMathjaxType"><span locate='MATHJAX_MENU'></span></label>
+</fieldset>
+<hr/>
+<fieldset>
+<input type="checkbox" name="cookieType" id="cookieType"/> <label for="cookieType"><span locate='COOKIE_SAVE'></span></label>
+</fieldset>
+</form>
+<div id="btEDITOR_PARAMETERS">
+<a href="#" id="btEDITOR_PARAMETERS_CLOSE" class="easyui-linkbutton" iconcls="icon-cancel"><span locate="CLOSE"></span></a>
+</div>
+</div>
+<div class="easyui-dialog" iconcls="icon-language" closed="true" modal="true" buttons="#btLANGUAGE_CHOISE" id="wLANGUAGE_CHOISE" title="<span locate='LANGUAGE_CHOISE' class='rtl-title-withicon'></span>" style="width:270px;height:230px;">
+<form id="formLANGUAGE_CHOISE" action="#" method="post">
+</form>
+<div id="btLANGUAGE_CHOISE">
+<a href="#" id="btLANGUAGE_CHOISE_CLOSE" class="easyui-linkbutton" iconcls="icon-cancel"><span locate="CLOSE"></span></a>
+</div>
+</div>
+<div class="easyui-dialog" iconcls="icon-style" closed="true" modal="true" buttons="#btSTYLE_CHOISE" id="wSTYLE_CHOISE" title="<span locate='STYLE_CHOISE' class='rtl-title-withicon'></span>" style="width:250px;height:200px;">
+<form id="formSTYLE_CHOISE" action="#" method="post">
+<fieldset dir='ltr'>
+<input type="radio" name="style" id="aguas_style" value="aguas"/> <label for="aguas_style">&laquo; Aguas &raquo;</label>
+<br/><input type="radio" name="style" id="gray_style" value="gray"/> <label for="gray_style">&laquo; Gray &raquo;</label>
+<br/><input type="radio" name="style" id="black_style" value="black"/> <label for="black_style">&laquo; Black &raquo;</label>
+<br/><input type="radio" name="style" id="bootstrap_style" value="bootstrap"/> <label for="bootstrap_style">&laquo; Bootstrap &raquo;</label>
+<br/><input type="radio" name="style" id="metro_style" value="metro"/> <label for="metro_style">&laquo; Metro &raquo;</label>
+</fieldset>
+</form>
+<div id="btSTYLE_CHOISE">
+<a href="#" id="btSTYLE_CHOISE_CLOSE" class="easyui-linkbutton" iconcls="icon-cancel"><span locate="CLOSE"></span></a>
+</div>
+</div>
+<div class="easyui-dialog" iconcls="icon-matrix" closed="true" modal="true" buttons="#btMATRIX" id="wMATRIX" title="<span locate='MATRIX' class='rtl-title-withicon'></span>" style="width:310px;height:200px;">
+<form id="formMATRIX" name="formMATRIX" action="#" method="post">
+<table style="border-spacing:0px; border-collapse:collapse;" id="tableMATRIX" dir="ltr">
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><center><input name="colsMATRIX" id="colsMATRIX" size="1" maxlength="2" value="3"/></center></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><input name="rowsMATRIX" id="rowsMATRIX" size="1" maxlength="2" value="3"/></td>
+<td>
+<select name="leftbracketMATRIX">
+<option value="(" selected="selected">(</option>
+<option value="[">[</option>
+<option value="{">{</option>
+<option value="(:">&lt;</option>
+<option value="|">|</option>
+<option value="||">||</option>
+<option value="{:">&nbsp;</option>
+<option value=")">)</option>
+<option value="]">]</option>
+<option value="}">}</option>
+<option value=":)">&gt;</option>
+</select>
+</td>
+<td><center><div id="showMATRIX"></div></center></td>
+<td>
+
+<select name="rightbracketMATRIX">
+<option value=")" selected="selected">)</option>
+<option value="]">]</option>
+<option value="}">}</option>
+<option value=":)">&gt;</option>
+<option value="|">|</option>
+<option value="||">||</option>
+<option value=":}">&nbsp;</option>
+<option value="(">(</option>
+<option value="[">[</option>
+<option value="{">{</option>
+<option value="(:">&lt;</option>
+</select>
+</td>
+</tr>
+</table>
+</form>
+<div id="btMATRIX">
+<a href="#" id="btMATRIX_SET" class="easyui-linkbutton" iconcls="icon-ok"><span locate="SET_IN_EDITOR"></span></a>
+<a href="#" id="btMATRIX_CLOSE" class="easyui-linkbutton" iconcls="icon-cancel"><span locate="CLOSE"></span></a>
+</div>
+</div>
+<div class="easyui-dialog" iconcls="icon-diagram" closed="true" modal="false" shadow="false" position="{left:410,top:80}" resizable="true" collapsible="true" id="wf_COMMUTATIVE_DIAGRAM_MORE" title="<span id='wf_COMMUTATIVE_DIAGRAM_MORE_TITLE' locate='COMMUTATIVE_DIAGRAM' class='rtl-title-withicon'></span>" style="width:260px;height:320px;">
+</div>
+<div class="easyui-dialog" iconcls="icon-chemical" closed="true" modal="false" shadow="false" position="{left:410,top:80}" resizable="true" collapsible="true" id="wf_CHEMICAL_FORMULAE_MORE" title="<span id='wf_CHEMICAL_FORMULAE_MORE_TITLE' locate='CHEMICAL_FORMULAE' class='rtl-title-withicon'></span>" style="width:220px;height:140px;">
+</div>
+<div class="easyui-dialog" closed="true" modal="false" shadow="false" position="{left:410,top:36}" resizable="true" collapsible="true" id="wf_BRACKET_SYMBOLS_MORE" title="<span id='wf_BRACKET_SYMBOLS_MORE_TITLE' class='rtl-title-withicon'>$(\ )$ &nbsp;&nbsp; $[\ \ ]$ &nbsp;&nbsp; $\|\ \|$</span>" style="width:250px;height:440px;">
+</div>
+<div class="easyui-dialog" closed="true" modal="false" shadow="false" position="{left:460,top:80}" resizable="true" collapsible="true" id="wf_RELATION_SYMBOLS_MORE" title="<span id='wf_RELATION_SYMBOLS_MORE_TITLE' class='rtl-title-withicon'>$\leq$ &nbsp;&nbsp; $\cong$ &nbsp;&nbsp; $\approx$</span>" style="width:240px;height:300px;">
+</div>
+<div class="easyui-dialog" closed="true" modal="false" shadow="false" position="{left:510,top:124}" resizable="true" collapsible="true" id="wf_ARROW_SYMBOLS_MORE" title="<span id='wf_ARROW_SYMBOLS_MORE_TITLE' class='rtl-title-withicon'>$\Rightarrow$ &nbsp;&nbsp; $\circlearrowleft$ &nbsp;&nbsp; $\looparrowright$</span>" style="width:240px;height:330px;">
+</div>
+<div class="easyui-dialog" closed="true" modal="false" shadow="false" position="{left:410,top:2}" resizable="true" collapsible="true" id="wf_FR_CHAR_MORE" title="<span id='wf_FR_CHAR_MORE_TITLE' class='rtl-title-withicon'>$\mathfrak{A}$ &nbsp;&nbsp; $\mathfrak{B}$ &nbsp;&nbsp; $\mathfrak{C}$</span>" style="width:240px;height:340px;">
+</div>
+<div class="easyui-dialog" closed="true" modal="false" shadow="false" position="{left:460,top:2}" resizable="true" collapsible="true" id="wf_BBB_CHAR_MORE" title="<span id='wf_BBB_CHAR_MORE_TITLE' class='rtl-title-withicon'>$\mathbb{A}$ &nbsp;&nbsp; $\mathbb{B}$ &nbsp;&nbsp; $\mathbb{C}$</span>" style="width:240px;height:340px;">
+</div>
+<div class="easyui-dialog" closed="true" modal="false" shadow="false" position="{left:510,top:2}" resizable="true" collapsible="true" id="wf_L_U_GREEK_CHAR_MORE" title="<span id='wf_L_U_GREEK_CHAR_MORE_TITLE' class='rtl-title-withicon'>$\varepsilon$ &nbsp;&nbsp; $\pi$ &nbsp;&nbsp; $\Psi$</span>" style="width:240px;height:470px;">
+</div>
+<div class="easyui-dialog" closed="true" modal="false" shadow="false" position="{left:410,top:80}" resizable="true" collapsible="true" id="wf_ALL_CHAR_MORE" title="<span id='wf_ALL_CHAR_MORE_TITLE' class='rtl-title-withicon'>A B C</span>" style="width:540px;height:320px;">
+</div>
+<div class="easyui-dialog" iconcls="icon-equation" closed="true" modal="false" shadow="false" position="{left:410,top:80}" resizable="true" collapsible="true" id="wf_EQUATION_MORE" title="<span id='wf_EQUATION_MORE_TITLE' locate='EQUATION' class='rtl-title-withicon'></span>" style="width:500px;height:320px;">
+</div>
+<div class="easyui-dialog" iconcls="icon-hspace" closed="true" modal="false" shadow="false" position="{left:410,top:80}" resizable="true" collapsible="true" id="wf_HORIZONTAL_SPACING_MORE" title="&nbsp;" style="width:110px;height:250px;">
+</div>
+<div class="easyui-dialog" iconcls="icon-vspace" closed="true" modal="false" shadow="false" position="{left:410,top:80}" resizable="true" collapsible="true" id="wf_VERTICAL_SPACING_MORE" title="&nbsp;" style="width:210px;height:120px;">
+</div>
+<div class="easyui-dialog" iconcls="icon-special_char" closed="true" modal="false" shadow="false" position="{left:410,top:80}" resizable="true" collapsible="true" id="wf_SPECIAL_CHARACTER_MORE" title="&nbsp;" style="width:65px;height:240px;">
+</div>
+<div class="easyui-window" iconcls="icon-symbols" closed="true" modal="false" collapsible="false" minimizable="false" maximizable="false" closable="true" id="wLATEX_CODES_LIST" title="<span locate='LATEX_CODES_LIST' class='rtl-title-withicon'></span>" style="height:450px;width:240px">
+<div id="cLATEX_CODES_LIST"></div>
+</div>
+<div class="easyui-window" iconcls="icon-symbols" closed="true" modal="false" collapsible="false" minimizable="false" maximizable="false" closable="true" id="wASCIIMATH_CODES_LIST" title="<span locate='ASCIIMATH_CODES_LIST' class='rtl-title-withicon'></span>" style="height:450px;width:330px">
+<div id="cASCIIMATH_CODES_LIST"></div> ``
+</div>
+<div class="easyui-window" iconcls="icon-codes" resizable="false" closed="true" modal="false" collapsible="false" minimizable="false" maximizable="false" closable="true" id="wUNICODES_LIST" title="<span locate='UNICODES_LIST' class='rtl-title-withicon'></span>" style="height:560px;width:580px">
+<div style="margin-top:10px;margin-bottom:10px;margin-left:4px;">
+<form action="#" method="post"><input class="easyui-combobox" id="unicodeChoise" name="unicodeChoise" value="-" style="width:345px;"></form>
+</div>
+<div id="cUNICODES_LIST" style="float:left;width:350px;height:480px;overflow:auto;"></div><div id="cUNICODES_VALUES" style="float:right;width:170px;height:480px;overflow:auto;"></div>
+</div>
+<div class="easyui-window" iconcls="icon-langressource" closed="true" modal="false" collapsible="false" minimizable="false" maximizable="false" closable="true" id="wLANGUAGE_LIST" title="<span locate='LANGUAGE_LIST' class='rtl-title-withicon'></span>" style="height:450px;width:650px">
+<div id="tLANGUAGE_LIST" class="easyui-tabs" border="false" fit="true" plain="false">
+</div>
+</div>
+<div class="easyui-window" iconcls="icon-info" closed="true" modal="false" collapsible="false" minimizable="false" maximizable="false" closable="true" id="wINFORMATIONS" title="<span locate='INFORMATIONS' class='rtl-title-withicon'></span>" style="height:450px;width:600px">
+<div id="tINFORMATIONS" class="easyui-tabs" border="false" fit="true" plain="false">
+<div title="<span locate='COPYRIGHT'></span>" id="tCOPYRIGHT" iconcls="icon-copyright" closable="false" style="padding:10px;" cache="true" href="information/tCOPYRIGHT.html"></div>
+<div title="<span locate='VERSION'></span>" id="tVERSION" iconcls="icon-history" closable="false" style="padding:10px;" cache="true" href="information/tVERSION.html"></div>
+<div title="<span locate='BUGS'></span>" id="tBUGS" iconcls="icon-bugs" closable="false" style="padding:10px;" cache="true" href="information/tBUGS.html"></div>
+<div title="<span locate='EQUATION_SAMPLE'></span>" id="tEQUATION" iconcls="icon-equation" closable="false" style="padding:10px;" cache="true" href="information/tEQUATION.html"></div>
+</div>
+</div>
+<!--
+ </div>
+
+ </div-->
+ <!---br />
+ <div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
+<div class="col-md-9">
+<textarea rows="1" cols="67" class="text-box-2" name="option-1">Option 1</textarea>
+</div>
+
+</div>
+<br />
+ <div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
+<div class="col-md-9">
+<textarea rows="1" cols="67" class="text-box-2" name="option-2">Option 2</textarea>
+</div>
+</div>
+<br />
+ <div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
+<div class="col-md-9">
+<textarea rows="1" cols="67" class="text-box-2" name="option-3">Option 3</textarea>
+</div>
+</div>
+<br />
+ <div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-1 topmargin-5"><input type="radio" class="radio-blue" name="chemistry-1"></div>
+<div class="col-md-9">
+<textarea rows="1" cols="67" class="text-box-2" name="option-4">Option 4</textarea>
+</div>
+</div>
+  <br />
+  <div class="row">
+   <div class="col-md-1"></div>
+ <div class="col-md-10">	<textarea id="editor" name="editor">Enter Feedback Here</textarea><br />
+ </div>
+<div class="col-md-1"></div>
+
+ </div>
+ 
+ <br />
+<div class="row">
+<div class="col-md-12">
+ <div style="margin: auto; text-align: center">
+<button type="submit" class="sign-up">Save</button>
+ </div>
+ <br />
+ </div>
+ <div class="col-md-1"></div>
+ </div>
+ </form>
+ </div>
+ 
+<div class="row bottom-6">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bottom-4">
+<img src="assets/Social-Icons-01.png" class="social-icons" />
+<img src="assets/Social-Icons-02.png" class="social-icons" />
+<img src="assets/Social-Icons-03.png" class="social-icons" />
+<br /><br />
+<p class="copyright">&copy; 2016 QPALX. All rights reserved</p>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bottom-5">
+<p>Contact Us<br />
+hello@qpalx.com<br />
+Studio M, 4th Floor 8 Lower<br />
+Manchester Street, M1 SQF<br />
++34 393 323 32 22</p>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 float-right">
+<p>Subscribe Now<br />
+Sign up to stay up to date with our<br />
+latest news</p>
+
+<input type="text" name="email" class="textbox" value="&nbsp;&nbsp;&nbsp;Enter Email Address">
+<button type="submit" class="sign-up">Sign Up</button>
+</div>
+</div>
+<footer>
+</footer>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script--->
+<script>
+	initSample();
+	
+	$(document).ready(function(){
+		$(".small-boxes").hide();
+        //$(".small-boxes-2").show();						   
+    $("#hide").click(function(){
+		$(".small-boxes").hide();
+        $(".small-boxes-2").show();
+    });
+    $("#show").click(function(){
+        $(".small-boxes-2").hide();
+        $(".small-boxes").show();
+    });
+});
+	function Quizzes(){
+			if( $("#hide").hasClass("blue-tabs-2") ) {
+		$("#hide").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+		$("#show").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+			} else {	
+		$("#hide").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+		$("#show").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+			}
+	}
+	function Settings(){
+			if( $("#show").hasClass("blue-tabs-3") ) {
+		$("#show").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+		$("#hide").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+			} else {	
+		$("#show").removeClass("blue-tabs-2").addClass("blue-tabs-3");
+		$("#hide").removeClass("blue-tabs-3").addClass("blue-tabs-2");
+			}
+	}
+</script>
+  </body>
+</html>

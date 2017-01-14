@@ -11,6 +11,13 @@ body {
 	width: 100%;
 	margin: 0;
 }
+
+.easyui-layout {
+	overflow: scroll;
+}
+#bodyPage{
+	overflow: scroll;
+}
 html {
 	margin: 0;
 }
