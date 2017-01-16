@@ -337,7 +337,7 @@ elseif ( !empty($_REQUEST["horizontal"]) && isset($_POST["submit"]) ) { ?>
    <p>Title of chart (required)<br /><input type="text" name="title"></p>
    </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
- <p>Components (required)<br /><input type="text" name="name"></p>
+ <p>Legend (required)<br /><input type="text" name="name"></p>
  </div>
  </div>
  <div class="row">
@@ -415,7 +415,7 @@ elseif ( !empty($_REQUEST["horizontal"]) && isset($_POST["submit"]) ) { ?>
    <p>Title of chart (required)<br /><input type="text" name="title"></p>
    </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
- <p>Components (required)<br /><input type="text" name="name"></p>
+ <p>Legend (required)<br /><input type="text" name="name"></p>
  </div>
  </div>
  <div class="row">
@@ -493,7 +493,7 @@ elseif ( !empty($_REQUEST["horizontal"]) && isset($_POST["submit"]) ) { ?>
    <p>Title of chart (required)<br /><input type="text" name="title"></p>
    </div>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
- <p>Components (required)<br /><input type="text" name="name"></p>
+ <p>Legend (required)<br /><input type="text" name="name"></p>
  </div>
  </div>
  <div class="row">
