@@ -547,6 +547,15 @@ width: 248px;
 #check-box-one:checked + label{
     border: 2px solid #7dc855;
 }
+
+#check-box-three {
+    display: none;
+}
+
+#check-box-three:checked + label{
+    border: 2px solid #7dc855;
+}
+
 #check-box-1:checked + label{
     border: 2px solid #7dc855;
 }
@@ -557,7 +566,13 @@ width: 248px;
 #check-box-two:checked + label{
     border: 2px solid #7dc855;
 }
+#check-box-four {
+    display: none;
+}
 
+#check-box-four:checked + label{
+    border: 2px solid #7dc855;
+}
 #check-box-2 {
     display: none;
 }
@@ -642,7 +657,8 @@ width: 248px;
 	text-align: center;
 }
 .side-margin {
-	padding: 0 10px 0 10px;		  
+	padding: 0 10px 0 10px;	
+	margin-top: -20px;
 }
 .gray {
 	   color: #999;
@@ -1131,8 +1147,9 @@ left: 12%;
 }
 
 .cents {
-	margin: 60px 80px;
+	margin: 60px 60px;
 	text-align: center;
+	width: 60%;
 	}
 	
 .radio-btn {
@@ -1612,15 +1629,22 @@ margin: auto 0 auto -60px;
 
 .checkmark1 {
 	position: relative;
-	top: -250px;
-	right: -260px;
+	top: -290px;
+	right: -250px;
 }
 
+.checkmark2 {
+	position: relative;
+	top: -280px;
+	right: -230px;
+}
+/*
 .checkmark2 {
 	position: relative;
 	top: -60px;
 	right: -50px;
 }
+*/
 
 .checkmark3 {
 	position: relative;

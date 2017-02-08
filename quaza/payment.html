@@ -39,19 +39,36 @@
     <div class="col-md-6">
     <input type="radio" id="check-box-one" value="a" name="subscriptions" onClick="displayCheckmark1();" />
     <label for="check-box-one" class="cents-box cents-box-2" id="">
-   <img class="cents" src="images/2cents.png" /><span id="one"></span><p class="centered large-text"><b>Monthly</b></p><p class="centered">You will be billed on a monthly basis</p></label>
+   <img class="cents" src="images/subscription-weekly-green.png" /><span id="one"></span><p class="centered large-text"><b>Weekly</b></p><p class="centered">You will be billed on a weekly basis</p></label>
    
    </div>
   
    <div class="col-md-6">
    <input type="radio" id="check-box-two" value="b" name="subscriptions" onClick="displayCheckmark2();" />
    <label for="check-box-two" class="cents-box cents-box-5" id="">
-   <img class="cents" src="images/5cents.png" /><span id="two"></span><p class="centered large-text"><b>Annually</b></p><p class="centered side-margin">You will be charged on a yearly basis at a discounted price.</p>
+   <img class="cents" src="images/Group 5.png" /><span id="two"></span><p class="centered large-text"><b>Monthly</b></p><p class="centered side-margin">You will be charged on a monthly basis.</p>
    </label>
    </div>
 
    </div>
+ <br /><br />
+     <div class="row">
+    <div class="col-md-6">
+    <input type="radio" id="check-box-three" value="c" name="subscriptions" onClick="displayCheckmark3();" />
+    <label for="check-box-three" class="cents-box cents-box-2" id="">
+   <img class="cents" src="images/11.png" /><span id="three"></span><p class="centered large-text"><b>Quarterly</b></p><p class="centered">You will be billed on a quarterly basis</p></label>
    
+   </div>
+  
+   <div class="col-md-6">
+   <input type="radio" id="check-box-four" value="d" name="subscriptions" onClick="displayCheckmark4();" />
+   <label for="check-box-four" class="cents-box cents-box-5" id="">
+   <img class="cents" src="images/Group 4.png" /><span id="four"></span><p class="centered large-text"><b>Annually</b></p><p class="centered side-margin">You will be charged on a yearly basis at a discounted price.</p>
+   </label>
+   </div>
+
+   </div>
+  
    <br /><br /><br /> <br /><br /><br />
    <div class="row hover">
    <div class="col-md-2"></div>
@@ -192,11 +209,14 @@ $("#form-text").prop('disabled', false);
 $("#form-text-1").prop('disabled', false);
 $("#form-text-2").prop('disabled', true);
 });
+
 });  
 	
 function displayCheckmark1(){
+	$("#one").empty();
 	$("#two").empty();
-	
+	$("#three").empty();
+	$("#four").empty();
 if (document.getElementById('check-box-one').checked) {
 
 	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark1\" aria-hidden=\"true\"></i>')
@@ -204,15 +224,41 @@ if (document.getElementById('check-box-one').checked) {
 }
 }
 function displayCheckmark2(){
-		$("#one").empty();
+	$("#one").empty();
+	$("#two").empty();
+	$("#three").empty();
+	$("#four").empty();
 		
 if (document.getElementById('check-box-two').checked) {
 
-	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark1\" aria-hidden=\"true\"></i>')
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark2\" aria-hidden=\"true\"></i>')
 	$('#two').append(fontAwe);
 }
 }
+function displayCheckmark3(){
+	$("#one").empty();
+	$("#two").empty();
+	$("#three").empty();
+	$("#four").empty();
+	
+if (document.getElementById('check-box-three').checked) {
 
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark1\" aria-hidden=\"true\"></i>')
+	$('#three').append(fontAwe);
+}
+}
+function displayCheckmark4(){
+	$("#one").empty();
+	$("#two").empty();
+	$("#three").empty();
+	$("#four").empty();
+		
+if (document.getElementById('check-box-four').checked) {
+
+	var fontAwe = $('<i class=\"fa fa-check-circle fa-2x checkmark2\" aria-hidden=\"true\"></i>')
+	$('#four').append(fontAwe);
+}
+}
 
 $('.radio-btn').click(function() {
 		$('.row').removeClass("hvr");
