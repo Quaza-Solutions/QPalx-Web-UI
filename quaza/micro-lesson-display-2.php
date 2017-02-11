@@ -328,10 +328,11 @@ html: items.join( "" ),
 });
 });
 });
-var vid = document.getElementById("modal-box");
+
+for (var i=0; i < 3; i++){
+var vid = document.getElementById("modal-box-" + i);
 vid.autoplay = false;
-var vid2 = document.getElementById("modal-box-2");
-vid2.autoplay = false;
+}
      function stopVideo(){
         //$("#modal-box")[0].pause();
 		$('video').trigger('pause');
