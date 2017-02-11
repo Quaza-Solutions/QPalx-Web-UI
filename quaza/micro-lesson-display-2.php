@@ -330,7 +330,8 @@ html: items.join( "" ),
 });
 
      function stopVideo(){
-        $("#modal-box")[0].pause();
+        //$("#modal-box")[0].pause();
+		$('video').trigger('pause');
 		 var href = parent.document.getElementById('popup1').getAttribute("href");
 		 //alert('Making API call.');
          $.ajax({ 
@@ -343,7 +344,8 @@ html: items.join( "" ),
          }); 
      }
      function stopVideo2(){
-        $("#modal-box-2")[0].pause();
+        //$("#modal-box-2")[0].pause();
+		$('video').trigger('pause');
 		 var href = parent.document.getElementById('popup2').getAttribute("href");
 		 //alert('Making API call.');
          $.ajax({ 
