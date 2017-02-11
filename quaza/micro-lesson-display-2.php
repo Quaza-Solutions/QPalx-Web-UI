@@ -313,6 +313,11 @@ latest news</p>
     <script>
 	
 $(document).ready(function() {
+						   
+for (var i=0; i < 3; i++){
+var vid = document.getElementById("modal-box-" + i);
+vid.autoplay = false;
+}
 $('.fetchjson').click(function () {
 var idNumber = $(this).attr('id').split('-').reverse()[0];
 $.getJSON( "ajax/microLesson"+idNumber+".json", function( data ) {
@@ -329,10 +334,7 @@ html: items.join( "" ),
 });
 });
 
-for (var i=0; i < 3; i++){
-var vid = document.getElementById("modal-box-" + i);
-vid.autoplay = false;
-}
+
      function stopVideo(){
         //$("#modal-box")[0].pause();
 		$('video').trigger('pause');
