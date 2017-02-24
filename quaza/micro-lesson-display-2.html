@@ -215,7 +215,7 @@ Success ID: GH-ACC-1230037<br />
    <div class="bar-1"></div>
     <a href="#" style="color: #000; float:right; margin: 20px 40px 20px 0;" onClick="stopVideo();">Close</a>
    <div class="modalBody">
-<video width="800" id="modal-box" controls>
+<video width="800" id="modal-box-1" controls>
   <source src="videos/lesson 1 with audio.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -289,7 +289,8 @@ latest news</p>
 	
 $(document).ready(function() {
 						   
-for (var i=0; i < 3; i++){
+for (var i=1; i < 3; i++){
+alert("hi");
 var vid = document.getElementById("modal-box-" + i);
 vid.autoplay = false;
 }
