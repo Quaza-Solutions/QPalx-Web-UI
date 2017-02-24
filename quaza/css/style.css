@@ -2537,3 +2537,11 @@ background-image: url("../images/Solutions-Header.jpg");
 	font-weight: normal;
 	padding: 50px 10px;
 }
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
