@@ -2464,6 +2464,33 @@ font-size: 18px;
 color: #fff; 
 background-color: #74be43;
 }
+.lessons {
+color: #fff; 
+background-color: #07bed3; 
+padding-top: 6px; 
+width: 200px;
+height: 40px;
+font-size: 18px;
+}
+
+.lessons:hover {
+color: #fff; 
+background-color: #74be43;
+}
+.chart {
+color: #fff; 
+background-color: #07bed3; 
+padding-top: 2px; 
+width: 80px;
+height: 20px;
+font-size: 12px;
+}
+
+.chart:hover {
+color: #fff; 
+background-color: #74be43;
+}
+
 .log-in {
 color: #fff; 
 background-color: #07bed3; 
