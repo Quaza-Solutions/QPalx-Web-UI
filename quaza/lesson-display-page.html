@@ -41,6 +41,7 @@ Success ID: GH-ACC-1230037<br />
       <div class="third circle-bar">
       <strong></strong>
     </div>
+    <p style="margin-left:60px; color: #06bfd3;">98 - 100%</p>
      </div>
 </div>
 </div>
@@ -193,8 +194,10 @@ latest news</p>
   value: 1.00,
   fill: {gradient: [['#06bfd3', .5], ['#06bfd3', .5]], gradientAngle: Math.PI / 4}
 }).on('circle-animation-progress', function(event, progress, stepValue) {
-  $(this).find('strong').html(parseInt(100 * progress) + '<i>%</i>');
+  //$(this).find('strong').html(parseInt(100 * progress) + '<i>%</i>');
+  $(this).find('strong').html(parseInt(10 * progress));
 });
+  
 </script>
   </body>
 </html>
