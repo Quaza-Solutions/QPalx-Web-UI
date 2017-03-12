@@ -301,12 +301,29 @@
 
         <div class="questionBankModalBody">
             <div class="whiteBody2">
-
+<div class="row">
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+<button id="chart">Chart</button><br /><br />
+<button id="table">Table</button>
+</div>
+<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
                 <div id="chart_div"></div>
+                <div id="table_div">
+<table width="100%" border="0" class="sf-table standard_minimal"><tr><td><b>Date</b></td><td><b>Score</b></td></tr> 
+<tr><td>01/09/2017</td><td>60%</td></tr>                
+<tr><td>02/09/2017</td><td>66%</td></tr> 
+<tr><td>03/09/2017</td><td>76%</td></tr> 
+<tr><td>03/12/2017</td><td>88%</td></tr> 
+</table>                      
+                </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 <div style="margin-top: 40px;" class="row bottom-6">
@@ -348,6 +365,15 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script>
+$("#table").click(function() {
+$("#table_div").show();
+$("#chart_div").hide();
+});
+
+$("#chart").click(function() {
+$("#table_div").hide();
+$("#chart_div").show();
+});
 google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
