@@ -2596,6 +2596,16 @@ video::-webkit-media-controls-enclosure {
     overflow:hidden;
 }
 .green-table td {
-	color: #7dc855;
-	font-size: 14px;
+	background-color: #7dc855;
+	color: #ffffff;
+	font-size: 10px;
+	padding: 2px;
+}
+
+#rounded {
+    border-radius: 15px 50px 30px;
+ 	background-color: #7dc855;
+    padding: 20px; 
+    width: 200px;
+    height: 220px; 
 }
