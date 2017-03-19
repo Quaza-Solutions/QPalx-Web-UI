@@ -2595,3 +2595,7 @@ video::-internal-media-controls-download-button {
 video::-webkit-media-controls-enclosure {
     overflow:hidden;
 }
+.green-table td {
+	color: #7dc855;
+	font-size: 14px;
+}
