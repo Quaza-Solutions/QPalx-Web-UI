@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.blue-sideboard {
+	background-color: #025c85;
+	height: 1000px;
+}
+
+.main-page {
+	background-color: #faf8fa;
+	height: 1000px;
+}
+
+.tableheaders th {
+	color: #ccc;
+}

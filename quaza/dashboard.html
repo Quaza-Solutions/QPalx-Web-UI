@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body ng-init="customers=[{performance: '-34%', region:'Ashanti', district:'Atwima Mponauk', subject: 'math', participation: 90}, {performance: '+74%',region:'Ashanti', district:'Umasi Metro', subject: 'english', participation: 200},{performance: '+12%',region:'Brong Ahafo', district:'Sunyani Muncipal', subject:'science', participation: 74}, {performance: '+45%',region:'Central', district:'Ekumfi', subject:'math', participation: 100}, {performance: '+20%',region:'Eastern', district:'Suhun Muncipal', subject:'english', participation: 67}, {performance: '+12%',region:'Western', district:'Metro', subject:'science', participation: 88}, {performance: '-30%',region:'Northern', district:'Muncipal', subject:'math', participation: 66}]">
+ <header>
+ <form>
+<div class="row">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="assets/new_logo.png" style="height: 30px; margin: 20px 0 20px 20px;"  /></div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><input type="text" name="search" value="Search..." /></div>
+  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+  </div>
+  </form>
+  </header>
+<div class="row">
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 blue-sideboard">
+</div>
+  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 main-page">
+  <div style="background-color: #76bf45; width: 770px; height: 40px; margin: 0 20px 0 20px;"><span style="color: #fff; margin: 10px 20px 10px 20px; padding: 12px 20px; display: block;">OVERALL DISTRICT PERFORMANCE</span>
+      <div style="margin-top: -46px;"><input style="margin-left: 400px; color: #ccc;" type="text" placeholder="Search" ng-model="customerFilter.region" /><button type="button" style="background-color: #fff;">Show All&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#94;</button></div>
+    </div>
+    <div style="overflow-y:scroll; height:100px; width: 770px; border: thin solid #ccc; margin: 0 20px;">
+    <table class="tableheaders table-striped" border="0" width="740px" style="background-color: #fff;">
+        <tr>
+            <th ng-click="sortBy='region';reverse=!reverse">REGION</th>
+            <th ng-click="sortBy='district';reverse=!reverse">DISTRICT</th>
+            <th ng-click="sortBy='subject';reverse=!reverse">SUBJECT</th>
+            <th ng-click="sortBy='performance';reverse=!reverse">PERFORMANCE</th>
+            <th ng-click="sortBy='participation';reverse=!reverse">PARTICIPATION</th>
+        </tr>
+        <tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
+            <td style="font-weight: bold;">{{ cust.region }}</td>
+            <td style="color: #ccc;">{{ cust.district | uppercase }}</td>
+            <td style="color: #ccc;">{{ cust.subject | uppercase }}</td>
+            <td style="font-weight: bold;">{{ cust.performance }}</td>
+            <td style="font-weight: bold;">{{ cust.participation }}</td>
+        </tr>
+    </table> 
+    </div>
+  </div>
+</div>
+  
+
+
+</body>
+</html>

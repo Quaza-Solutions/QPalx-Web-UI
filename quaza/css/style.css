@@ -2450,6 +2450,18 @@ height: 44px;
 color: #fff; 
 background-color: #74be43;
 }
+.delete-edit {
+color: #fff; 
+background-color: #07bed3; 
+padding-top: 6px; 
+width: 100px;
+height: 44px;
+}
+
+.delete-edit:hover {
+color: #fff; 
+background-color: #74be43;
+}
 
 .sign-up {
 color: #fff; 
