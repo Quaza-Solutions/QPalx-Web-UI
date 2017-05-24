@@ -2370,7 +2370,11 @@ border: none;
 		margin-top: -20px;
 		margin-left: 14px;
 }
-
+#focus-area {
+		width: 280px;
+		margin-top: -20px;
+		margin-left: 14px;
+}
 #result {
 		width: 140px;
 		margin-top: -20px;
