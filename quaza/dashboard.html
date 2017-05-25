@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
-<body ng-init="customers=[{performance: '-34%', region:'Ashanti', district:'Atwima Mponauk', subject: 'math', participation: 90}, {performance: '+74%',region:'Ashanti', district:'Umasi Metro', subject: 'english', participation: 200},{performance: '+12%',region:'Brong Ahafo', district:'Sunyani Muncipal', subject:'science', participation: 74}, {performance: '+45%',region:'Central', district:'Ekumfi', subject:'math', participation: 100}, {performance: '+20%',region:'Eastern', district:'Suhun Muncipal', subject:'english', participation: 67}, {performance: '+12%',region:'Western', district:'Metro', subject:'science', participation: 88}, {performance: '-30%',region:'Northern', district:'Muncipal', subject:'math', participation: 66}]">
+<body ng-init="customers=[{performance: '-34%', region:'Ashanti', district:'Atwima Mponauk', subject: 'math', participation: 90}, {performance: '+74%',region:'Ashanti', district:'Umasi Metro', subject: 'english', participation: 200},{performance: '+12%',region:'Brong Ahafo', district:'Sunyani Muncipal', subject:'science', participation: 74}, {performance: '+45%',region:'Central', district:'Ekumfi', subject:'math', participation: 100}, {performance: '+20%',region:'Eastern', district:'Suhun Muncipal', subject:'english', participation: 67}, {performance: '+12%',region:'Western', district:'Metro', subject:'science', participation: 88}, {performance: '-30%',region:'Northern', district:'Muncipal', subject:'math', participation: 66}]" ng-app="staticSelect">
  <header>
  
 <div class="row">
@@ -24,19 +24,19 @@
   <div style="background-color: #76bf45; width: 770px; height: 40px; margin: 0 20px 0 20px;"><span style="color: #fff; margin: 10px 20px 10px 20px; padding: 12px 20px; display: block;">OVERALL DISTRICT PERFORMANCE</span>
       <div style="margin-top: -46px;"><input style="margin-left: 400px; color: #ccc;" type="text" placeholder="Search" ng-model="customerFilter.region" />
       </div>
-      </div>
-      
-<div ng-controller="ExampleController">
+     
+<div ng-controller="ExampleController" style="margin: -26px auto auto 600px;">
   <form name="myForm">
-    <label for="singleSelect"> Single select: </label><br>
-    <select name="singleSelect" ng-model="data.singleSelect">
-      <option value="option-1">Option 1</option>
-      <option value="option-2">Option 2</option>
+    <select name="singleSelect" ng-model="customerFilter.subject">
+      <option value="">View All</option>
+      <option value="math">Math</option>
+      <option value="english">English</option>
+      <option value="science">Science</option>
     </select><br>
     </form>
-    </div>
-    
-    <div style="overflow-y:scroll; height:100px; width: 770px; border: thin solid #ccc; margin: 0 20px;">
+
+      
+    <div style="overflow-y:scroll; height:100px; width: 770px; border: thin solid #ccc; margin: 10px 20px auto -600px;">
     <table class="tableheaders table-striped" border="0" width="740px" style="background-color: #fff;">
         <tr>
             <th ng-click="sortBy='region';reverse=!reverse">REGION</th>
@@ -56,21 +56,19 @@
     </div>
   </div>
 </div>
-  
+</div>
+</div>
 
 <script>
+
 angular.module('staticSelect', [])
  .controller('ExampleController', ['$scope', function($scope) {
    $scope.data = {
-    singleSelect: null,
-    multipleSelect: [],
-    option1: 'option-1'
+    singleSelect: null
    };
 
-   $scope.forceUnknownOption = function() {
-     $scope.data.singleSelect = 'nonsense';
-   };
 }]);
+
 </script>
 </body>
 </html>
