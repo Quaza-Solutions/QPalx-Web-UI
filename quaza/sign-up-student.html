@@ -16,6 +16,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body>
  <header>
@@ -86,21 +87,14 @@
   <div class="col-md-3">Region</div>
   </div>
   <div class="row">
+  <div data-ng-app="main" data-ng-controller="myCtrl">
   <div class="col-md-3">
-  <select name="degree" class="dropdown">
-  <option value="High School">High School</option>
-  <option value="Bachelor's">Bachelor's</option>
-  <option value="Master's">Master's</option>
-  <option value="Doctorate">Doctorate</option>
-</select>
+     <select data-ng-model="option1" class="dropdown" data-ng-options="option for option in options1" data-ng-change="getOptions2()">
+    </select>
 </div>
   <div class="col-md-3">
-  <select id="grade" name="grade" class="dropdown">
-  <option value="Freshman">Freshman</option>
-  <option value="Sophomore">Sophomore</option>
-  <option value="Junior">Junior</option>
-  <option value="Senior">Senior</option>
-</select>
+    <select data-ng-model="option2" class="dropdown" data-ng-options="option for option in options2">
+    </select>
 </div>
   <div class="col-md-3">
 <select id="countries" name="countries" class="dropdown">
@@ -356,6 +350,7 @@
 </select>
 </div>
 </div>
+</div>
 <div class="bottom-space"></div>
 <div class="row">
 <div class="col-md-6">Current School</div>
@@ -412,5 +407,26 @@ latest news</p>
      <script src="js/validation.js"></script>
          
     <script src="js/hr.js"></script>
+<script>
+var app = angular.module('main', []);
+var option1Options = ["Junior High", "Senior High","Bachelor's","Master's","Doctorate"];
+var option2Options = [["JHS1","JHS2","JHS3"],
+               ["SHS1","SHS2","SHS3"]];
+//function myCtrl($scope){
+app.controller('myCtrl', function ($scope) {
+    $scope.options1 = option1Options;
+    $scope.options2 = []; // we'll get these later
+    $scope.getOptions2 = function(){
+        // just some silly stuff to get the key of what was selected since we are using simple arrays.
+        var key = $scope.options1.indexOf($scope.option1);
+        // Here you could actually go out and fetch the options for a server.
+        var myNewOptions = option2Options[key];
+        // Now set the options.
+        // If you got the results from a server, this would go in the callback
+        $scope.options2 = myNewOptions;
+    };
+})  
+</script>
+
   </body>
 </html>

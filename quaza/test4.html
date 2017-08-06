@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div data-ng-app="main" data-ng-controller="myCtrl">
+    <select data-ng-model="option1" data-ng-options="option for option in options1" data-ng-change="getOptions2()">
+    </select>
+    <select data-ng-model="option2" data-ng-options="option for option in options2">
+    </select>
+ </div>   
+<script>
+var app = angular.module('main', []);
+var option1Options = ["Junior High", "Senior High","Bachelor's","Master's","Doctorate"];
+var option2Options = [["JHS1","JHS2","JHS3"],
+               ["SHS1","SHS2","SHS3"]];
+//function myCtrl($scope){
+app.controller('myCtrl', function ($scope) {
+    $scope.options1 = option1Options;
+    $scope.options2 = []; // we'll get these later
+    $scope.getOptions2 = function(){
+        // just some silly stuff to get the key of what was selected since we are using simple arrays.
+        var key = $scope.options1.indexOf($scope.option1);
+        // Here you could actually go out and fetch the options for a server.
+        var myNewOptions = option2Options[key];
+        // Now set the options.
+        // If you got the results from a server, this would go in the callback
+        $scope.options2 = myNewOptions;
+    };
+})  
+</script>
+</body>
+</html>
